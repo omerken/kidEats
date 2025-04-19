@@ -1,0 +1,14 @@
+.root {
+  flex-shrink: 0;
+  background: var(--surface-3);
+}
+
+.horizontal {
+  height: var(--border-size-1);
+  width: 100%;
+}
+
+.vertical {
+  height: 100%;
+  width: var(--border-size-1);
+}

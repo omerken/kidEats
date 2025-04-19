@@ -1,0 +1,103 @@
+.base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--size-2);
+  white-space: nowrap;
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-5);
+  transition: colors 200ms var(--ease-3);
+}
+
+.base:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--surface-4);
+}
+
+.base:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.base svg {
+  pointer-events: none;
+  width: var(--size-4);
+  height: var(--size-4);
+  flex-shrink: 0;
+}
+
+/* Variants */
+.default {
+  background: var(--brand);
+  color: var(--surface-1);
+}
+
+.default:hover {
+  background: color-mix(in srgb, var(--brand) 90%, transparent);
+}
+
+.destructive {
+  background: var(--red-9);
+  color: var(--surface-1);
+}
+
+.destructive:hover {
+  background: color-mix(in srgb, var(--red-9) 90%, transparent);
+}
+
+.outline {
+  border: var(--border-size-1) solid var(--surface-3);
+  background: var(--surface-1);
+}
+
+.outline:hover {
+  background: var(--surface-2);
+  color: var(--text-1);
+}
+
+.secondary {
+  background: var(--surface-3);
+  color: var(--text-2);
+}
+
+.secondary:hover {
+  background: color-mix(in srgb, var(--surface-3) 80%, transparent);
+}
+
+.ghost:hover {
+  background: var(--surface-2);
+  color: var(--text-1);
+}
+
+.link {
+  color: var(--brand);
+  text-underline-offset: 4px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Sizes */
+.sizeDefault {
+  height: var(--size-10);
+  padding: var(--size-2) var(--size-4);
+}
+
+.sizeSm {
+  height: var(--size-9);
+  padding: 0 var(--size-3);
+  border-radius: var(--radius-2);
+}
+
+.sizeLg {
+  height: var(--size-11);
+  padding: 0 var(--size-8);
+  border-radius: var(--radius-2);
+}
+
+.sizeIcon {
+  height: var(--size-10);
+  width: var(--size-10);
+}

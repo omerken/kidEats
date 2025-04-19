@@ -1,0 +1,51 @@
+.item {
+  border-bottom: var(--border-size-1) solid var(--surface-3);
+}
+
+.header {
+  display: flex;
+}
+
+.trigger {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--size-4) 0;
+  font-weight: var(--font-weight-5);
+  color: var(--text-1);
+  transition: all var(--ease-3);
+}
+
+.trigger:hover {
+  text-decoration: underline;
+}
+
+.chevron {
+  height: var(--size-4);
+  width: var(--size-4);
+  flex-shrink: 0;
+  transition: transform 200ms var(--ease-3);
+}
+
+.trigger[data-state="open"] .chevron {
+  transform: rotate(180deg);
+}
+
+.content {
+  overflow: hidden;
+  font-size: var(--font-size-2);
+  color: var(--text-2);
+}
+
+.content[data-state="closed"] {
+  animation: var(--animation-slide-out-up);
+}
+
+.content[data-state="open"] {
+  animation: var(--animation-slide-in-down);
+}
+
+.contentInner {
+  padding: 0 0 var(--size-4) 0;
+}

@@ -1,0 +1,96 @@
+.nav {
+  margin-inline: auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--size-1);
+}
+
+.item {
+  display: flex;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-5);
+  height: var(--size-10);
+  padding-inline: var(--size-4);
+  transition: all 200ms var(--ease-3);
+}
+
+.link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--surface-4);
+}
+
+.linkGhost {
+  background: transparent;
+  color: var(--text-1);
+}
+
+.linkGhost:hover {
+  background: var(--surface-2);
+}
+
+.linkOutline {
+  border: var(--border-size-1) solid var(--surface-3);
+  background: transparent;
+}
+
+.linkOutline:hover {
+  background: var(--surface-2);
+}
+
+.linkIcon {
+  width: var(--size-10);
+  padding: 0;
+}
+
+.directionLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-5);
+  height: var(--size-10);
+  padding-inline: var(--size-4);
+  transition: all 200ms var(--ease-3);
+  gap: var(--size-1);
+}
+
+.directionLink:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--surface-4);
+}
+
+.previous {
+  padding-left: var(--size-2);
+}
+
+.next {
+  padding-right: var(--size-2);
+}
+
+.icon {
+  height: var(--size-4);
+  width: var(--size-4);
+}
+
+.ellipsis {
+  display: flex;
+  height: var(--size-9);
+  width: var(--size-9);
+  align-items: center;
+  justify-content: center;
+}

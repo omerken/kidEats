@@ -1,0 +1,39 @@
+.input {
+  display: flex;
+  height: var(--size-10);
+  width: 100%;
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--surface-3);
+  background: var(--surface-1);
+  padding: var(--size-2) var(--size-3);
+  font-size: var(--font-size-3);
+  color: var(--text-1);
+}
+
+.input::placeholder {
+  color: var(--text-2);
+}
+
+.input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--surface-1), 0 0 0 4px var(--surface-4);
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.input::file-selector-button {
+  border: none;
+  background: transparent;
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-5);
+  color: var(--text-1);
+}
+
+@media (min-width: 768px) {
+  .input {
+    font-size: var(--font-size-2);
+  }
+}

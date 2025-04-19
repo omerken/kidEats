@@ -1,0 +1,184 @@
+.viewport {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  max-height: 100vh;
+  width: 100%;
+  flex-direction: column-reverse;
+  padding: var(--size-4);
+}
+
+@media (min-width: 640px) {
+  .viewport {
+    bottom: 0;
+    right: 0;
+    top: auto;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .viewport {
+    max-width: 420px;
+  }
+}
+
+.toast {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-4);
+  overflow: hidden;
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--surface-3);
+  padding: var(--size-6);
+  padding-right: var(--size-8);
+  box-shadow: var(--shadow-4);
+  transition: all 150ms var(--ease-3);
+}
+
+.toast[data-state="open"] {
+  animation: slideIn 150ms var(--ease-3);
+}
+
+.toast[data-state="closed"] {
+  animation: fadeOut 100ms var(--ease-3);
+}
+
+.toast[data-swipe="move"] {
+  transform: translateX(var(--radix-toast-swipe-move-x));
+  transition: none;
+}
+
+.toast[data-swipe="cancel"] {
+  transform: translateX(0);
+}
+
+.toast[data-swipe="end"] {
+  animation: swipeOut 100ms var(--ease-3);
+}
+
+.destructive {
+  border-color: var(--red-6);
+  background: var(--red-9);
+  color: var(--red-1);
+}
+
+.action {
+  display: inline-flex;
+  height: var(--size-8);
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--surface-3);
+  background: transparent;
+  padding-inline: var(--size-3);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-5);
+  transition: colors 150ms var(--ease-3);
+}
+
+.action:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--surface-4);
+}
+
+.action[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.destructiveAction {
+  border-color: color-mix(in srgb, var(--surface-2) 40%, transparent);
+}
+
+.destructiveAction:hover {
+  border-color: color-mix(in srgb, var(--red-9) 30%, transparent);
+  background: var(--red-9);
+  color: var(--red-1);
+}
+
+.close {
+  position: absolute;
+  right: var(--size-2);
+  top: var(--size-2);
+  border-radius: var(--radius-2);
+  padding: var(--size-1);
+  color: color-mix(in srgb, var(--text-1) 50%, transparent);
+  opacity: 0;
+  transition: opacity 150ms var(--ease-3);
+}
+
+.close:hover {
+  color: var(--text-1);
+}
+
+.close:focus {
+  opacity: 1;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--surface-4);
+}
+
+.toast:hover .close {
+  opacity: 1;
+}
+
+.destructiveClose {
+  color: var(--red-3);
+}
+
+.destructiveClose:hover {
+  color: var(--red-1);
+}
+
+.destructiveClose:focus {
+  box-shadow: 0 0 0 2px var(--red-4);
+}
+
+.title {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-6);
+}
+
+.description {
+  font-size: var(--font-size-2);
+  opacity: 0.9;
+}
+
+.icon {
+  height: var(--size-4);
+  width: var(--size-4);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes swipeOut {
+  from {
+    transform: translateX(var(--radix-toast-swipe-end-x));
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

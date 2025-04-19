@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: var(--size-4) 0;
+}
+
+.drawerContent {
+  padding: 0 var(--size-4);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+  margin: var(--size-6) 0;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  padding: var(--size-2);
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--surface-3);
+  background-color: var(--surface-1);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-1);
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 2px var(--brand-a5);
+}
+
+.footer {
+  display: flex;
+  gap: var(--size-3);
+  justify-content: flex-end;
+}
+
+.cancelButton {
+  margin-right: auto;
+}

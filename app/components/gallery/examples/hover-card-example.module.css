@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+  width: 100%;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  padding: var(--size-4);
+  border: var(--border-size-1) dashed var(--surface-3);
+  border-radius: var(--radius-3);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
+
+.cardHeader {
+  display: flex;
+  gap: var(--size-3);
+}
+
+.avatar {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1);
+}
+
+.userName {
+  font-weight: 600;
+  font-size: var(--font-size-2);
+  color: var(--text-1);
+  display: flex;
+  align-items: center;
+  gap: var(--size-2);
+}
+
+.userHandle {
+  font-size: var(--font-size-1);
+  color: var(--text-2);
+}
+
+.userBio {
+  font-size: var(--font-size-1);
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+.stats {
+  display: flex;
+  gap: var(--size-4);
+  margin-top: var(--size-2);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-weight: 600;
+  color: var(--text-1);
+}
+
+.statLabel {
+  font-size: var(--font-size-0);
+  color: var(--text-2);
+}
+
+.trigger {
+  color: var(--brand);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.trigger:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  width: var(--size-4);
+  height: var(--size-4);
+  opacity: 0.7;
+}

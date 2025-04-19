@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: var(--size-4) 0;
+}
+
+.trigger {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 150px;
+  border-radius: var(--radius-3);
+  border: var(--border-size-1) dashed var(--surface-3);
+  background-color: var(--surface-1);
+  cursor: context-menu;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.box:hover {
+  background-color: var(--surface-2);
+  border-color: var(--brand);
+}
+
+.instruction {
+  font-size: var(--font-size-2);
+  color: var(--text-2);
+  text-align: center;
+}

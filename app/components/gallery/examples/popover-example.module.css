@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+  width: 100%;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  padding: var(--size-4);
+  border: var(--border-size-1) dashed var(--surface-3);
+  border-radius: var(--radius-3);
+}
+
+.popoverContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+}
+
+.inputLabel {
+  font-size: var(--font-size-1);
+  font-weight: 500;
+  color: var(--text-1);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--size-2);
+  margin-top: var(--size-2);
+}
+
+.popoverButton {
+  padding: var(--size-2) var(--size-3);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-1);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: none;
+}
+
+.cancelButton {
+  background-color: var(--surface-2);
+  color: var(--text-1);
+}
+
+.cancelButton:hover {
+  background-color: var(--surface-3);
+}
+
+.submitButton {
+  background-color: var(--brand);
+  color: white;
+}
+
+.submitButton:hover {
+  background-color: var(--brand-hover);
+}
+
+.inputField {
+  padding: var(--size-2);
+  border-radius: var(--radius-2);
+  border: 1px solid var(--surface-3);
+  font-size: var(--font-size-1);
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 1px var(--brand-light);
+}

@@ -1,0 +1,35 @@
+.root {
+  height: var(--size-4);
+  width: var(--size-4);
+  flex-shrink: 0;
+  border-radius: var(--radius-1);
+  border: var(--border-size-1) solid var(--brand);
+  background: var(--surface-1);
+}
+
+.root:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--surface-1), 0 0 0 4px var(--surface-4);
+}
+
+.root:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.root[data-state="checked"] {
+  background: var(--brand);
+  color: var(--surface-1);
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+}
+
+.icon {
+  height: var(--size-4);
+  width: var(--size-4);
+}

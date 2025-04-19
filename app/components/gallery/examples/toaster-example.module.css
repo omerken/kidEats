@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+  padding: var(--size-4);
+  border: var(--border-size-1) dashed var(--surface-3);
+  border-radius: var(--radius-3);
+  margin-bottom: var(--size-2);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-6);
+  color: var(--text-1);
+  margin: 0;
+}
+
+.description {
+  font-size: var(--font-size-1);
+  color: var(--text-2);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.infoNote {
+  font-size: var(--font-size-1);
+  color: var(--text-2);
+  margin: var(--size-2) 0;
+  line-height: 1.5;
+  background-color: var(--surface-2);
+  padding: var(--size-3);
+  border-radius: var(--radius-3);
+  border-left: 4px solid var(--blue-9);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-3);
+  margin-top: var(--size-2);
+}
+
+.button {
+  flex: 1;
+  min-width: 100px;
+}
+
+.infoButton {
+  flex: 1;
+  min-width: 100px;
+  background-color: var(--blue-9);
+  color: white;
+}
+
+.warningButton {
+  flex: 1;
+  min-width: 100px;
+  background-color: var(--orange-9);
+  color: white;
+}
+
+.successButton {
+  flex: 1;
+  min-width: 100px;
+  background-color: var(--green-9);
+  color: white;
+}
+
+.buttonIcon {
+  margin-right: var(--size-2);
+}
+
+/* Toast style classes */
+.info {
+  border-left: 4px solid var(--blue-9);
+  background-color: var(--surface-1);
+}
+
+.warning {
+  border-left: 4px solid var(--orange-9);
+  background-color: var(--surface-1);
+}
+
+.success {
+  border-left: 4px solid var(--green-9);
+  background-color: var(--surface-1);
+}
+
+.infoIcon {
+  color: var(--blue-9);
+}
+
+.warningIcon {
+  color: var(--orange-9);
+}
+
+.successIcon {
+  color: var(--green-9);
+}
+
+/* Custom toast styles */
+.defaultToast {
+  background-color: var(--surface-1);
+  border-left: 4px solid var(--text-2);
+}
+
+.positionToast {
+  border-left: 4px solid var(--violet-9);
+  background-color: var(--surface-1);
+}
+
+.customStyled {
+  border-radius: var(--radius-6);
+  background: linear-gradient(to right, var(--cyan-9), var(--blue-9));
+  color: white;
+  box-shadow: var(--shadow-5);
+}
+
+@media (max-width: 640px) {
+  .actions {
+    flex-direction: column;
+  }
+
+  .button,
+  .infoButton,
+  .warningButton,
+  .successButton {
+    width: 100%;
+  }
+}

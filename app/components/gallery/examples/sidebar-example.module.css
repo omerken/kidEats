@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+  padding: var(--size-4) var(--size-2);
+  border: var(--border-size-1) dashed var(--surface-3);
+  border-radius: var(--radius-3);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-6);
+  color: var(--text-1);
+  margin: 0;
+  text-align: center;
+  margin-bottom: var(--size-2);
+}
+
+.demoWrapper {
+  display: flex;
+  position: relative;
+  height: 500px;
+  border: var(--border-size-1) solid var(--surface-3);
+  border-radius: var(--radius-3);
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  padding: var(--size-4);
+  overflow: auto;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--size-3);
+  padding: var(--size-3) var(--size-2);
+  margin-bottom: var(--size-1);
+}
+
+.logo {
+  width: var(--size-6);
+  height: var(--size-6);
+  color: var(--brand);
+}
+
+.logoText {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-7);
+  color: var(--text-1);
+}
+
+.navSection {
+  margin-bottom: var(--size-2);
+  padding: 0 var(--size-1);
+}
+
+.navLabel {
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-5);
+  color: var(--text-2);
+  padding: var(--size-2) var(--size-1);
+  margin-bottom: var(--size-1);
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: var(--size-2) var(--size-2);
+  gap: var(--size-3);
+  border-radius: var(--radius-2);
+  color: var(--text-2);
+  font-size: var(--font-size-1);
+  margin-bottom: var(--size-1);
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navItem:hover {
+  background-color: var(--surface-2);
+  color: var(--text-1);
+}
+
+.navItemActive {
+  background-color: var(--brand-a3);
+  color: var(--brand);
+  font-weight: var(--font-weight-6);
+}
+
+.navItemActive:hover {
+  background-color: var(--brand-a4);
+}
+
+.navIcon {
+  width: var(--size-5);
+  height: var(--size-5);
+  flex-shrink: 0;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  min-width: var(--size-4);
+  height: var(--size-4);
+  padding: 0 var(--size-1);
+  border-radius: var(--radius-round);
+  background-color: var(--surface-3);
+  color: var(--text-2);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-6);
+}
+
+.content h2 {
+  font-size: var(--font-size-4);
+  margin-bottom: var(--size-4);
+  color: var(--text-1);
+}
+
+.contentSection {
+  margin-bottom: var(--size-6);
+}
+
+.contentTitle {
+  font-size: var(--font-size-3);
+  margin-bottom: var(--size-2);
+  color: var(--text-1);
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--size-3);
+}
+
+.card {
+  padding: var(--size-3);
+  background-color: var(--surface-1);
+  border: var(--border-size-1) solid var(--surface-3);
+  border-radius: var(--radius-2);
+}
+
+.cardTitle {
+  font-size: var(--font-size-2);
+  margin-bottom: var(--size-2);
+  color: var(--text-1);
+}
+
+.cardDescription {
+  font-size: var(--font-size-1);
+  color: var(--text-2);
+}
+
+@media (max-width: 768px) {
+  .demoWrapper {
+    flex-direction: column;
+    height: auto;
+    min-height: 600px;
+  }
+}

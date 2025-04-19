@@ -1,0 +1,154 @@
+.subTrigger {
+  display: flex;
+  cursor: default;
+  user-select: none;
+  align-items: center;
+  gap: var(--size-2);
+  border-radius: var(--radius-1);
+  padding: var(--size-1) var(--size-2);
+  font-size: var(--font-size-2);
+  outline: none;
+}
+
+.subTrigger:focus,
+.subTrigger[data-state="open"] {
+  background: var(--surface-3);
+}
+
+.subTrigger svg {
+  pointer-events: none;
+  height: var(--size-4);
+  width: var(--size-4);
+  flex-shrink: 0;
+}
+
+.content {
+  z-index: var(--layer-5);
+  min-width: 8rem;
+  overflow: hidden;
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--surface-3);
+  background: var(--surface-1);
+  padding: var(--size-1);
+  color: var(--text-1);
+  box-shadow: var(--shadow-3);
+}
+
+.content[data-state="open"] {
+  animation: contentShow 150ms var(--ease-3);
+}
+
+.content[data-state="closed"] {
+  animation: contentHide 150ms var(--ease-3);
+}
+
+.item {
+  position: relative;
+  display: flex;
+  cursor: default;
+  user-select: none;
+  align-items: center;
+  gap: var(--size-2);
+  border-radius: var(--radius-1);
+  padding: var(--size-1) var(--size-2);
+  font-size: var(--font-size-2);
+  outline: none;
+  transition: colors 150ms var(--ease-3);
+}
+
+.item:focus {
+  background: var(--surface-3);
+  color: var(--text-1);
+}
+
+.item[data-disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.item svg {
+  pointer-events: none;
+  height: var(--size-4);
+  width: var(--size-4);
+  flex-shrink: 0;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+  cursor: default;
+  user-select: none;
+  align-items: center;
+  border-radius: var(--radius-1);
+  padding: var(--size-1) var(--size-2);
+  padding-left: var(--size-8);
+  font-size: var(--font-size-2);
+  outline: none;
+  transition: colors 150ms var(--ease-3);
+}
+
+.indicator {
+  position: absolute;
+  left: var(--size-2);
+  display: flex;
+  height: var(--size-3);
+  width: var(--size-3);
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: var(--size-4);
+  width: var(--size-4);
+}
+
+.circleIcon {
+  height: var(--size-2);
+  width: var(--size-2);
+  fill: currentColor;
+}
+
+.label {
+  padding: var(--size-2);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-6);
+}
+
+.separator {
+  margin: var(--size-1) calc(var(--size-1) * -1);
+  height: var(--border-size-1);
+  background: var(--surface-3);
+}
+
+.shortcut {
+  margin-left: auto;
+  font-size: var(--font-size-0);
+  letter-spacing: var(--font-letterspacing-4);
+  opacity: 0.6;
+}
+
+.inset {
+  padding-left: var(--size-8);
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes contentHide {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}

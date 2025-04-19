@@ -1,0 +1,65 @@
+.group {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.group[data-panel-group-direction="vertical"] {
+  flex-direction: column;
+}
+
+.handle {
+  position: relative;
+  display: flex;
+  width: 1px;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-3);
+}
+
+.handle::after {
+  position: absolute;
+  inset-block: 0;
+  left: 50%;
+  width: var(--size-1);
+  transform: translateX(-50%);
+  content: "";
+}
+
+.handle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 1px var(--surface-4), 0 0 0 2px var(--surface-1);
+}
+
+.handle[data-panel-group-direction="vertical"] {
+  height: 1px;
+  width: 100%;
+}
+
+.handle[data-panel-group-direction="vertical"]::after {
+  left: 0;
+  height: var(--size-1);
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.handle[data-panel-group-direction="vertical"] > div {
+  transform: rotate(90deg);
+}
+
+.gripWrapper {
+  z-index: var(--layer-1);
+  display: flex;
+  height: var(--size-4);
+  width: var(--size-3);
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-1);
+  border: var(--border-size-1) solid var(--surface-3);
+  background: var(--surface-3);
+}
+
+.gripIcon {
+  height: var(--size-2);
+  width: var(--size-2);
+}
