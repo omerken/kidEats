@@ -9,10 +9,11 @@ html {
   --font-body: var(--font-size-fluid-0) var(--font-system-ui);
   --font-caption: var(--font-size-fluid-0) var(--font-system-ui);
   --font-code: var(--font-size-fluid-0) var(--font-monospace-code);
-  --brand-light: var(--orange-6);
-  --brand-secondary-light: var(--orange-4);
 
   /* Light Theme */
+  --brand-light: var(--violet-6);
+  --brand-secondary-light: var(--violet-4);
+
   --success-light: var(--green-6);
   --danger-light: var(--red-6);
 
@@ -42,8 +43,8 @@ html {
 @media (prefers-color-scheme: dark) {
   html {
     /* Dark Theme */
-    --brand-dark: var(--orange-5);
-    --brand-secondary-dark: var(--orange-8);
+    --brand-dark: var(--violet-6);
+    --brand-secondary-dark: var(--violet-10);
 
     --success-dark: var(--green-9);
     --danger-dark: var(--red-9);
@@ -75,8 +76,8 @@ html {
 @media (prefers-contrast: less) {
   :root {
     /* Dim Theme */
-    --brand-dim: var(--orange-4);
-    --brand-secondary-dim: var(--orange-3);
+    --brand-dim: var(--violet-8);
+    --brand-secondary-dim: var(--violet-3);
 
     --success-dim: var(--green-8);
     --danger-dim: var(--red-8);
