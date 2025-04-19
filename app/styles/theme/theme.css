@@ -48,8 +48,8 @@ html {
     --success-dark: var(--green-9);
     --danger-dark: var(--red-9);
 
-    --text-1-dark: var(--gray-2);
-    --text-2-dark: var(--gray-4);
+    --text-1-dark: var(--gray-3);
+    --text-2-dark: var(--gray-5);
 
     --surface-1-dark: var(--gray-12);
     --surface-2-dark: var(--gray-11);

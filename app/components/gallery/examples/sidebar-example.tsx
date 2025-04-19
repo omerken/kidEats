@@ -23,12 +23,13 @@ import {
 } from "lucide-react";
 
 const COMPONENT_COUNTS = {
+  theme: 5,
   input: 11,
-  layout: 8,
-  navigation: 3,
-  overlay: 9,
-  display: 10,
-  feedback: 1,
+  layout: 9,
+  navigation: 4,
+  overlay: 8,
+  display: 7,
+  feedback: 3,
 };
 
 interface SidebarExampleProps {
@@ -82,6 +83,19 @@ export function SidebarExample({ onCategorySelect }: SidebarExampleProps) {
                 >
                   <Layers3 className={styles.navIcon} />
                   All Components
+                </a>
+                <a
+                  className={`${styles.navItem} ${
+                    selectedCategory === "theme" ? styles.navItemActive : ""
+                  }`}
+                  onClick={() => handleCategorySelect("theme")}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Theme Variables"
+                >
+                  <Palette className={styles.navIcon} />
+                  Theme Variables
+                  <span className={styles.badge}>{COMPONENT_COUNTS.theme}</span>
                 </a>
                 <a
                   className={`${styles.navItem} ${
