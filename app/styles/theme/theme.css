@@ -1,13 +1,20 @@
 html {
   /* Typography */
-  --display: xxx;
-  --heading: xxx;
-  --subheading: xxx;
-  --body: xxx;
-  --caption: xxx;
+  --font-display: var(--font-weight-9) var(--font-size-fluid-3)
+    var(--font-transitional);
+  --font-heading: var(--font-weight-6) var(--font-size-fluid-2)
+    var(--font-transitional);
+  --font-subheading: var(--font-weight-4) var(--font-size-fluid-1)
+    var(--font-system-ui);
+  --font-body: var(--font-size-fluid-0) var(--font-system-ui);
+  --font-caption: var(--font-size-fluid-0) var(--font-system-ui);
+  --font-code: var(--font-size-fluid-0) var(--font-monospace-code);
+  --brand-light: var(--orange-6);
+  --brand-secondary-light: var(--orange-4);
 
   /* Light Theme */
-  --brand-light: var(--orange-6);
+  --success-light: var(--green-6);
+  --danger-light: var(--red-6);
 
   --text-1-light: var(--gray-8);
   --text-2-light: var(--gray-7);
@@ -17,59 +24,76 @@ html {
   --surface-3-light: var(--gray-2);
   --surface-4-light: var(--gray-3);
 
-  /* Dark theme */
-  --brand-dark: var(--orange-3);
+  --brand: var(--brand-light);
+  --brand-secondary: var(--brand-secondary-light);
 
-  --text-1-dark: var(--gray-3);
-  --text-2-dark: var(--gray-5);
+  --success: var(--success-light);
+  --danger: var(--danger-light);
 
-  --surface-1-dark: var(--gray-12);
-  --surface-2-dark: var(--gray-11);
-  --surface-3-dark: var(--gray-10);
-  --surface-4-dark: var(--gray-9);
+  --text-1: var(--text-light-1);
+  --text-2: var(--text-light-2);
 
-  /* Dim Theme */
-  --brand-dim: var(--orange-4);
-
-  --text-1-dim: var(--gray-3);
-  --text-2-dim: var(--gray-4);
-
-  --surface-1-dim: var(--gray-8);
-  --surface-2-dim: var(--gray-7);
-  --surface-3-dim: var(--gray-6);
-  --surface-4-dim: var(--gray-5);
-
-  /* Actual Theme */
-  --brand: var(--orange-6);
-
-  --text-1: var(--gray-8);
-  --text-2: var(--gray-7);
-
-  --surface-1: var(--gray-0);
-  --surface-2: var(--gray-1);
-  --surface-3: var(--gray-2);
-  --surface-4: var(--gray-3);
+  --surface-1: var(--surface-light-1);
+  --surface-2: var(--surface-light-2);
+  --surface-3: var(--surface-light-3);
+  --surface-4: var(--surface-light-4);
 }
 
-/* Dark Theme */
 @media (prefers-color-scheme: dark) {
   html {
-    --brand: var(--orange-6);
+    /* Dark Theme */
+    --brand-dark: var(--orange-5);
+    --brand-secondary-dark: var(--orange-8);
 
-    --text-1: var(--gray-3);
-    --text-2: var(--gray-5);
+    --success-dark: var(--green-9);
+    --danger-dark: var(--red-9);
 
-    --surface-1: var(--gray-12);
-    --surface-2: var(--gray-11);
-    --surface-3: var(--gray-10);
-    --surface-4: var(--gray-9);
+    --text-1-dark: var(--gray-2);
+    --text-2-dark: var(--gray-4);
+
+    --surface-1-dark: var(--gray-12);
+    --surface-2-dark: var(--gray-11);
+    --surface-3-dark: var(--gray-10);
+    --surface-4-dark: var(--gray-9);
+
+    --brand: var(--brand-dark);
+    --brand-secondary: var(--brand-secondary-dark);
+
+    --success: var(--success-dark);
+    --danger: var(--danger-dark);
+
+    --text-1: var(--text-1-dark);
+    --text-2: var(--text-2-dark);
+
+    --surface-1: var(--surface-1-dark);
+    --surface-2: var(--surface-2-dark);
+    --surface-3: var(--surface-3-dark);
+    --surface-4: var(--surface-4-dark);
   }
 }
 
-/* Dim Theme */
 @media (prefers-contrast: less) {
   :root {
+    /* Dim Theme */
+    --brand-dim: var(--orange-4);
+    --brand-secondary-dim: var(--orange-3);
+
+    --success-dim: var(--green-8);
+    --danger-dim: var(--red-8);
+
+    --text-1-dim: var(--gray-3);
+    --text-2-dim: var(--gray-4);
+
+    --surface-1-dim: var(--gray-8);
+    --surface-2-dim: var(--gray-7);
+    --surface-3-dim: var(--gray-6);
+    --surface-4-dim: var(--gray-5);
+
     --brand: var(--brand-dim);
+    --brand-secondary: var(--brand-secondary-dim);
+
+    --success: var(--success-dim);
+    --danger: var(--danger-dim);
 
     --text-1: var(--text-1-dim);
     --text-2: var(--text-2-dim);

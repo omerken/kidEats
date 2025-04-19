@@ -1,4 +1,5 @@
-import React, { useState, useCallback } from "react";
+import React, { useCallback } from "react";
+import classNames from "classnames";
 import styles from "./component-gallery.module.css";
 import { ButtonExample } from "./examples/button-example";
 import { InputExample } from "./examples/input-example";
@@ -83,7 +84,6 @@ function ComponentSection({ title, children, id }: ComponentSectionProps) {
   );
 }
 
-// Updated GallerySidebar that enables navigation
 function GallerySidebar() {
   const handleCategorySelect = useCallback((category: string) => {
     if (category === "all") {
@@ -122,6 +122,96 @@ export function ComponentGallery() {
             <h1>UI Component Gallery</h1>
             <p>A showcase of all available UI components in the application</p>
           </div>
+
+          <ComponentSection title="Theme Variables" id="section-theme">
+            <ComponentExample
+              title="Brand Colors"
+              description="Primary and secondary brand colors"
+            >
+              <div className={styles["theme-grid"]}>
+                <div
+                  className={classNames(
+                    styles["theme-color"],
+                    styles["theme-color-brand"]
+                  )}
+                >
+                  Brand
+                </div>
+                <div
+                  className={classNames(
+                    styles["theme-color"],
+                    styles["theme-color-brand-secondary"]
+                  )}
+                >
+                  Brand Secondary
+                </div>
+              </div>
+            </ComponentExample>
+
+            <ComponentExample
+              title="Status Colors"
+              description="Success and danger colors"
+            >
+              <div className={styles["theme-grid"]}>
+                <div
+                  className={classNames(
+                    styles["theme-color"],
+                    styles["theme-color-success"]
+                  )}
+                >
+                  Success
+                </div>
+                <div
+                  className={classNames(
+                    styles["theme-color"],
+                    styles["theme-color-danger"]
+                  )}
+                >
+                  Danger
+                </div>
+              </div>
+            </ComponentExample>
+
+            <ComponentExample
+              title="Text Colors"
+              description="Primary and secondary text colors"
+            >
+              <div className={styles["theme-grid"]}>
+                <p className={styles["theme-text-1"]}>
+                  Text Primary (--text-1)
+                </p>
+                <p className={styles["theme-text-2"]}>
+                  Text Secondary (--text-2)
+                </p>
+              </div>
+            </ComponentExample>
+
+            <ComponentExample
+              title="Surface Colors"
+              description="Background surface variations"
+            >
+              <div className={styles["theme-grid"]}>
+                <div className={styles["theme-surface-1"]}>Surface 1</div>
+                <div className={styles["theme-surface-2"]}>Surface 2</div>
+                <div className={styles["theme-surface-3"]}>Surface 3</div>
+                <div className={styles["theme-surface-4"]}>Surface 4</div>
+              </div>
+            </ComponentExample>
+
+            <ComponentExample
+              title="Typography"
+              description="Font styles and sizes"
+            >
+              <div className={styles["theme-typography"]}>
+                <h1 className={styles["theme-display"]}>Display Text</h1>
+                <h2 className={styles["theme-heading"]}>Heading Text</h2>
+                <h3 className={styles["theme-subheading"]}>Subheading Text</h3>
+                <p className={styles["theme-body"]}>Body Text</p>
+                <p className={styles["theme-caption"]}>Caption Text</p>
+                <p className={styles["theme-code"]}>Code Text</p>
+              </div>
+            </ComponentExample>
+          </ComponentSection>
 
           <ComponentSection title="Input Components" id="section-input">
             <ComponentExample

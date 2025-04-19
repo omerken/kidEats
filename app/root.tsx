@@ -8,6 +8,8 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
+import { Toaster } from "./components/ui/toaster/toaster";
+
 import "open-props/normalize";
 import "./styles/theme/animations.css";
 import "./styles/theme/colors.css";
@@ -15,8 +17,8 @@ import "./styles/theme/decorations.css";
 import "./styles/theme/sizes.css";
 import "./styles/theme/typography.css";
 import "./styles/theme/theme.css";
+
 import "./app.css";
-import { Toaster } from "./components/ui/toaster/toaster";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
