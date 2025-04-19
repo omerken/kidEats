@@ -380,14 +380,14 @@ export function ComponentGallery() {
               <BadgeExample />
             </ComponentExample>
 
-            <ComponentExample
+            {/* <ComponentExample
               title="Calendar"
               description="Calendar components allow users to select dates and date ranges."
             >
               <CalendarExample />
-            </ComponentExample>
+            </ComponentExample> */}
 
-            <ComponentExample
+            {/* <ComponentExample
               title="Carousel"
               description="Carousels display multiple pieces of content in a rotating slideshow."
             >
@@ -399,14 +399,14 @@ export function ComponentGallery() {
               description="Charts visualize data in various formats like line charts, bar charts, and more."
             >
               <ChartExample />
-            </ComponentExample>
+            </ComponentExample> */}
 
-            <ComponentExample
+            {/* <ComponentExample
               title="Command"
               description="Command menus provide searchable actions in a modal or inline interface."
             >
               <CommandExample />
-            </ComponentExample>
+            </ComponentExample> */}
 
             <ComponentExample
               title="Label"
