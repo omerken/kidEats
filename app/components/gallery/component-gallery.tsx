@@ -242,12 +242,12 @@ export function ComponentGallery() {
               <InputExample />
             </ComponentExample>
 
-            <ComponentExample
+            {/* <ComponentExample
               title="Input OTP"
               description="Input OTP components allow users to enter one-time password codes with individual character inputs."
             >
               <InputOTPExample />
-            </ComponentExample>
+            </ComponentExample> */}
 
             <ComponentExample
               title="Radio Group"

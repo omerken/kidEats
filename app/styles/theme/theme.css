@@ -11,97 +11,55 @@ html {
   --font-code: var(--font-size-fluid-0) var(--font-monospace-code);
 
   /* Light Theme */
-  --brand-light: var(--violet-6);
-  --brand-secondary-light: var(--violet-4);
+  --brand: var(--violet-6);
+  --brand-secondary: var(--violet-4);
 
-  --success-light: var(--green-6);
-  --danger-light: var(--red-6);
+  --success: var(--green-6);
+  --danger: var(--red-6);
 
-  --text-1-light: var(--gray-8);
-  --text-2-light: var(--gray-7);
+  --text-1: var(--gray-8);
+  --text-2: var(--gray-7);
 
-  --surface-1-light: var(--gray-0);
-  --surface-2-light: var(--gray-1);
-  --surface-3-light: var(--gray-2);
-  --surface-4-light: var(--gray-3);
-
-  --brand: var(--brand-light);
-  --brand-secondary: var(--brand-secondary-light);
-
-  --success: var(--success-light);
-  --danger: var(--danger-light);
-
-  --text-1: var(--text-light-1);
-  --text-2: var(--text-light-2);
-
-  --surface-1: var(--surface-light-1);
-  --surface-2: var(--surface-light-2);
-  --surface-3: var(--surface-light-3);
-  --surface-4: var(--surface-light-4);
+  --surface-1: var(--gray-0);
+  --surface-2: var(--gray-1);
+  --surface-3: var(--gray-2);
+  --surface-4: var(--gray-3);
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     /* Dark Theme */
-    --brand-dark: var(--violet-6);
-    --brand-secondary-dark: var(--violet-10);
+    --brand: var(--violet-6);
+    --brand-secondary: var(--violet-10);
 
-    --success-dark: var(--green-9);
-    --danger-dark: var(--red-9);
+    --success: var(--green-9);
+    --danger: var(--red-9);
 
-    --text-1-dark: var(--gray-3);
-    --text-2-dark: var(--gray-5);
+    --text-1: var(--gray-3);
+    --text-2: var(--gray-5);
 
-    --surface-1-dark: var(--gray-12);
-    --surface-2-dark: var(--gray-11);
-    --surface-3-dark: var(--gray-10);
-    --surface-4-dark: var(--gray-9);
-
-    --brand: var(--brand-dark);
-    --brand-secondary: var(--brand-secondary-dark);
-
-    --success: var(--success-dark);
-    --danger: var(--danger-dark);
-
-    --text-1: var(--text-1-dark);
-    --text-2: var(--text-2-dark);
-
-    --surface-1: var(--surface-1-dark);
-    --surface-2: var(--surface-2-dark);
-    --surface-3: var(--surface-3-dark);
-    --surface-4: var(--surface-4-dark);
+    --surface-1: var(--gray-12);
+    --surface-2: var(--gray-11);
+    --surface-3: var(--gray-10);
+    --surface-4: var(--gray-9);
   }
 }
 
 @media (prefers-contrast: less) {
-  :root {
+  html {
     /* Dim Theme */
-    --brand-dim: var(--violet-8);
-    --brand-secondary-dim: var(--violet-3);
+    --brand: var(--violet-8);
+    --brand-secondary: var(--violet-3);
 
-    --success-dim: var(--green-8);
-    --danger-dim: var(--red-8);
+    --success: var(--green-8);
+    --danger: var(--red-8);
 
-    --text-1-dim: var(--gray-3);
-    --text-2-dim: var(--gray-4);
+    --text-1: var(--gray-3);
+    --text-2: var(--gray-4);
 
-    --surface-1-dim: var(--gray-8);
-    --surface-2-dim: var(--gray-7);
-    --surface-3-dim: var(--gray-6);
-    --surface-4-dim: var(--gray-5);
-
-    --brand: var(--brand-dim);
-    --brand-secondary: var(--brand-secondary-dim);
-
-    --success: var(--success-dim);
-    --danger: var(--danger-dim);
-
-    --text-1: var(--text-1-dim);
-    --text-2: var(--text-2-dim);
-
-    --surface-1: var(--surface-1-dim);
-    --surface-2: var(--surface-2-dim);
-    --surface-3: var(--surface-3-dim);
-    --surface-4: var(--surface-4-dim);
+    --surface-1: var(--gray-8);
+    --surface-2: var(--gray-7);
+    --surface-3: var(--gray-6);
+    --surface-4: var(--gray-5);
   }
 }
