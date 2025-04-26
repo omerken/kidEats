@@ -1,5 +1,4 @@
 import type { Route } from "./+types/home";
-import { ComponentGallery } from "../components/gallery/component-gallery";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,6 +11,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  // return <div>hello world</div>;
-  return <ComponentGallery />;
+  return <div>hello world</div>;
 }
