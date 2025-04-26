@@ -102,47 +102,70 @@
 
 .theme-color {
   padding: 1rem;
-  color: var(--color-text-1);
+  border-radius: var(--radius-2);
+  border: 2px solid;
 }
 
 .theme-color-brand {
-  background: var(--color-brand-1);
+  color: var(--color-brand-1);
+  border-color: var(--color-brand-1);
 }
 
 .theme-color-brand-secondary {
-  background: var(--color-brand-2);
+  color: var(--color-brand-2);
+  border-color: var(--color-brand-2);
 }
 
 .theme-color-success {
   background: var(--color-surface-success);
+  color: var(--color-text-1);
 }
 
 .theme-color-danger {
   background: var(--color-surface-danger);
+  color: var(--color-text-1);
 }
 
 .theme-text-1 {
   color: var(--color-text-1);
+  padding: 1rem;
+  border-radius: var(--radius-2);
+  background: var(--color-surface-2);
 }
 
 .theme-text-2 {
   color: var(--color-text-2);
+  padding: 1rem;
+  border-radius: var(--radius-2);
+  background: var(--color-surface-2);
 }
 
 .theme-surface-1 {
   background: var(--color-surface-1);
+  padding: 1rem;
+  border-radius: var(--radius-2);
+  border: 1px solid var(--color-surface-3);
 }
 
 .theme-surface-2 {
   background: var(--color-surface-2);
+  padding: 1rem;
+  border-radius: var(--radius-2);
+  border: 1px solid var(--color-surface-3);
 }
 
 .theme-surface-3 {
   background: var(--color-surface-3);
+  padding: 1rem;
+  border-radius: var(--radius-2);
+  border: 1px solid var(--color-surface-4);
 }
 
 .theme-surface-4 {
   background: var(--color-surface-4);
+  padding: 1rem;
+  border-radius: var(--radius-2);
+  border: 1px solid var(--color-surface-4);
   color: var(--color-text-1);
 }
 

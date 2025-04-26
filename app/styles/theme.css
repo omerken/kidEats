@@ -2,7 +2,7 @@
 This file contains the CSS variables for the theme of the application.
 The format for the CSS variables is as follows:
   --font-{type}: {value};
-  --color-{type}-{number}: {value};
+  --color-{type}-{variant}: {value};
 */
 
 html {
