@@ -17,32 +17,32 @@
 
 .itemDefault {
   background: transparent;
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .itemDefault:hover {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .itemDefault[data-state="on"] {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .itemOutline {
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
 }
 
 .itemOutline:hover {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .itemOutline[data-state="on"] {
-  background: var(--surface-1);
-  color: var(--text-1);
-  border-color: var(--surface-4);
+  background: var(--color-surface-1);
+  color: var(--color-text-1);
+  border-color: var(--color-surface-4);
 }
 
 .sizeSm {

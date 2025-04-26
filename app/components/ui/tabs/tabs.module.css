@@ -4,9 +4,9 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-2);
-  background: var(--surface-2);
+  background: var(--color-surface-2);
   padding: var(--size-1);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .trigger {
@@ -23,7 +23,7 @@
 
 .trigger:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--surface-1), 0 0 0 4px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-1), 0 0 0 4px var(--color-surface-4);
 }
 
 .trigger:disabled {
@@ -32,8 +32,8 @@
 }
 
 .trigger[data-state="active"] {
-  background: var(--surface-1);
-  color: var(--text-1);
+  background: var(--color-surface-1);
+  color: var(--color-text-1);
   box-shadow: var(--shadow-1);
 }
 
@@ -43,5 +43,5 @@
 
 .content:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--surface-1), 0 0 0 4px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-1), 0 0 0 4px var(--color-surface-4);
 }

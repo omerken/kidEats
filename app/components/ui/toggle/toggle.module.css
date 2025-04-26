@@ -18,7 +18,7 @@
 
 .toggle:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--surface-1), 0 0 0 4px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-1), 0 0 0 4px var(--color-surface-4);
 }
 
 .toggle:disabled {
@@ -27,8 +27,8 @@
 }
 
 .toggle[data-state="on"] {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .default {
@@ -36,18 +36,18 @@
 }
 
 .default:hover {
-  background: var(--surface-2);
-  color: var(--text-2);
+  background: var(--color-surface-2);
+  color: var(--color-text-2);
 }
 
 .outline {
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   background: transparent;
 }
 
 .outline:hover {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .sizeDefault {

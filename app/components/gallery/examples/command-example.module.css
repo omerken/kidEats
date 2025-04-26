@@ -13,7 +13,7 @@
 
 .inlineCommand {
   width: 100%;
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-radius: var(--radius-3);
   overflow: hidden;
 }
@@ -36,5 +36,5 @@
   width: var(--size-4);
   height: var(--size-4);
   margin-right: var(--size-2);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }

@@ -4,13 +4,13 @@
   width: 100%;
   overflow: hidden;
   border-radius: var(--radius-round);
-  background: var(--surface-2);
+  background: var(--color-surface-2);
 }
 
 .indicator {
   height: 100%;
   width: 100%;
   flex: 1;
-  background: var(--brand);
+  background: var(--color-brand-1);
   transition: transform 200ms var(--ease-3);
 }

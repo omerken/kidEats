@@ -4,7 +4,7 @@
 }
 
 .label {
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .labelError {
@@ -13,7 +13,7 @@
 
 .description {
   font-size: var(--font-size-2);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .message {

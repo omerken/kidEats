@@ -73,7 +73,7 @@
 }
 
 .headCell {
-  color: var(--text-2);
+  color: var(--color-text-2);
   border-radius: var(--radius-2);
   width: var(--size-9);
   font-weight: var(--font-weight-4);
@@ -95,7 +95,7 @@
 }
 
 .cell:has([aria-selected]) {
-  background: var(--surface-2);
+  background: var(--color-surface-2);
 }
 
 .cell:has([aria-selected].dayRangeEnd) {
@@ -127,38 +127,38 @@
 }
 
 .daySelected {
-  background: var(--brand);
-  color: var(--surface-1);
+  background: var(--color-brand-1);
+  color: var(--color-surface-1);
 }
 
 .daySelected:hover,
 .daySelected:focus {
-  background: var(--brand);
-  color: var(--surface-1);
+  background: var(--color-brand-1);
+  color: var(--color-surface-1);
 }
 
 .dayToday {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .dayOutside {
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .dayOutside[aria-selected] {
-  background: color-mix(in srgb, var(--surface-2) 50%, transparent);
-  color: var(--text-2);
+  background: color-mix(in srgb, var(--color-surface-2) 50%, transparent);
+  color: var(--color-text-2);
 }
 
 .dayDisabled {
-  color: var(--text-2);
+  color: var(--color-text-2);
   opacity: 0.5;
 }
 
 .dayRangeMiddle[aria-selected] {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .dayHidden {

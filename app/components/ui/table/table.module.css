@@ -11,7 +11,7 @@
 }
 
 .header tr {
-  border-bottom: var(--border-size-1) solid var(--surface-3);
+  border-bottom: var(--border-size-1) solid var(--color-surface-3);
 }
 
 .body tr:last-child {
@@ -19,8 +19,8 @@
 }
 
 .footer {
-  border-top: var(--border-size-1) solid var(--surface-3);
-  background: color-mix(in srgb, var(--surface-2) 50%, transparent);
+  border-top: var(--border-size-1) solid var(--color-surface-3);
+  background: color-mix(in srgb, var(--color-surface-2) 50%, transparent);
   font-weight: var(--font-weight-5);
 }
 
@@ -29,16 +29,16 @@
 }
 
 .row {
-  border-bottom: var(--border-size-1) solid var(--surface-3);
+  border-bottom: var(--border-size-1) solid var(--color-surface-3);
   transition: colors 200ms var(--ease-3);
 }
 
 .row:hover {
-  background: color-mix(in srgb, var(--surface-2) 50%, transparent);
+  background: color-mix(in srgb, var(--color-surface-2) 50%, transparent);
 }
 
 .row[data-state="selected"] {
-  background: var(--surface-2);
+  background: var(--color-surface-2);
 }
 
 .head {
@@ -47,7 +47,7 @@
   text-align: left;
   vertical-align: middle;
   font-weight: var(--font-weight-5);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .head:has([role="checkbox"]) {
@@ -66,5 +66,5 @@
 .caption {
   margin-top: var(--size-4);
   font-size: var(--font-size-2);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }

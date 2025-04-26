@@ -10,14 +10,14 @@
   flex-direction: column;
   gap: var(--size-3);
   padding: var(--size-4) var(--size-2);
-  border: var(--border-size-1) dashed var(--surface-3);
+  border: var(--border-size-1) dashed var(--color-surface-3);
   border-radius: var(--radius-3);
 }
 
 .sectionTitle {
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-6);
-  color: var(--text-1);
+  color: var(--color-text-1);
   margin: 0;
   text-align: center;
   margin-bottom: var(--size-2);
@@ -27,7 +27,7 @@
   display: flex;
   position: relative;
   height: 500px;
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-radius: var(--radius-3);
   overflow: hidden;
 }
@@ -49,13 +49,13 @@
 .logo {
   width: var(--size-6);
   height: var(--size-6);
-  color: var(--brand);
+  color: var(--color-brand-1);
 }
 
 .logoText {
   font-size: var(--font-size-3);
   font-weight: var(--font-weight-7);
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .navSection {
@@ -66,7 +66,7 @@
 .navLabel {
   font-size: var(--font-size-0);
   font-weight: var(--font-weight-5);
-  color: var(--text-2);
+  color: var(--color-text-2);
   padding: var(--size-2) var(--size-1);
   margin-bottom: var(--size-1);
 }
@@ -77,7 +77,7 @@
   padding: var(--size-2) var(--size-2);
   gap: var(--size-3);
   border-radius: var(--radius-2);
-  color: var(--text-2);
+  color: var(--color-text-2);
   font-size: var(--font-size-1);
   margin-bottom: var(--size-1);
   cursor: pointer;
@@ -87,18 +87,18 @@
 }
 
 .navItem:hover {
-  background-color: var(--surface-2);
-  color: var(--text-1);
+  background-color: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .navItemActive {
-  background-color: var(--brand-a3);
-  color: var(--brand);
+  background-color: var(--color-brand-1-a3);
+  color: var(--color-brand-1);
   font-weight: var(--font-weight-6);
 }
 
 .navItemActive:hover {
-  background-color: var(--brand-a4);
+  background-color: var(--color-brand-1-a4);
 }
 
 .navIcon {
@@ -116,8 +116,8 @@
   height: var(--size-4);
   padding: 0 var(--size-1);
   border-radius: var(--radius-round);
-  background-color: var(--surface-3);
-  color: var(--text-2);
+  background-color: var(--color-surface-3);
+  color: var(--color-text-2);
   font-size: var(--font-size-0);
   font-weight: var(--font-weight-6);
 }
@@ -125,7 +125,7 @@
 .content h2 {
   font-size: var(--font-size-4);
   margin-bottom: var(--size-4);
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .contentSection {
@@ -135,7 +135,7 @@
 .contentTitle {
   font-size: var(--font-size-3);
   margin-bottom: var(--size-2);
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .cardGrid {
@@ -146,20 +146,20 @@
 
 .card {
   padding: var(--size-3);
-  background-color: var(--surface-1);
-  border: var(--border-size-1) solid var(--surface-3);
+  background-color: var(--color-surface-1);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-radius: var(--radius-2);
 }
 
 .cardTitle {
   font-size: var(--font-size-2);
   margin-bottom: var(--size-2);
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .cardDescription {
   font-size: var(--font-size-1);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 @media (max-width: 768px) {

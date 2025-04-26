@@ -1,8 +1,8 @@
 .card {
   border-radius: var(--radius-3);
-  border: var(--border-size-1) solid var(--surface-3);
-  background: var(--surface-1);
-  color: var(--text-1);
+  border: var(--border-size-1) solid var(--color-surface-3);
+  background: var(--color-surface-1);
+  color: var(--color-text-1);
   box-shadow: var(--shadow-1);
 }
 
@@ -22,7 +22,7 @@
 
 .description {
   font-size: var(--font-size-2);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .content {

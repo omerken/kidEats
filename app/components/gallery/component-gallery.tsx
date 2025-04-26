@@ -178,10 +178,10 @@ export function ComponentGallery() {
             >
               <div className={styles["theme-grid"]}>
                 <p className={styles["theme-text-1"]}>
-                  Text Primary (--text-1)
+                  Text Primary (--color-text-1)
                 </p>
                 <p className={styles["theme-text-2"]}>
-                  Text Secondary (--text-2)
+                  Text Secondary (--color-text-2)
                 </p>
               </div>
             </ComponentExample>

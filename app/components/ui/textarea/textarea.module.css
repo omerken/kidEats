@@ -3,19 +3,19 @@
   min-height: 80px;
   width: 100%;
   border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--surface-3);
-  background: var(--surface-1);
+  border: var(--border-size-1) solid var(--color-surface-3);
+  background: var(--color-surface-1);
   padding: var(--size-2) var(--size-3);
   font-size: var(--font-size-3);
 }
 
 .textarea::placeholder {
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .textarea:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--surface-1), 0 0 0 4px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-1), 0 0 0 4px var(--color-surface-4);
 }
 
 .textarea:disabled {

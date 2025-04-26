@@ -6,9 +6,9 @@
 
 .collapsible {
   width: 100%;
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-radius: var(--radius-3);
-  background-color: var(--surface-1);
+  background-color: var(--color-surface-1);
 }
 
 .header {
@@ -16,14 +16,14 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--size-3) var(--size-4);
-  border-bottom: var(--border-size-1) solid var(--surface-3);
+  border-bottom: var(--border-size-1) solid var(--color-surface-3);
 }
 
 .header h4 {
   font-weight: var(--font-weight-6);
   font-size: var(--font-size-2);
   margin: 0;
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .trigger {
@@ -44,7 +44,7 @@
 .preview {
   padding: var(--size-4);
   font-size: var(--font-size-2);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .content {
@@ -61,14 +61,14 @@
 
 .contentInner {
   padding: 0 var(--size-4) var(--size-4);
-  background-color: var(--surface-2);
-  border-top: var(--border-size-1) dashed var(--surface-3);
+  background-color: var(--color-surface-2);
+  border-top: var(--border-size-1) dashed var(--color-surface-3);
 }
 
 .contentInner p {
   margin: var(--size-3) 0;
   font-size: var(--font-size-1);
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 @keyframes slideDown {

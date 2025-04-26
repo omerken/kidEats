@@ -19,20 +19,20 @@
   width: 250px;
   height: 150px;
   border-radius: var(--radius-3);
-  border: var(--border-size-1) dashed var(--surface-3);
-  background-color: var(--surface-1);
+  border: var(--border-size-1) dashed var(--color-surface-3);
+  background-color: var(--color-surface-1);
   cursor: context-menu;
   user-select: none;
   transition: all 0.2s ease;
 }
 
 .box:hover {
-  background-color: var(--surface-2);
-  border-color: var(--brand);
+  background-color: var(--color-surface-2);
+  border-color: var(--color-brand-1);
 }
 
 .instruction {
   font-size: var(--font-size-2);
-  color: var(--text-2);
+  color: var(--color-text-2);
   text-align: center;
 }

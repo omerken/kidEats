@@ -28,7 +28,7 @@
   width: var(--size-10);
   align-items: center;
   justify-content: center;
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-left: none;
   font-size: var(--font-size-2);
   transition: all 200ms var(--ease-3);
@@ -36,7 +36,7 @@
 
 .slot:first-child {
   border-radius: var(--radius-2) 0 0 var(--radius-2);
-  border-left: var(--border-size-1) solid var(--surface-3);
+  border-left: var(--border-size-1) solid var(--color-surface-3);
 }
 
 .slot:last-child {
@@ -45,7 +45,7 @@
 
 .slotActive {
   z-index: 10;
-  box-shadow: 0 0 0 2px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-4);
 }
 
 .caret {
@@ -60,7 +60,7 @@
 .caretLine {
   height: var(--size-4);
   width: 1px;
-  background: var(--text-1);
+  background: var(--color-text-1);
   animation: blink 1000ms var(--ease-3) infinite;
 }
 

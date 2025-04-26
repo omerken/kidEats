@@ -5,8 +5,8 @@
   flex-direction: column;
   overflow: hidden;
   border-radius: var(--radius-3);
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .dialog {
@@ -18,7 +18,7 @@
 .inputWrapper {
   display: flex;
   align-items: center;
-  border-bottom: var(--border-size-1) solid var(--surface-3);
+  border-bottom: var(--border-size-1) solid var(--color-surface-3);
   padding: 0 var(--size-3);
 }
 
@@ -41,7 +41,7 @@
 }
 
 .input::placeholder {
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .input:disabled {
@@ -64,20 +64,20 @@
 .group {
   overflow: hidden;
   padding: var(--size-1);
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .groupHeading {
   padding: var(--size-2) var(--size-2) var(--size-1);
   font-size: var(--font-size-0);
   font-weight: var(--font-weight-5);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .separator {
   margin: 0 calc(var(--size-1) * -1);
   height: var(--border-size-1);
-  background: var(--surface-3);
+  background: var(--color-surface-3);
 }
 
 .item {
@@ -93,8 +93,8 @@
 }
 
 .item[data-selected="true"] {
-  background: var(--surface-3);
-  color: var(--text-1);
+  background: var(--color-surface-3);
+  color: var(--color-text-1);
 }
 
 .item[data-disabled="true"] {
@@ -106,5 +106,5 @@
   margin-left: auto;
   font-size: var(--font-size-0);
   letter-spacing: var(--font-letterspacing-4);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }

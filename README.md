@@ -2,8 +2,6 @@
 
 A modern, production-ready template for building full-stack React applications using React Router.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
-
 ## Features
 
 - 🚀 Server-side rendering
@@ -11,8 +9,14 @@ A modern, production-ready template for building full-stack React applications u
 - 📦 Asset bundling and optimization
 - 🔄 Data loading and mutations
 - 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
+- 🎉 CSS Modules for styling
 - 📖 [React Router docs](https://reactrouter.com/)
+
+### Styling & Theming
+
+- This project uses CSS modules as the styling solution, Radix as the component library, and Open Props for styling tokens and theming
+- Project theme is defined in `app/styles/theme.css`, used as a design system for all UI building
+- Base design tokens are defined in `app/styles/tokens/<token-type>.css`, used as an immutable base design system for all the theme and all UI
 
 ## Getting Started
 
@@ -57,9 +61,3 @@ Make sure to deploy the output of `npm run build`
 │   ├── client/    # Static assets
 │   └── server/    # Server-side code
 ```
-
-## Styling
-
----
-
-Built with ❤️ using React Router.

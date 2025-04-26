@@ -12,7 +12,7 @@
 
 .root:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--surface-1), 0 0 0 4px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-1), 0 0 0 4px var(--color-surface-4);
 }
 
 .root:disabled {
@@ -21,11 +21,11 @@
 }
 
 .root[data-state="checked"] {
-  background: var(--brand);
+  background: var(--color-brand-1);
 }
 
 .root[data-state="unchecked"] {
-  background: var(--surface-3);
+  background: var(--color-surface-3);
 }
 
 .thumb {
@@ -34,7 +34,7 @@
   height: var(--size-5);
   width: var(--size-5);
   border-radius: var(--radius-round);
-  background: var(--surface-1);
+  background: var(--color-surface-1);
   box-shadow: var(--shadow-3);
   transition: transform 200ms var(--ease-3);
 }

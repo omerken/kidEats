@@ -1,7 +1,7 @@
 .component-gallery {
   padding: 2rem;
   width: 100%;
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .gallery-header {
@@ -55,8 +55,8 @@
 
 @media (prefers-color-scheme: dark) {
   .component-example {
-    --border-color: var(--surface-4);
-    --card-bg: var(--surface-2);
+    --border-color: var(--color-surface-4);
+    --card-bg: var(--color-surface-2);
   }
 }
 
@@ -73,7 +73,7 @@
   height: 100vh;
   position: sticky;
   top: 0;
-  border-right: var(--border-size-1) solid var(--surface-3);
+  border-right: var(--border-size-1) solid var(--color-surface-3);
   z-index: 10;
 }
 
@@ -102,48 +102,48 @@
 
 .theme-color {
   padding: 1rem;
-  color: white;
+  color: var(--color-text-1);
 }
 
 .theme-color-brand {
-  background: var(--brand);
+  background: var(--color-brand-1);
 }
 
 .theme-color-brand-secondary {
-  background: var(--brand-secondary);
+  background: var(--color-brand-2);
 }
 
 .theme-color-success {
-  background: var(--success);
+  background: var(--color-surface-success);
 }
 
 .theme-color-danger {
-  background: var(--danger);
+  background: var(--color-surface-danger);
 }
 
 .theme-text-1 {
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .theme-text-2 {
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .theme-surface-1 {
-  background: var(--surface-1);
+  background: var(--color-surface-1);
 }
 
 .theme-surface-2 {
-  background: var(--surface-2);
+  background: var(--color-surface-2);
 }
 
 .theme-surface-3 {
-  background: var(--surface-3);
+  background: var(--color-surface-3);
 }
 
 .theme-surface-4 {
-  background: var(--surface-4);
-  color: var(--text-1);
+  background: var(--color-surface-4);
+  color: var(--color-text-1);
 }
 
 .theme-typography {

@@ -34,5 +34,5 @@
   position: relative;
   flex: 1;
   border-radius: var(--radius-round);
-  background: var(--surface-3);
+  background: var(--color-surface-3);
 }

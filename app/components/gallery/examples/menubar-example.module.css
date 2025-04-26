@@ -10,21 +10,21 @@
   flex-direction: column;
   gap: var(--size-3);
   padding: var(--size-4);
-  border: var(--border-size-1) dashed var(--surface-3);
+  border: var(--border-size-1) dashed var(--color-surface-3);
   border-radius: var(--radius-3);
 }
 
 .sectionTitle {
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-6);
-  color: var(--text-1);
+  color: var(--color-text-1);
   margin: 0;
   margin-bottom: var(--size-2);
 }
 
 .description {
   font-size: var(--font-size-1);
-  color: var(--text-2);
+  color: var(--color-text-2);
   margin: 0;
   margin-bottom: var(--size-3);
 }
@@ -40,9 +40,9 @@
   flex-direction: column;
   gap: var(--size-2);
   min-height: 200px;
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-radius: var(--radius-2);
-  background-color: var(--surface-1);
+  background-color: var(--color-surface-1);
 }
 
 .workspaceContent {
@@ -51,12 +51,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-2);
+  color: var(--color-text-2);
   font-size: var(--font-size-1);
 }
 
 .shortcut {
-  color: var(--text-2);
+  color: var(--color-text-2);
   font-size: var(--font-size-0);
 }
 
@@ -71,10 +71,10 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--size-1) var(--size-4);
-  border-top: var(--border-size-1) solid var(--surface-3);
-  background-color: var(--surface-2);
+  border-top: var(--border-size-1) solid var(--color-surface-3);
+  background-color: var(--color-surface-2);
   font-size: var(--font-size-0);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .statusItems {
@@ -84,16 +84,16 @@
 
 .menuOptions {
   margin-top: var(--size-4);
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-radius: var(--radius-2);
   padding: var(--size-3);
-  background-color: var(--surface-1);
+  background-color: var(--color-surface-1);
 }
 
 .menuOptionTitle {
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-6);
-  color: var(--text-1);
+  color: var(--color-text-1);
   margin: 0;
   margin-bottom: var(--size-2);
 }
@@ -109,7 +109,7 @@
 
 .optionItem {
   font-size: var(--font-size-1);
-  color: var(--text-2);
+  color: var(--color-text-2);
   padding: var(--size-1) 0;
 }
 

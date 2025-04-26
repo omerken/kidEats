@@ -23,12 +23,12 @@
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-6);
   margin: 0;
-  color: var(--text-2);
+  color: var(--color-text-2);
   text-align: center;
 }
 
 .calendarWrapper {
-  background-color: var(--surface-1);
+  background-color: var(--color-surface-1);
   border-radius: var(--radius-3);
   box-shadow: var(--shadow-2);
   padding: var(--size-2);

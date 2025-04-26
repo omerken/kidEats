@@ -14,7 +14,7 @@
 .sectionTitle {
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-6);
-  color: var(--text-1);
+  color: var(--color-text-1);
   margin: 0;
   margin-bottom: var(--size-2);
 }
@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   padding: var(--size-4);
-  border: var(--border-size-1) dashed var(--surface-3);
+  border: var(--border-size-1) dashed var(--color-surface-3);
   border-radius: var(--radius-3);
 }
 
@@ -44,22 +44,22 @@
 
 .selectedValue {
   font-size: var(--font-size-1);
-  color: var(--text-2);
+  color: var(--color-text-2);
   margin-top: var(--size-2);
   padding: var(--size-2);
-  background-color: var(--surface-2);
+  background-color: var(--color-surface-2);
   border-radius: var(--radius-2);
-  border-left: 3px solid var(--brand);
+  border-left: 3px solid var(--color-brand-1);
 }
 
 .selectedValue span {
   font-weight: var(--font-weight-6);
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .helperText {
   font-size: var(--font-size-1);
-  color: var(--text-2);
+  color: var(--color-text-2);
   margin-top: var(--size-1);
   font-style: italic;
 }
@@ -80,7 +80,7 @@
 .searchIcon {
   width: var(--size-4);
   height: var(--size-4);
-  color: var(--text-2);
+  color: var(--color-text-2);
   margin-right: var(--size-1);
   flex-shrink: 0;
 }
@@ -92,7 +92,7 @@
   font-size: var(--font-size-1);
   padding: var(--size-1);
   outline: none;
-  color: var(--text-1);
+  color: var(--color-text-1);
   width: 100%;
 }
 
@@ -103,7 +103,7 @@
 .noResults {
   padding: var(--size-2);
   text-align: center;
-  color: var(--text-2);
+  color: var(--color-text-2);
   font-size: var(--font-size-1);
   font-style: italic;
 }

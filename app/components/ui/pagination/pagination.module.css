@@ -30,25 +30,25 @@
 
 .link:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-4);
 }
 
 .linkGhost {
   background: transparent;
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .linkGhost:hover {
-  background: var(--surface-2);
+  background: var(--color-surface-2);
 }
 
 .linkOutline {
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   background: transparent;
 }
 
 .linkOutline:hover {
-  background: var(--surface-2);
+  background: var(--color-surface-2);
 }
 
 .linkIcon {
@@ -71,7 +71,7 @@
 
 .directionLink:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-4);
 }
 
 .previous {

@@ -11,12 +11,13 @@ import type { Route } from "./+types/root";
 import { Toaster } from "./components/ui/toaster/toaster";
 
 import "open-props/normalize";
-import "./styles/theme/animations.css";
-import "./styles/theme/colors.css";
-import "./styles/theme/decorations.css";
-import "./styles/theme/sizes.css";
-import "./styles/theme/typography.css";
-import "./styles/theme/theme.css";
+import "./styles/tokens/animations.css";
+import "./styles/tokens/colors.css";
+import "./styles/tokens/decorations.css";
+import "./styles/tokens/sizes.css";
+import "./styles/tokens/spacings.css";
+import "./styles/tokens/typography.css";
+import "./styles/theme.css";
 
 import "./app.css";
 

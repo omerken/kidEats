@@ -4,8 +4,8 @@
   align-items: center;
   gap: var(--size-1);
   border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--surface-3);
-  background: var(--surface-1);
+  border: var(--border-size-1) solid var(--color-surface-3);
+  background: var(--color-surface-1);
   padding: var(--size-1);
 }
 
@@ -23,8 +23,8 @@
 
 .trigger:focus,
 .trigger[data-state="open"] {
-  background: var(--surface-3);
-  color: var(--text-1);
+  background: var(--color-surface-3);
+  color: var(--color-text-1);
 }
 
 .subTrigger {
@@ -40,8 +40,8 @@
 
 .subTrigger:focus,
 .subTrigger[data-state="open"] {
-  background: var(--surface-3);
-  color: var(--text-1);
+  background: var(--color-surface-3);
+  color: var(--color-text-1);
 }
 
 .inset {
@@ -59,10 +59,10 @@
   min-width: 12rem;
   overflow: hidden;
   border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--surface-3);
-  background: var(--surface-1);
+  border: var(--border-size-1) solid var(--color-surface-3);
+  background: var(--color-surface-1);
   padding: var(--size-1);
-  color: var(--text-1);
+  color: var(--color-text-1);
   box-shadow: var(--shadow-3);
 }
 
@@ -79,10 +79,10 @@
   min-width: 8rem;
   overflow: hidden;
   border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--surface-3);
-  background: var(--surface-1);
+  border: var(--border-size-1) solid var(--color-surface-3);
+  background: var(--color-surface-1);
   padding: var(--size-1);
-  color: var(--text-1);
+  color: var(--color-text-1);
   box-shadow: var(--shadow-3);
 }
 
@@ -107,8 +107,8 @@
 }
 
 .item:focus {
-  background: var(--surface-3);
-  color: var(--text-1);
+  background: var(--color-surface-3);
+  color: var(--color-text-1);
 }
 
 .item[data-disabled] {
@@ -159,14 +159,14 @@
 .separator {
   margin: var(--size-1) calc(var(--size-1) * -1);
   height: var(--border-size-1);
-  background: var(--surface-3);
+  background: var(--color-surface-3);
 }
 
 .shortcut {
   margin-left: auto;
   font-size: var(--font-size-0);
   letter-spacing: var(--font-letterspacing-4);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 @keyframes contentShow {

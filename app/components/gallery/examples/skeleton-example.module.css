@@ -14,7 +14,7 @@
 .sectionTitle {
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-6);
-  color: var(--text-1);
+  color: var(--color-text-1);
   margin: 0;
 }
 
@@ -46,7 +46,7 @@
 .cardSkeleton {
   width: 100%;
   max-width: 350px;
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-radius: var(--radius-3);
   padding: var(--size-3);
   display: flex;
@@ -116,7 +116,7 @@
 /* Table skeleton */
 .tableSkeleton {
   width: 100%;
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-radius: var(--radius-2);
   overflow: hidden;
 }
@@ -130,7 +130,7 @@
 }
 
 .tableHeader {
-  background-color: var(--surface-2);
+  background-color: var(--color-surface-2);
 }
 
 .tableHeaderCell {
@@ -138,7 +138,7 @@
 }
 
 .tableRow {
-  border-bottom: var(--border-size-1) solid var(--surface-3);
+  border-bottom: var(--border-size-1) solid var(--color-surface-3);
 }
 
 .tableRow:last-child {

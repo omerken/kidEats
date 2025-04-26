@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--surface-2);
+  background-color: var(--color-surface-2);
   border-radius: var(--radius-3);
   box-shadow: var(--shadow-1);
   transition: transform 0.2s ease;
@@ -36,5 +36,5 @@
 .number {
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-6);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }

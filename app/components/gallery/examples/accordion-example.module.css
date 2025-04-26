@@ -7,7 +7,7 @@
 
 .accordion {
   width: 100%;
-  border: var(--border-size-1) solid var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
   border-radius: var(--radius-3);
   overflow: hidden;
 }

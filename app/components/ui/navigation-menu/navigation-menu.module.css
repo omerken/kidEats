@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-2);
-  background: var(--surface-1);
+  background: var(--color-surface-1);
   padding: var(--size-2) var(--size-4);
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-5);
@@ -33,8 +33,8 @@
 
 .trigger:hover,
 .trigger:focus {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
   outline: none;
 }
 
@@ -45,7 +45,7 @@
 
 .trigger[data-active],
 .trigger[data-state="open"] {
-  background: color-mix(in srgb, var(--surface-2) 50%, transparent);
+  background: color-mix(in srgb, var(--color-surface-2) 50%, transparent);
 }
 
 .chevron {
@@ -97,9 +97,9 @@
   width: 100%;
   overflow: hidden;
   border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--surface-3);
-  background: var(--surface-1);
-  color: var(--text-1);
+  border: var(--border-size-1) solid var(--color-surface-3);
+  background: var(--color-surface-1);
+  color: var(--color-text-1);
   box-shadow: var(--shadow-3);
   transform-origin: top center;
 }
@@ -143,7 +143,7 @@
   width: var(--size-2);
   transform: rotate(45deg);
   border-top-left-radius: var(--radius-1);
-  background: var(--surface-3);
+  background: var(--color-surface-3);
   box-shadow: var(--shadow-2);
 }
 

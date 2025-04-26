@@ -12,7 +12,7 @@
 
 .base:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-4);
 }
 
 .base:disabled {
@@ -29,17 +29,17 @@
 
 /* Variants */
 .default {
-  background: var(--brand);
-  color: var(--surface-1);
+  background: var(--color-brand-1);
+  color: var(--color-surface-1);
 }
 
 .default:hover {
-  background: color-mix(in srgb, var(--brand) 90%, transparent);
+  background: color-mix(in srgb, var(--color-brand-1) 90%, transparent);
 }
 
 .destructive {
   background: var(--red-9);
-  color: var(--surface-1);
+  color: var(--color-surface-1);
 }
 
 .destructive:hover {
@@ -47,31 +47,31 @@
 }
 
 .outline {
-  border: var(--border-size-1) solid var(--surface-3);
-  background: var(--surface-1);
+  border: var(--border-size-1) solid var(--color-surface-3);
+  background: var(--color-surface-1);
 }
 
 .outline:hover {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .secondary {
-  background: var(--surface-3);
-  color: var(--text-2);
+  background: var(--color-surface-3);
+  color: var(--color-text-2);
 }
 
 .secondary:hover {
-  background: color-mix(in srgb, var(--surface-3) 80%, transparent);
+  background: color-mix(in srgb, var(--color-surface-3) 80%, transparent);
 }
 
 .ghost:hover {
-  background: var(--surface-2);
-  color: var(--text-1);
+  background: var(--color-surface-2);
+  color: var(--color-text-1);
 }
 
 .link {
-  color: var(--brand);
+  color: var(--color-brand-1);
   text-underline-offset: 4px;
 }
 

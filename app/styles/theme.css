@@ -1,0 +1,53 @@
+/* 
+This file contains the CSS variables for the theme of the application.
+The format for the CSS variables is as follows:
+  --font-{type}: {value};
+  --color-{type}-{number}: {value};
+*/
+
+html {
+  /* Typography */
+  --font-display: var(--font-weight-9) var(--font-size-fluid-3)
+    var(--font-transitional);
+  --font-heading: var(--font-weight-6) var(--font-size-fluid-2)
+    var(--font-transitional);
+  --font-subheading: var(--font-weight-4) var(--font-size-fluid-1)
+    var(--font-system-ui);
+  --font-body: var(--font-size-fluid-0) var(--font-system-ui);
+  --font-caption: var(--font-size-fluid-0) var(--font-system-ui);
+  --font-code: var(--font-size-fluid-0) var(--font-monospace-code);
+
+  /* Light Theme */
+  --color-brand-1: var(--violet-6);
+  --color-brand-2: var(--violet-7);
+
+  --color-text-1: var(--gray-8);
+  --color-text-2: var(--gray-7);
+
+  --color-surface-1: var(--gray-0);
+  --color-surface-2: var(--gray-1);
+  --color-surface-3: var(--gray-2);
+  --color-surface-4: var(--gray-3);
+
+  --color-surface-success: var(--green-3);
+  --color-surface-danger: var(--red-3);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    /* Dark Theme */
+    --color-brand-1: var(--violet-3);
+    --color-brand-2: var(--violet-4);
+
+    --color-text-1: var(--gray-3);
+    --color-text-2: var(--gray-5);
+
+    --color-surface-1: var(--gray-12);
+    --color-surface-2: var(--gray-11);
+    --color-surface-3: var(--gray-10);
+    --color-surface-4: var(--gray-9);
+
+    --color-surface-success: var(--green-9);
+    --color-surface-danger: var(--red-9);
+  }
+}

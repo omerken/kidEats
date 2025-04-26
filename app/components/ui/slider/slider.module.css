@@ -14,13 +14,13 @@
   flex-grow: 1;
   overflow: hidden;
   border-radius: var(--radius-round);
-  background: var(--surface-2);
+  background: var(--color-surface-2);
 }
 
 .range {
   position: absolute;
   height: 100%;
-  background: var(--brand);
+  background: var(--color-brand-1);
 }
 
 .thumb {
@@ -28,14 +28,14 @@
   height: var(--size-5);
   width: var(--size-5);
   border-radius: var(--radius-round);
-  border: 2px solid var(--brand);
-  background: var(--surface-1);
+  border: 2px solid var(--color-brand-1);
+  background: var(--color-surface-1);
   transition: colors 200ms var(--ease-3);
 }
 
 .thumb:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--surface-1), 0 0 0 4px var(--surface-4);
+  box-shadow: 0 0 0 2px var(--color-surface-1), 0 0 0 4px var(--color-surface-4);
 }
 
 .thumb:disabled {

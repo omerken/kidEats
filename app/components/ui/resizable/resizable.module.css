@@ -14,7 +14,7 @@
   width: 1px;
   align-items: center;
   justify-content: center;
-  background: var(--surface-3);
+  background: var(--color-surface-3);
 }
 
 .handle::after {
@@ -28,7 +28,7 @@
 
 .handle:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 1px var(--surface-4), 0 0 0 2px var(--surface-1);
+  box-shadow: 0 0 0 1px var(--color-surface-4), 0 0 0 2px var(--color-surface-1);
 }
 
 .handle[data-panel-group-direction="vertical"] {
@@ -55,8 +55,8 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-1);
-  border: var(--border-size-1) solid var(--surface-3);
-  background: var(--surface-3);
+  border: var(--border-size-1) solid var(--color-surface-3);
+  background: var(--color-surface-3);
 }
 
 .gripIcon {

@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--size-4);
-  border: var(--border-size-1) dashed var(--surface-3);
+  border: var(--border-size-1) dashed var(--color-surface-3);
   border-radius: var(--radius-3);
 }
 
@@ -62,12 +62,12 @@
   font-size: var(--font-size-2);
   transition: background-color 0.2s ease;
   text-decoration: none;
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .link:hover {
-  background-color: var(--surface-2);
-  color: var(--brand);
+  background-color: var(--color-surface-2);
+  color: var(--color-brand-1);
 }
 
 .callout {
@@ -77,20 +77,20 @@
   gap: var(--size-2);
   padding: var(--size-4);
   border-radius: var(--radius-2);
-  background-color: var(--brand-a2);
-  border: var(--border-size-1) solid var(--brand-a3);
+  background-color: var(--color-brand-1-a2);
+  border: var(--border-size-1) solid var(--color-brand-1-a3);
 }
 
 .calloutTitle {
   font-size: var(--font-size-3);
   font-weight: var(--font-weight-6);
-  color: var(--brand);
+  color: var(--color-brand-1);
   margin: 0;
 }
 
 .calloutDescription {
   font-size: var(--font-size-1);
-  color: var(--text-1);
+  color: var(--color-text-1);
   margin: 0;
 }
 
@@ -105,7 +105,7 @@
   width: var(--size-10);
   height: var(--size-10);
   margin-bottom: var(--size-2);
-  color: var(--brand);
+  color: var(--color-brand-1);
 }
 
 .featureCard {
@@ -115,12 +115,12 @@
   text-align: center;
   padding: var(--size-4);
   border-radius: var(--radius-2);
-  background-color: var(--surface-2);
+  background-color: var(--color-surface-2);
   transition: background-color 0.2s;
 }
 
 .featureCard:hover {
-  background-color: var(--surface-3);
+  background-color: var(--color-surface-3);
 }
 
 .featureTitle {
@@ -131,7 +131,7 @@
 
 .featureDescription {
   font-size: var(--font-size-1);
-  color: var(--text-2);
+  color: var(--color-text-2);
   margin: 0;
 }
 

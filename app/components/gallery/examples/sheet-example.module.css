@@ -17,7 +17,7 @@
   gap: var(--size-2);
   align-items: center;
   padding: var(--size-3);
-  border: var(--border-size-1) dashed var(--surface-3);
+  border: var(--border-size-1) dashed var(--color-surface-3);
   border-radius: var(--radius-3);
 }
 
@@ -25,7 +25,7 @@
   margin: 0;
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-6);
-  color: var(--text-1);
+  color: var(--color-text-1);
   margin-bottom: var(--size-2);
 }
 
@@ -58,7 +58,7 @@
 
 .notification {
   padding: var(--size-3);
-  border-bottom: var(--border-size-1) solid var(--surface-3);
+  border-bottom: var(--border-size-1) solid var(--color-surface-3);
 }
 
 .notification:last-child {
@@ -72,13 +72,13 @@
 .notificationTitle {
   font-weight: var(--font-weight-6);
   font-size: var(--font-size-2);
-  color: var(--text-1);
+  color: var(--color-text-1);
   margin-bottom: var(--size-1);
 }
 
 .notificationText {
   font-size: var(--font-size-1);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .playerControls {
@@ -97,12 +97,12 @@
 .songTitle {
   font-weight: var(--font-weight-6);
   font-size: var(--font-size-3);
-  color: var(--text-1);
+  color: var(--color-text-1);
 }
 
 .songArtist {
   font-size: var(--font-size-2);
-  color: var(--text-2);
+  color: var(--color-text-2);
 }
 
 .controls {
