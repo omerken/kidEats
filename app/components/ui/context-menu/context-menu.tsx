@@ -13,21 +13,17 @@ const ContextMenuPortal = ContextMenuPrimitive.Portal;
 const ContextMenuSub = ContextMenuPrimitive.Sub;
 const ContextMenuRadioGroup = ContextMenuPrimitive.RadioGroup;
 
-const ContextMenuSubTrigger = React.forwardRef<
-  React.ComponentRef<typeof ContextMenuPrimitive.SubTrigger>,
-  React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.SubTrigger> & {
-    inset?: boolean;
-  }
->(({ className, inset, children, ...props }, ref) => (
+const ContextMenuSubTrigger: React.FC<
+  React.ComponentProps<typeof ContextMenuPrimitive.SubTrigger> & { inset?: boolean }
+> = ({ className, inset, children, ...props }) => (
   <ContextMenuPrimitive.SubTrigger
-    ref={ref}
     className={classNames(styles.subTrigger, inset && styles.inset, className)}
     {...props}
   >
     {children}
     <ChevronRight className={styles.chevron} />
   </ContextMenuPrimitive.SubTrigger>
-));
+);
 ContextMenuSubTrigger.displayName = ContextMenuPrimitive.SubTrigger.displayName;
 
 const ContextMenuSubContent: React.FC<React.ComponentProps<typeof ContextMenuPrimitive.SubContent>> = ({
@@ -46,18 +42,11 @@ const ContextMenuContent: React.FC<React.ComponentProps<typeof ContextMenuPrimit
 );
 ContextMenuContent.displayName = ContextMenuPrimitive.Content.displayName;
 
-const ContextMenuItem = React.forwardRef<
-  React.ComponentRef<typeof ContextMenuPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.Item> & {
-    inset?: boolean;
-  }
->(({ className, inset, ...props }, ref) => (
-  <ContextMenuPrimitive.Item
-    ref={ref}
-    className={classNames(styles.item, inset && styles.inset, className)}
-    {...props}
-  />
-));
+const ContextMenuItem: React.FC<React.ComponentProps<typeof ContextMenuPrimitive.Item> & { inset?: boolean }> = ({
+  className,
+  inset,
+  ...props
+}) => <ContextMenuPrimitive.Item className={classNames(styles.item, inset && styles.inset, className)} {...props} />;
 ContextMenuItem.displayName = ContextMenuPrimitive.Item.displayName;
 
 const ContextMenuCheckboxItem: React.FC<React.ComponentProps<typeof ContextMenuPrimitive.CheckboxItem>> = ({
@@ -92,18 +81,11 @@ const ContextMenuRadioItem: React.FC<React.ComponentProps<typeof ContextMenuPrim
 );
 ContextMenuRadioItem.displayName = ContextMenuPrimitive.RadioItem.displayName;
 
-const ContextMenuLabel = React.forwardRef<
-  React.ComponentRef<typeof ContextMenuPrimitive.Label>,
-  React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.Label> & {
-    inset?: boolean;
-  }
->(({ className, inset, ...props }, ref) => (
-  <ContextMenuPrimitive.Label
-    ref={ref}
-    className={classNames(styles.label, inset && styles.inset, className)}
-    {...props}
-  />
-));
+const ContextMenuLabel: React.FC<React.ComponentProps<typeof ContextMenuPrimitive.Label> & { inset?: boolean }> = ({
+  className,
+  inset,
+  ...props
+}) => <ContextMenuPrimitive.Label className={classNames(styles.label, inset && styles.inset, className)} {...props} />;
 ContextMenuLabel.displayName = ContextMenuPrimitive.Label.displayName;
 
 const ContextMenuSeparator: React.FC<React.ComponentProps<typeof ContextMenuPrimitive.Separator>> = ({

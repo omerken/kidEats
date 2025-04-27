@@ -13,21 +13,17 @@ const DropdownMenuPortal = DropdownMenuPrimitive.Portal;
 const DropdownMenuSub = DropdownMenuPrimitive.Sub;
 const DropdownMenuRadioGroup = DropdownMenuPrimitive.RadioGroup;
 
-const DropdownMenuSubTrigger = React.forwardRef<
-  React.ComponentRef<typeof DropdownMenuPrimitive.SubTrigger>,
-  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.SubTrigger> & {
-    inset?: boolean;
-  }
->(({ className, inset, children, ...props }, ref) => (
+const DropdownMenuSubTrigger: React.FC<
+  React.ComponentProps<typeof DropdownMenuPrimitive.SubTrigger> & { inset?: boolean }
+> = ({ className, inset, children, ...props }) => (
   <DropdownMenuPrimitive.SubTrigger
-    ref={ref}
     className={classNames(styles.subTrigger, inset && styles.inset, className)}
     {...props}
   >
     {children}
     <ChevronRight className={styles.icon} />
   </DropdownMenuPrimitive.SubTrigger>
-));
+);
 DropdownMenuSubTrigger.displayName = DropdownMenuPrimitive.SubTrigger.displayName;
 
 const DropdownMenuSubContent: React.FC<React.ComponentProps<typeof DropdownMenuPrimitive.SubContent>> = ({
@@ -51,18 +47,11 @@ const DropdownMenuContent: React.FC<React.ComponentProps<typeof DropdownMenuPrim
 );
 DropdownMenuContent.displayName = DropdownMenuPrimitive.Content.displayName;
 
-const DropdownMenuItem = React.forwardRef<
-  React.ComponentRef<typeof DropdownMenuPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Item> & {
-    inset?: boolean;
-  }
->(({ className, inset, ...props }, ref) => (
-  <DropdownMenuPrimitive.Item
-    ref={ref}
-    className={classNames(styles.item, inset && styles.inset, className)}
-    {...props}
-  />
-));
+const DropdownMenuItem: React.FC<React.ComponentProps<typeof DropdownMenuPrimitive.Item> & { inset?: boolean }> = ({
+  className,
+  inset,
+  ...props
+}) => <DropdownMenuPrimitive.Item className={classNames(styles.item, inset && styles.inset, className)} {...props} />;
 DropdownMenuItem.displayName = DropdownMenuPrimitive.Item.displayName;
 
 const DropdownMenuCheckboxItem: React.FC<React.ComponentProps<typeof DropdownMenuPrimitive.CheckboxItem>> = ({
@@ -97,18 +86,11 @@ const DropdownMenuRadioItem: React.FC<React.ComponentProps<typeof DropdownMenuPr
 );
 DropdownMenuRadioItem.displayName = DropdownMenuPrimitive.RadioItem.displayName;
 
-const DropdownMenuLabel = React.forwardRef<
-  React.ComponentRef<typeof DropdownMenuPrimitive.Label>,
-  React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Label> & {
-    inset?: boolean;
-  }
->(({ className, inset, ...props }, ref) => (
-  <DropdownMenuPrimitive.Label
-    ref={ref}
-    className={classNames(styles.label, inset && styles.inset, className)}
-    {...props}
-  />
-));
+const DropdownMenuLabel: React.FC<React.ComponentProps<typeof DropdownMenuPrimitive.Label> & { inset?: boolean }> = ({
+  className,
+  inset,
+  ...props
+}) => <DropdownMenuPrimitive.Label className={classNames(styles.label, inset && styles.inset, className)} {...props} />;
 DropdownMenuLabel.displayName = DropdownMenuPrimitive.Label.displayName;
 
 const DropdownMenuSeparator: React.FC<React.ComponentProps<typeof DropdownMenuPrimitive.Separator>> = ({
