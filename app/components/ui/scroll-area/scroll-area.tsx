@@ -9,14 +9,8 @@ const ScrollArea = React.forwardRef<
   React.ComponentRef<typeof ScrollAreaPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>
 >(({ className, children, ...props }, ref) => (
-  <ScrollAreaPrimitive.Root
-    ref={ref}
-    className={classNames(styles.root, className)}
-    {...props}
-  >
-    <ScrollAreaPrimitive.Viewport className={styles.viewport}>
-      {children}
-    </ScrollAreaPrimitive.Viewport>
+  <ScrollAreaPrimitive.Root ref={ref} className={classNames(styles.root, className)} {...props}>
+    <ScrollAreaPrimitive.Viewport className={styles.viewport}>{children}</ScrollAreaPrimitive.Viewport>
     <ScrollBar />
     <ScrollAreaPrimitive.Corner />
   </ScrollAreaPrimitive.Root>
@@ -32,9 +26,7 @@ const ScrollBar = React.forwardRef<
     orientation={orientation}
     className={classNames(
       styles.scrollbar,
-      orientation === "vertical"
-        ? styles.scrollbarVertical
-        : styles.scrollbarHorizontal,
+      orientation === "vertical" ? styles.scrollbarVertical : styles.scrollbarHorizontal,
       className
     )}
     {...props}

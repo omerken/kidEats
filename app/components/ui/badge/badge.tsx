@@ -7,12 +7,7 @@ interface BadgeProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 function Badge({ className, variant = "default", ...props }: BadgeProps) {
-  return (
-    <div
-      className={classNames(styles.badge, styles[variant], className)}
-      {...props}
-    />
-  );
+  return <div className={classNames(styles.badge, styles[variant], className)} {...props} />;
 }
 
 export { Badge };

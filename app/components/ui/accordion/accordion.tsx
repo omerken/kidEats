@@ -12,11 +12,7 @@ const AccordionItem = React.forwardRef<
   React.ComponentRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
 >(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item
-    ref={ref}
-    className={classNames(styles.item, className)}
-    {...props}
-  />
+  <AccordionPrimitive.Item ref={ref} className={classNames(styles.item, className)} {...props} />
 ));
 AccordionItem.displayName = "AccordionItem";
 
@@ -25,11 +21,7 @@ const AccordionTrigger = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Header className={styles.header}>
-    <AccordionPrimitive.Trigger
-      ref={ref}
-      className={classNames(styles.trigger, className)}
-      {...props}
-    >
+    <AccordionPrimitive.Trigger ref={ref} className={classNames(styles.trigger, className)} {...props}>
       {children}
       <ChevronDown className={styles.chevron} />
     </AccordionPrimitive.Trigger>

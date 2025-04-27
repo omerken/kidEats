@@ -12,11 +12,7 @@ const Command = React.forwardRef<
   React.ComponentRef<typeof CommandPrimitive>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive>
 >(({ className, ...props }, ref) => (
-  <CommandPrimitive
-    ref={ref}
-    className={classNames(styles.root, className)}
-    {...props}
-  />
+  <CommandPrimitive ref={ref} className={classNames(styles.root, className)} {...props} />
 ));
 Command.displayName = CommandPrimitive.displayName;
 
@@ -36,11 +32,7 @@ const CommandInput = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div className={styles.inputWrapper} cmdk-input-wrapper="">
     <Search className={styles.searchIcon} />
-    <CommandPrimitive.Input
-      ref={ref}
-      className={classNames(styles.input, className)}
-      {...props}
-    />
+    <CommandPrimitive.Input ref={ref} className={classNames(styles.input, className)} {...props} />
   </div>
 ));
 CommandInput.displayName = CommandPrimitive.Input.displayName;
@@ -49,31 +41,21 @@ const CommandList = React.forwardRef<
   React.ComponentRef<typeof CommandPrimitive.List>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.List>
 >(({ className, ...props }, ref) => (
-  <CommandPrimitive.List
-    ref={ref}
-    className={classNames(styles.list, className)}
-    {...props}
-  />
+  <CommandPrimitive.List ref={ref} className={classNames(styles.list, className)} {...props} />
 ));
 CommandList.displayName = CommandPrimitive.List.displayName;
 
 const CommandEmpty = React.forwardRef<
   React.ComponentRef<typeof CommandPrimitive.Empty>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Empty>
->((props, ref) => (
-  <CommandPrimitive.Empty ref={ref} className={styles.empty} {...props} />
-));
+>((props, ref) => <CommandPrimitive.Empty ref={ref} className={styles.empty} {...props} />);
 CommandEmpty.displayName = CommandPrimitive.Empty.displayName;
 
 const CommandGroup = React.forwardRef<
   React.ComponentRef<typeof CommandPrimitive.Group>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Group>
 >(({ className, ...props }, ref) => (
-  <CommandPrimitive.Group
-    ref={ref}
-    className={classNames(styles.group, className)}
-    {...props}
-  />
+  <CommandPrimitive.Group ref={ref} className={classNames(styles.group, className)} {...props} />
 ));
 CommandGroup.displayName = CommandPrimitive.Group.displayName;
 
@@ -81,11 +63,7 @@ const CommandSeparator = React.forwardRef<
   React.ComponentRef<typeof CommandPrimitive.Separator>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Separator>
 >(({ className, ...props }, ref) => (
-  <CommandPrimitive.Separator
-    ref={ref}
-    className={classNames(styles.separator, className)}
-    {...props}
-  />
+  <CommandPrimitive.Separator ref={ref} className={classNames(styles.separator, className)} {...props} />
 ));
 CommandSeparator.displayName = CommandPrimitive.Separator.displayName;
 
@@ -93,18 +71,11 @@ const CommandItem = React.forwardRef<
   React.ComponentRef<typeof CommandPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Item>
 >(({ className, ...props }, ref) => (
-  <CommandPrimitive.Item
-    ref={ref}
-    className={classNames(styles.item, className)}
-    {...props}
-  />
+  <CommandPrimitive.Item ref={ref} className={classNames(styles.item, className)} {...props} />
 ));
 CommandItem.displayName = CommandPrimitive.Item.displayName;
 
-const CommandShortcut = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLSpanElement>) => (
+const CommandShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => (
   <span className={classNames(styles.shortcut, className)} {...props} />
 );
 CommandShortcut.displayName = "CommandShortcut";

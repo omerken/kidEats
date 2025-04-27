@@ -21,9 +21,7 @@ export function Toaster() {
           <Toast key={id} {...props}>
             <div className={styles.container}>
               {title && <ToastTitle>{title}</ToastTitle>}
-              {description && (
-                <ToastDescription>{description}</ToastDescription>
-              )}
+              {description && <ToastDescription>{description}</ToastDescription>}
             </div>
             {action}
             <ToastClose />

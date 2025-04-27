@@ -282,54 +282,15 @@ This file contains colors, gradients, and noise filters from the Open Props libr
     #f39060,
     #ffb56b
   );
-  --gradient-2: linear-gradient(
-    to bottom right var(--gradient-space),
-    #48005c,
-    #8300e2,
-    #a269ff
-  );
-  --gradient-3: radial-gradient(
-      circle at top right var(--gradient-space),
-      #0ff,
-      rgba(0, 255, 255, 0)
-    ),
-    radial-gradient(
-      circle at bottom left var(--gradient-space),
-      #ff1492,
-      rgba(255, 20, 146, 0)
-    );
-  --gradient-4: linear-gradient(
-    to bottom right var(--gradient-space),
-    #00f5a0,
-    #00d9f5
-  );
-  --gradient-5: conic-gradient(
-    from -270deg at 75% 110% var(--gradient-space),
-    #f0f,
-    #fffaf0
-  );
-  --gradient-6: conic-gradient(
-    from -90deg at top left var(--gradient-space),
-    #000,
-    #fff
-  );
-  --gradient-7: linear-gradient(
-    to bottom right var(--gradient-space),
-    #72c6ef,
-    #004e8f
-  );
-  --gradient-8: conic-gradient(
-    from 90deg at 50% 0% var(--gradient-space),
-    #111,
-    50%,
-    #222,
-    #111
-  );
-  --gradient-9: conic-gradient(
-    from 0.5turn at bottom center var(--gradient-space),
-    #add8e6,
-    #fff
-  );
+  --gradient-2: linear-gradient(to bottom right var(--gradient-space), #48005c, #8300e2, #a269ff);
+  --gradient-3: radial-gradient(circle at top right var(--gradient-space), #0ff, rgba(0, 255, 255, 0)),
+    radial-gradient(circle at bottom left var(--gradient-space), #ff1492, rgba(255, 20, 146, 0));
+  --gradient-4: linear-gradient(to bottom right var(--gradient-space), #00f5a0, #00d9f5);
+  --gradient-5: conic-gradient(from -270deg at 75% 110% var(--gradient-space), #f0f, #fffaf0);
+  --gradient-6: conic-gradient(from -90deg at top left var(--gradient-space), #000, #fff);
+  --gradient-7: linear-gradient(to bottom right var(--gradient-space), #72c6ef, #004e8f);
+  --gradient-8: conic-gradient(from 90deg at 50% 0% var(--gradient-space), #111, 50%, #222, #111);
+  --gradient-9: conic-gradient(from 0.5turn at bottom center var(--gradient-space), #add8e6, #fff);
   --gradient-10: conic-gradient(
     from 90deg at 40% -25% var(--gradient-space),
     gold,
@@ -349,11 +310,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
     gold,
     gold
   );
-  --gradient-11: conic-gradient(
-    at bottom left var(--gradient-space),
-    #ff1493,
-    cyan
-  );
+  --gradient-11: conic-gradient(at bottom left var(--gradient-space), #ff1493, cyan);
   --gradient-12: conic-gradient(
     from 90deg at 25% -10% var(--gradient-space),
     #ff4500,
@@ -373,58 +330,16 @@ This file contains colors, gradients, and noise filters from the Open Props libr
     #fff3c7
   );
   --gradient-14: conic-gradient(at top right var(--gradient-space), lime, cyan);
-  --gradient-15: linear-gradient(
-    to bottom right var(--gradient-space),
-    #c7d2fe,
-    #fecaca,
-    #fef3c7
-  );
-  --gradient-16: radial-gradient(
-    circle at 50% -250% var(--gradient-space),
-    #374151,
-    #111827,
-    #000
-  );
-  --gradient-17: conic-gradient(
-    from -90deg at 50% -25% var(--gradient-space),
-    blue,
-    #8a2be2
-  );
-  --gradient-18: linear-gradient(
-      0deg var(--gradient-space),
-      rgba(255, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 75%
-    ),
-    linear-gradient(
-      60deg var(--gradient-space),
-      rgba(255, 255, 0, 0.8),
-      rgba(255, 255, 0, 0) 75%
-    ),
-    linear-gradient(
-      120deg var(--gradient-space),
-      rgba(0, 255, 0, 0.8),
-      rgba(0, 255, 0, 0) 75%
-    ),
-    linear-gradient(
-      180deg var(--gradient-space),
-      rgba(0, 255, 255, 0.8),
-      rgba(0, 255, 255, 0) 75%
-    ),
-    linear-gradient(
-      240deg var(--gradient-space),
-      rgba(0, 0, 255, 0.8),
-      rgba(0, 0, 255, 0) 75%
-    ),
-    linear-gradient(
-      300deg var(--gradient-space),
-      rgba(255, 0, 255, 0.8),
-      rgba(255, 0, 255, 0) 75%
-    );
-  --gradient-19: linear-gradient(
-    to bottom right var(--gradient-space),
-    #ffe259,
-    #ffa751
-  );
+  --gradient-15: linear-gradient(to bottom right var(--gradient-space), #c7d2fe, #fecaca, #fef3c7);
+  --gradient-16: radial-gradient(circle at 50% -250% var(--gradient-space), #374151, #111827, #000);
+  --gradient-17: conic-gradient(from -90deg at 50% -25% var(--gradient-space), blue, #8a2be2);
+  --gradient-18: linear-gradient(0deg var(--gradient-space), rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 75%),
+    linear-gradient(60deg var(--gradient-space), rgba(255, 255, 0, 0.8), rgba(255, 255, 0, 0) 75%),
+    linear-gradient(120deg var(--gradient-space), rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 75%),
+    linear-gradient(180deg var(--gradient-space), rgba(0, 255, 255, 0.8), rgba(0, 255, 255, 0) 75%),
+    linear-gradient(240deg var(--gradient-space), rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 75%),
+    linear-gradient(300deg var(--gradient-space), rgba(255, 0, 255, 0.8), rgba(255, 0, 255, 0) 75%);
+  --gradient-19: linear-gradient(to bottom right var(--gradient-space), #ffe259, #ffa751);
   --gradient-20: conic-gradient(
     from -135deg at -10% center var(--gradient-space),
     orange,
@@ -446,67 +361,17 @@ This file contains colors, gradients, and noise filters from the Open Props libr
     #00f,
     #00f
   );
-  --gradient-22: linear-gradient(
-    to bottom right var(--gradient-space),
-    #acb6e5,
-    #86fde8
-  );
-  --gradient-23: linear-gradient(
-    to bottom right var(--gradient-space),
-    #536976,
-    #292e49
-  );
-  --gradient-24: conic-gradient(
-    from 0.5turn at 0% 0% var(--gradient-space),
-    #00c476,
-    10%,
-    #82b0ff,
-    90%,
-    #00c476
-  );
-  --gradient-25: conic-gradient(
-    at 125% 50% var(--gradient-space),
-    #b78cf7,
-    #ff7c94,
-    #ffcf0d,
-    #ff7c94,
-    #b78cf7
-  );
-  --gradient-26: linear-gradient(
-    to bottom right var(--gradient-space),
-    #9796f0,
-    #fbc7d4
-  );
-  --gradient-27: conic-gradient(
-    from 0.5turn at bottom left var(--gradient-space),
-    #ff1493,
-    #639
-  );
-  --gradient-28: conic-gradient(
-    from -90deg at 50% 105% var(--gradient-space),
-    #fff,
-    orchid
-  );
-  --gradient-29: radial-gradient(
-      circle at top right var(--gradient-space),
-      #bfb3ff,
-      rgba(191, 179, 255, 0)
-    ),
-    radial-gradient(
-      circle at bottom left var(--gradient-space),
-      #86acf9,
-      rgba(134, 172, 249, 0)
-    );
-  --gradient-30: radial-gradient(
-      circle at top right var(--gradient-space),
-      #00ff80,
-      rgba(0, 255, 128, 0)
-    ),
-    radial-gradient(
-      circle at bottom left var(--gradient-space),
-      #adffd6,
-      rgba(173, 255, 214, 0)
-    );
+  --gradient-22: linear-gradient(to bottom right var(--gradient-space), #acb6e5, #86fde8);
+  --gradient-23: linear-gradient(to bottom right var(--gradient-space), #536976, #292e49);
+  --gradient-24: conic-gradient(from 0.5turn at 0% 0% var(--gradient-space), #00c476, 10%, #82b0ff, 90%, #00c476);
+  --gradient-25: conic-gradient(at 125% 50% var(--gradient-space), #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7);
+  --gradient-26: linear-gradient(to bottom right var(--gradient-space), #9796f0, #fbc7d4);
+  --gradient-27: conic-gradient(from 0.5turn at bottom left var(--gradient-space), #ff1493, #639);
+  --gradient-28: conic-gradient(from -90deg at 50% 105% var(--gradient-space), #fff, orchid);
+  --gradient-29: radial-gradient(circle at top right var(--gradient-space), #bfb3ff, rgba(191, 179, 255, 0)),
+    radial-gradient(circle at bottom left var(--gradient-space), #86acf9, rgba(134, 172, 249, 0));
+  --gradient-30: radial-gradient(circle at top right var(--gradient-space), #00ff80, rgba(0, 255, 128, 0)),
+    radial-gradient(circle at bottom left var(--gradient-space), #adffd6, rgba(173, 255, 214, 0));
 
   --noise-1: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.005' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
   --noise-2: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.05' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");

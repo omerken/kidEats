@@ -9,11 +9,7 @@ const Slider = React.forwardRef<
   React.ComponentRef<typeof SliderPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root>
 >(({ className, ...props }, ref) => (
-  <SliderPrimitive.Root
-    ref={ref}
-    className={classNames(styles.root, className)}
-    {...props}
-  >
+  <SliderPrimitive.Root ref={ref} className={classNames(styles.root, className)} {...props}>
     <SliderPrimitive.Track className={styles.track}>
       <SliderPrimitive.Range className={styles.range} />
     </SliderPrimitive.Track>

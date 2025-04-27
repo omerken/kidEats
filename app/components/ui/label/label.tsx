@@ -9,11 +9,7 @@ const Label = React.forwardRef<
   React.ComponentRef<typeof LabelPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root>
 >(({ className, ...props }, ref) => (
-  <LabelPrimitive.Root
-    ref={ref}
-    className={classNames(styles.label, className)}
-    {...props}
-  />
+  <LabelPrimitive.Root ref={ref} className={classNames(styles.label, className)} {...props} />
 ));
 Label.displayName = LabelPrimitive.Root.displayName;
 

@@ -9,11 +9,7 @@ const Progress = React.forwardRef<
   React.ComponentRef<typeof ProgressPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>
 >(({ className, value, ...props }, ref) => (
-  <ProgressPrimitive.Root
-    ref={ref}
-    className={classNames(styles.root, className)}
-    {...props}
-  >
+  <ProgressPrimitive.Root ref={ref} className={classNames(styles.root, className)} {...props}>
     <ProgressPrimitive.Indicator
       className={styles.indicator}
       style={{ transform: `translateX(-${100 - (value || 0)}%)` }}

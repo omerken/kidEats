@@ -17,30 +17,17 @@ const ToggleGroupContext = React.createContext<ToggleVariants>({
 
 const ToggleGroup = React.forwardRef<
   React.ComponentRef<typeof ToggleGroupPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Root> &
-    ToggleVariants
->(
-  (
-    { className, variant = "default", size = "default", children, ...props },
-    ref
-  ) => (
-    <ToggleGroupPrimitive.Root
-      ref={ref}
-      className={classNames(styles.root, className)}
-      {...props}
-    >
-      <ToggleGroupContext.Provider value={{ variant, size }}>
-        {children}
-      </ToggleGroupContext.Provider>
-    </ToggleGroupPrimitive.Root>
-  )
-);
+  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Root> & ToggleVariants
+>(({ className, variant = "default", size = "default", children, ...props }, ref) => (
+  <ToggleGroupPrimitive.Root ref={ref} className={classNames(styles.root, className)} {...props}>
+    <ToggleGroupContext.Provider value={{ variant, size }}>{children}</ToggleGroupContext.Provider>
+  </ToggleGroupPrimitive.Root>
+));
 ToggleGroup.displayName = ToggleGroupPrimitive.Root.displayName;
 
 const ToggleGroupItem = React.forwardRef<
   React.ComponentRef<typeof ToggleGroupPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Item> &
-    ToggleVariants
+  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Item> & ToggleVariants
 >(({ className, children, variant, size, ...props }, ref) => {
   const context = React.useContext(ToggleGroupContext);
   const itemVariant = variant || context.variant;

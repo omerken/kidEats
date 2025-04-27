@@ -34,11 +34,7 @@ const ContextMenuSubContent = React.forwardRef<
   React.ComponentRef<typeof ContextMenuPrimitive.SubContent>,
   React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.SubContent>
 >(({ className, ...props }, ref) => (
-  <ContextMenuPrimitive.SubContent
-    ref={ref}
-    className={classNames(styles.content, className)}
-    {...props}
-  />
+  <ContextMenuPrimitive.SubContent ref={ref} className={classNames(styles.content, className)} {...props} />
 ));
 ContextMenuSubContent.displayName = ContextMenuPrimitive.SubContent.displayName;
 
@@ -47,11 +43,7 @@ const ContextMenuContent = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.Content>
 >(({ className, ...props }, ref) => (
   <ContextMenuPrimitive.Portal>
-    <ContextMenuPrimitive.Content
-      ref={ref}
-      className={classNames(styles.content, className)}
-      {...props}
-    />
+    <ContextMenuPrimitive.Content ref={ref} className={classNames(styles.content, className)} {...props} />
   </ContextMenuPrimitive.Portal>
 ));
 ContextMenuContent.displayName = ContextMenuPrimitive.Content.displayName;
@@ -74,11 +66,7 @@ const ContextMenuCheckboxItem = React.forwardRef<
   React.ComponentRef<typeof ContextMenuPrimitive.CheckboxItem>,
   React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.CheckboxItem>
 >(({ className, children, ...props }, ref) => (
-  <ContextMenuPrimitive.CheckboxItem
-    ref={ref}
-    className={classNames(styles.checkbox, className)}
-    {...props}
-  >
+  <ContextMenuPrimitive.CheckboxItem ref={ref} className={classNames(styles.checkbox, className)} {...props}>
     <span className={styles.indicator}>
       <ContextMenuPrimitive.ItemIndicator>
         <Check className={styles.icon} />
@@ -87,18 +75,13 @@ const ContextMenuCheckboxItem = React.forwardRef<
     {children}
   </ContextMenuPrimitive.CheckboxItem>
 ));
-ContextMenuCheckboxItem.displayName =
-  ContextMenuPrimitive.CheckboxItem.displayName;
+ContextMenuCheckboxItem.displayName = ContextMenuPrimitive.CheckboxItem.displayName;
 
 const ContextMenuRadioItem = React.forwardRef<
   React.ComponentRef<typeof ContextMenuPrimitive.RadioItem>,
   React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.RadioItem>
 >(({ className, children, ...props }, ref) => (
-  <ContextMenuPrimitive.RadioItem
-    ref={ref}
-    className={classNames(styles.checkbox, className)}
-    {...props}
-  >
+  <ContextMenuPrimitive.RadioItem ref={ref} className={classNames(styles.checkbox, className)} {...props}>
     <span className={styles.indicator}>
       <ContextMenuPrimitive.ItemIndicator>
         <Circle className={styles.circleIcon} />
@@ -127,18 +110,11 @@ const ContextMenuSeparator = React.forwardRef<
   React.ComponentRef<typeof ContextMenuPrimitive.Separator>,
   React.ComponentPropsWithoutRef<typeof ContextMenuPrimitive.Separator>
 >(({ className, ...props }, ref) => (
-  <ContextMenuPrimitive.Separator
-    ref={ref}
-    className={classNames(styles.separator, className)}
-    {...props}
-  />
+  <ContextMenuPrimitive.Separator ref={ref} className={classNames(styles.separator, className)} {...props} />
 ));
 ContextMenuSeparator.displayName = ContextMenuPrimitive.Separator.displayName;
 
-const ContextMenuShortcut = ({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLSpanElement>) => (
+const ContextMenuShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => (
   <span className={classNames(styles.shortcut, className)} {...props} />
 );
 ContextMenuShortcut.displayName = "ContextMenuShortcut";

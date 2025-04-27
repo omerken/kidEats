@@ -7,12 +7,9 @@ The format for the CSS variables is as follows:
 
 html {
   /* Typography */
-  --font-display: var(--font-weight-9) var(--font-size-fluid-3)
-    var(--font-transitional);
-  --font-heading: var(--font-weight-6) var(--font-size-fluid-2)
-    var(--font-transitional);
-  --font-subheading: var(--font-weight-4) var(--font-size-fluid-1)
-    var(--font-system-ui);
+  --font-display: var(--font-weight-9) var(--font-size-fluid-3) var(--font-transitional);
+  --font-heading: var(--font-weight-6) var(--font-size-fluid-2) var(--font-transitional);
+  --font-subheading: var(--font-weight-4) var(--font-size-fluid-1) var(--font-system-ui);
   --font-body: var(--font-size-fluid-0) var(--font-system-ui);
   --font-caption: var(--font-size-fluid-0) var(--font-system-ui);
   --font-code: var(--font-size-fluid-0) var(--font-monospace-code);
