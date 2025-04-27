@@ -34,12 +34,12 @@ const DialogContent: React.FC<React.ComponentProps<typeof DialogPrimitive.Conten
 );
 DialogContent.displayName = DialogPrimitive.Content.displayName;
 
-const DialogHeader = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+const DialogHeader = ({ className, ...props }: React.ComponentProps<"div">) => (
   <div className={classNames(styles.header, className)} {...props} />
 );
 DialogHeader.displayName = "DialogHeader";
 
-const DialogFooter = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+const DialogFooter = ({ className, ...props }: React.ComponentProps<"div">) => (
   <div className={classNames(styles.footer, className)} {...props} />
 );
 DialogFooter.displayName = "DialogFooter";

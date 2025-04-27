@@ -3,8 +3,7 @@ import { Slot } from "@radix-ui/react-slot";
 import classNames from "classnames";
 import styles from "./button.module.css";
 
-interface ButtonProps
-  extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+interface ButtonProps extends React.ComponentProps<"button"> {
   variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
   size?: "default" | "sm" | "lg" | "icon";
   asChild?: boolean;

@@ -94,7 +94,7 @@ const ContextMenuSeparator: React.FC<React.ComponentProps<typeof ContextMenuPrim
 }) => <ContextMenuPrimitive.Separator className={classNames(styles.separator, className)} {...props} />;
 ContextMenuSeparator.displayName = ContextMenuPrimitive.Separator.displayName;
 
-const ContextMenuShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => (
+const ContextMenuShortcut = ({ className, ...props }: React.ComponentProps<"span">) => (
   <span className={classNames(styles.shortcut, className)} {...props} />
 );
 ContextMenuShortcut.displayName = "ContextMenuShortcut";

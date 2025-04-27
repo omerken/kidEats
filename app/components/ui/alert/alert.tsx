@@ -2,7 +2,7 @@ import * as React from "react";
 import classNames from "classnames";
 import styles from "./alert.module.css";
 
-interface AlertProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+interface AlertProps extends React.ComponentProps<"div"> {
   variant?: "default" | "destructive";
 }
 

@@ -46,12 +46,12 @@ const SheetContent: React.FC<SheetContentProps> = ({ side = "right", className, 
 );
 SheetContent.displayName = SheetPrimitive.Content.displayName;
 
-const SheetHeader = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+const SheetHeader = ({ className, ...props }: React.ComponentProps<"div">) => (
   <div className={classNames(styles.header, className)} {...props} />
 );
 SheetHeader.displayName = "SheetHeader";
 
-const SheetFooter = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+const SheetFooter = ({ className, ...props }: React.ComponentProps<"div">) => (
   <div className={classNames(styles.footer, className)} {...props} />
 );
 SheetFooter.displayName = "SheetFooter";

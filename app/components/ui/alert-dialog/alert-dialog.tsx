@@ -27,12 +27,12 @@ const AlertDialogContent: React.FC<React.ComponentProps<typeof AlertDialogPrimit
 );
 AlertDialogContent.displayName = AlertDialogPrimitive.Content.displayName;
 
-const AlertDialogHeader = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+const AlertDialogHeader = ({ className, ...props }: React.ComponentProps<"div">) => (
   <div className={classNames(styles.header, className)} {...props} />
 );
 AlertDialogHeader.displayName = "AlertDialogHeader";
 
-const AlertDialogFooter = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+const AlertDialogFooter = ({ className, ...props }: React.ComponentProps<"div">) => (
   <div className={classNames(styles.footer, className)} {...props} />
 );
 AlertDialogFooter.displayName = "AlertDialogFooter";

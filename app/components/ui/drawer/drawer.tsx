@@ -34,12 +34,12 @@ const DrawerContent: React.FC<React.ComponentProps<typeof DrawerPrimitive.Conten
 );
 DrawerContent.displayName = "DrawerContent";
 
-const DrawerHeader = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+const DrawerHeader = ({ className, ...props }: React.ComponentProps<"div">) => (
   <div className={classNames(styles.header, className)} {...props} />
 );
 DrawerHeader.displayName = "DrawerHeader";
 
-const DrawerFooter = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+const DrawerFooter = ({ className, ...props }: React.ComponentProps<"div">) => (
   <div className={classNames(styles.footer, className)} {...props} />
 );
 DrawerFooter.displayName = "DrawerFooter";

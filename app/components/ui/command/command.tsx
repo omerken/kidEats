@@ -57,7 +57,7 @@ const CommandItem: React.FC<React.ComponentProps<typeof CommandPrimitive.Item>> 
 );
 CommandItem.displayName = CommandPrimitive.Item.displayName;
 
-const CommandShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => (
+const CommandShortcut = ({ className, ...props }: React.ComponentProps<"span">) => (
   <span className={classNames(styles.shortcut, className)} {...props} />
 );
 CommandShortcut.displayName = "CommandShortcut";

@@ -113,7 +113,7 @@ const MenubarSeparator: React.FC<React.ComponentProps<typeof MenubarPrimitive.Se
 }) => <MenubarPrimitive.Separator className={classNames(styles.separator, className)} {...props} />;
 MenubarSeparator.displayName = MenubarPrimitive.Separator.displayName;
 
-const MenubarShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => (
+const MenubarShortcut = ({ className, ...props }: React.ComponentProps<"span">) => (
   <span className={classNames(styles.shortcut, className)} {...props} />
 );
 MenubarShortcut.displayname = "MenubarShortcut";

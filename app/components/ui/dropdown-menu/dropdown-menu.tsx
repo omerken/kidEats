@@ -99,7 +99,7 @@ const DropdownMenuSeparator: React.FC<React.ComponentProps<typeof DropdownMenuPr
 }) => <DropdownMenuPrimitive.Separator className={classNames(styles.separator, className)} {...props} />;
 DropdownMenuSeparator.displayName = DropdownMenuPrimitive.Separator.displayName;
 
-const DropdownMenuShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => (
+const DropdownMenuShortcut = ({ className, ...props }: React.ComponentProps<"span">) => (
   <span className={classNames(styles.shortcut, className)} {...props} />
 );
 DropdownMenuShortcut.displayName = "DropdownMenuShortcut";
