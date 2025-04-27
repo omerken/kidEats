@@ -8,14 +8,14 @@ const Pagination = ({ className, ...props }: React.ComponentProps<"nav">) => (
 );
 Pagination.displayName = "Pagination";
 
-const PaginationContent = React.forwardRef<HTMLUListElement, React.ComponentProps<"ul">>(
-  ({ className, ...props }, ref) => <ul ref={ref} className={classNames(styles.list, className)} {...props} />
+const PaginationContent: React.FC<React.ComponentProps<"ul">> = ({ className, ...props }) => (
+  <ul className={classNames(styles.list, className)} {...props} />
 );
 PaginationContent.displayName = "PaginationContent";
 
-const PaginationItem = React.forwardRef<HTMLLIElement, React.ComponentProps<"li">>(({ className, ...props }, ref) => (
-  <li ref={ref} className={classNames(styles.item, className)} {...props} />
-));
+const PaginationItem: React.FC<React.ComponentProps<"li">> = ({ className, ...props }) => (
+  <li className={classNames(styles.item, className)} {...props} />
+);
 PaginationItem.displayName = "PaginationItem";
 
 type PaginationLinkProps = {

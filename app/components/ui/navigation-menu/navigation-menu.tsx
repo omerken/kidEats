@@ -6,65 +6,63 @@ import { ChevronDown } from "lucide-react";
 import classNames from "classnames";
 import styles from "./navigation-menu.module.css";
 
-const NavigationMenu = React.forwardRef<
-  React.ComponentRef<typeof NavigationMenuPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root>
->(({ className, children, ...props }, ref) => (
-  <NavigationMenuPrimitive.Root ref={ref} className={classNames(styles.root, className)} {...props}>
+const NavigationMenu: React.FC<React.ComponentProps<typeof NavigationMenuPrimitive.Root>> = ({
+  className,
+  children,
+  ...props
+}) => (
+  <NavigationMenuPrimitive.Root className={classNames(styles.root, className)} {...props}>
     {children}
     <NavigationMenuViewport />
   </NavigationMenuPrimitive.Root>
-));
+);
 NavigationMenu.displayName = NavigationMenuPrimitive.Root.displayName;
 
-const NavigationMenuList = React.forwardRef<
-  React.ComponentRef<typeof NavigationMenuPrimitive.List>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.List>
->(({ className, ...props }, ref) => (
-  <NavigationMenuPrimitive.List ref={ref} className={classNames(styles.list, className)} {...props} />
-));
+const NavigationMenuList: React.FC<React.ComponentProps<typeof NavigationMenuPrimitive.List>> = ({
+  className,
+  ...props
+}) => <NavigationMenuPrimitive.List className={classNames(styles.list, className)} {...props} />;
 NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
 
 const NavigationMenuItem = NavigationMenuPrimitive.Item;
 
-const NavigationMenuTrigger = React.forwardRef<
-  React.ComponentRef<typeof NavigationMenuPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
-  <NavigationMenuPrimitive.Trigger ref={ref} className={classNames(styles.trigger, className)} {...props}>
+const NavigationMenuTrigger: React.FC<React.ComponentProps<typeof NavigationMenuPrimitive.Trigger>> = ({
+  className,
+  children,
+  ...props
+}) => (
+  <NavigationMenuPrimitive.Trigger className={classNames(styles.trigger, className)} {...props}>
     {children} <ChevronDown className={styles.chevron} aria-hidden="true" />
   </NavigationMenuPrimitive.Trigger>
-));
+);
 NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName;
 
-const NavigationMenuContent = React.forwardRef<
-  React.ComponentRef<typeof NavigationMenuPrimitive.Content>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Content>
->(({ className, ...props }, ref) => (
-  <NavigationMenuPrimitive.Content ref={ref} className={classNames(styles.content, className)} {...props} />
-));
+const NavigationMenuContent: React.FC<React.ComponentProps<typeof NavigationMenuPrimitive.Content>> = ({
+  className,
+  ...props
+}) => <NavigationMenuPrimitive.Content className={classNames(styles.content, className)} {...props} />;
 NavigationMenuContent.displayName = NavigationMenuPrimitive.Content.displayName;
 
 const NavigationMenuLink = NavigationMenuPrimitive.Link;
 
-const NavigationMenuViewport = React.forwardRef<
-  React.ComponentRef<typeof NavigationMenuPrimitive.Viewport>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
->(({ className, ...props }, ref) => (
+const NavigationMenuViewport: React.FC<React.ComponentProps<typeof NavigationMenuPrimitive.Viewport>> = ({
+  className,
+  ...props
+}) => (
   <div className={styles.viewportWrapper}>
-    <NavigationMenuPrimitive.Viewport className={classNames(styles.viewport, className)} ref={ref} {...props} />
+    <NavigationMenuPrimitive.Viewport className={classNames(styles.viewport, className)} {...props} />
   </div>
-));
+);
 NavigationMenuViewport.displayName = NavigationMenuPrimitive.Viewport.displayName;
 
-const NavigationMenuIndicator = React.forwardRef<
-  React.ComponentRef<typeof NavigationMenuPrimitive.Indicator>,
-  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Indicator>
->(({ className, ...props }, ref) => (
-  <NavigationMenuPrimitive.Indicator ref={ref} className={classNames(styles.indicator, className)} {...props}>
+const NavigationMenuIndicator: React.FC<React.ComponentProps<typeof NavigationMenuPrimitive.Indicator>> = ({
+  className,
+  ...props
+}) => (
+  <NavigationMenuPrimitive.Indicator className={classNames(styles.indicator, className)} {...props}>
     <div className={styles.arrow} />
   </NavigationMenuPrimitive.Indicator>
-));
+);
 NavigationMenuIndicator.displayName = NavigationMenuPrimitive.Indicator.displayName;
 
 export {

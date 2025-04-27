@@ -8,12 +8,9 @@ import classNames from "classnames";
 import { Dialog, DialogContent } from "@/components/ui/dialog/dialog";
 import styles from "./command.module.css";
 
-const Command = React.forwardRef<
-  React.ComponentRef<typeof CommandPrimitive>,
-  React.ComponentPropsWithoutRef<typeof CommandPrimitive>
->(({ className, ...props }, ref) => (
-  <CommandPrimitive ref={ref} className={classNames(styles.root, className)} {...props} />
-));
+const Command: React.FC<React.ComponentProps<typeof CommandPrimitive>> = ({ className, ...props }) => (
+  <CommandPrimitive className={classNames(styles.root, className)} {...props} />
+);
 Command.displayName = CommandPrimitive.displayName;
 
 const CommandDialog = ({ children, ...props }: DialogProps) => {
@@ -26,53 +23,38 @@ const CommandDialog = ({ children, ...props }: DialogProps) => {
   );
 };
 
-const CommandInput = React.forwardRef<
-  React.ComponentRef<typeof CommandPrimitive.Input>,
-  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input>
->(({ className, ...props }, ref) => (
+const CommandInput: React.FC<React.ComponentProps<typeof CommandPrimitive.Input>> = ({ className, ...props }) => (
   <div className={styles.inputWrapper} cmdk-input-wrapper="">
     <Search className={styles.searchIcon} />
-    <CommandPrimitive.Input ref={ref} className={classNames(styles.input, className)} {...props} />
+    <CommandPrimitive.Input className={classNames(styles.input, className)} {...props} />
   </div>
-));
+);
 CommandInput.displayName = CommandPrimitive.Input.displayName;
 
-const CommandList = React.forwardRef<
-  React.ComponentRef<typeof CommandPrimitive.List>,
-  React.ComponentPropsWithoutRef<typeof CommandPrimitive.List>
->(({ className, ...props }, ref) => (
-  <CommandPrimitive.List ref={ref} className={classNames(styles.list, className)} {...props} />
-));
+const CommandList: React.FC<React.ComponentProps<typeof CommandPrimitive.List>> = ({ className, ...props }) => (
+  <CommandPrimitive.List className={classNames(styles.list, className)} {...props} />
+);
 CommandList.displayName = CommandPrimitive.List.displayName;
 
-const CommandEmpty = React.forwardRef<
-  React.ComponentRef<typeof CommandPrimitive.Empty>,
-  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Empty>
->((props, ref) => <CommandPrimitive.Empty ref={ref} className={styles.empty} {...props} />);
+const CommandEmpty: React.FC<React.ComponentProps<typeof CommandPrimitive.Empty>> = (props) => (
+  <CommandPrimitive.Empty className={styles.empty} {...props} />
+);
 CommandEmpty.displayName = CommandPrimitive.Empty.displayName;
 
-const CommandGroup = React.forwardRef<
-  React.ComponentRef<typeof CommandPrimitive.Group>,
-  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Group>
->(({ className, ...props }, ref) => (
-  <CommandPrimitive.Group ref={ref} className={classNames(styles.group, className)} {...props} />
-));
+const CommandGroup: React.FC<React.ComponentProps<typeof CommandPrimitive.Group>> = ({ className, ...props }) => (
+  <CommandPrimitive.Group className={classNames(styles.group, className)} {...props} />
+);
 CommandGroup.displayName = CommandPrimitive.Group.displayName;
 
-const CommandSeparator = React.forwardRef<
-  React.ComponentRef<typeof CommandPrimitive.Separator>,
-  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Separator>
->(({ className, ...props }, ref) => (
-  <CommandPrimitive.Separator ref={ref} className={classNames(styles.separator, className)} {...props} />
-));
+const CommandSeparator: React.FC<React.ComponentProps<typeof CommandPrimitive.Separator>> = ({
+  className,
+  ...props
+}) => <CommandPrimitive.Separator className={classNames(styles.separator, className)} {...props} />;
 CommandSeparator.displayName = CommandPrimitive.Separator.displayName;
 
-const CommandItem = React.forwardRef<
-  React.ComponentRef<typeof CommandPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Item>
->(({ className, ...props }, ref) => (
-  <CommandPrimitive.Item ref={ref} className={classNames(styles.item, className)} {...props} />
-));
+const CommandItem: React.FC<React.ComponentProps<typeof CommandPrimitive.Item>> = ({ className, ...props }) => (
+  <CommandPrimitive.Item className={classNames(styles.item, className)} {...props} />
+);
 CommandItem.displayName = CommandPrimitive.Item.displayName;
 
 const CommandShortcut = ({ className, ...props }: React.HTMLAttributes<HTMLSpanElement>) => (
