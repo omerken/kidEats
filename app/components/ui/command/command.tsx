@@ -5,7 +5,7 @@ import { type DialogProps } from "@radix-ui/react-dialog";
 import { Command as CommandPrimitive } from "cmdk";
 import { Search } from "lucide-react";
 import classNames from "classnames";
-import { Dialog, DialogContent } from "@/components/ui/dialog/dialog";
+import { Dialog, DialogContent } from "~/components/ui/dialog/dialog";
 import styles from "./command.module.css";
 
 const Command: React.FC<React.ComponentProps<typeof CommandPrimitive>> = ({ className, ...props }) => (

@@ -4,12 +4,12 @@ import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { PanelLeft } from "lucide-react";
 import classNames from "classnames";
-import { useIsMobile } from "@/hooks/use-mobile";
-import { Button } from "@/components/ui/button/button";
-import { Input } from "@/components/ui/input/input";
-import { Sheet, SheetContent } from "@/components/ui/sheet/sheet";
-import { Skeleton } from "@/components/ui/skeleton/skeleton";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip/tooltip";
+import { useIsMobile } from "~/hooks/use-mobile";
+import { Button } from "~/components/ui/button/button";
+import { Input } from "~/components/ui/input/input";
+import { Sheet, SheetContent } from "~/components/ui/sheet/sheet";
+import { Skeleton } from "~/components/ui/skeleton/skeleton";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "~/components/ui/tooltip/tooltip";
 import styles from "./sidebar.module.css";
 
 // Constants
