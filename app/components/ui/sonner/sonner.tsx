@@ -1,5 +1,3 @@
-"use client";
-
 import { Toaster as Sonner } from "sonner";
 import styles from "./sonner.module.css";
 
