@@ -4,7 +4,7 @@ import classNames from "classnames";
 import styles from "./switch.module.css";
 
 const Switch: React.FC<React.ComponentProps<typeof SwitchPrimitives.Root>> = ({ className, ...props }) => (
-  <SwitchPrimitives.Root>
+  <SwitchPrimitives.Root className={classNames(styles.root, className)} {...props}>
     <SwitchPrimitives.Thumb className={styles.thumb} />
   </SwitchPrimitives.Root>
 );

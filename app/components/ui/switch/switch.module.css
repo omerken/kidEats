@@ -1,7 +1,7 @@
 .root {
   display: inline-flex;
   height: var(--size-6);
-  width: var(--size-11);
+  width: var(--size-9);
   flex-shrink: 0;
   cursor: pointer;
   align-items: center;
@@ -40,7 +40,7 @@
 }
 
 .thumb[data-state="checked"] {
-  transform: translateX(var(--size-5));
+  transform: translateX(var(--size-6));
 }
 
 .thumb[data-state="unchecked"] {
