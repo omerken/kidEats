@@ -1,0 +1,13 @@
+{
+  "theme": {
+    "designTokensAndThemeFiles": [
+      "app/styles/theme.css",
+      "app/styles/tokens/colors.css",
+      "app/styles/tokens/typography.css",
+      "app/styles/tokens/sizes.css",
+      "app/styles/tokens/spacings.css",
+      "app/styles/tokens/decorations.css",
+      "app/styles/tokens/animations.css"
+    ]
+  }
+}
