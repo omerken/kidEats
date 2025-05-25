@@ -1,48 +1,62 @@
 .root {
-  display: inline-flex;
-  height: var(--size-6);
-  width: var(--size-9);
-  flex-shrink: 0;
+  --switch-height: var(--size-2-5);
+  --switch-width: calc(var(--switch-height) * 1.75);
+  position: relative;
+  width: var(--switch-width);
+  height: var(--switch-height);
   cursor: pointer;
-  align-items: center;
   border-radius: var(--radius-round);
-  border: 2px solid transparent;
+  padding: 0;
   transition: colors 200ms var(--ease-3);
+  box-shadow: 0 0 0 1px var(--color-base-border-subtle);
 }
 
 .root:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--color-surface-1), 0 0 0 4px var(--color-surface-4);
+  box-shadow: 0 0 0 2px var(--color-base-border);
+}
+
+.root[data-state="checked"] {
+  background: var(--color-pop-bg);
+  &:hover {
+    background: var(--color-pop-bg-hover);
+  }
+}
+
+.root[data-state="unchecked"] {
+  background: var(--color-accent-bg);
+  &:hover {
+    background: var(--color-accent-bg-hover);
+  }
 }
 
 .root:disabled {
   cursor: not-allowed;
-  opacity: 0.5;
+  background-color: var(--color-base-bg-subtle);
+  &:hover {
+    background-color: var(--color-base-bg-subtle);
+  }
 }
 
-.root[data-state="checked"] {
-  background: var(--color-brand-1);
-}
-
-.root[data-state="unchecked"] {
-  background: var(--color-surface-3);
+.root:disabled[data-state="checked"] {
+  background-color: var(--color-accent-bg);
 }
 
 .thumb {
-  pointer-events: none;
-  display: block;
-  height: var(--size-5);
-  width: var(--size-5);
+  --switch-thumb-inset: var(--space-0-25);
+  --switch-thumb-size: calc(var(--switch-height) - var(--switch-thumb-inset) * 2);
+  --switch-thumb-translate-x: calc(var(--switch-width) - var(--switch-height));
+  position: absolute;
+  left: var(--switch-thumb-inset);
+  top: var(--switch-thumb-inset);
+  height: var(--switch-thumb-size);
+  width: var(--switch-thumb-size);
   border-radius: var(--radius-round);
-  background: var(--color-surface-1);
+  background: var(--color-base-bg-app);
   box-shadow: var(--shadow-3);
-  transition: transform 200ms var(--ease-3);
+  transition: transform 0.14s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .thumb[data-state="checked"] {
-  transform: translateX(var(--size-6));
-}
-
-.thumb[data-state="unchecked"] {
-  transform: translateX(0);
+  transform: translateX(var(--switch-thumb-translate-x));
 }

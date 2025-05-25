@@ -1,24 +1,10 @@
 .toaster {
-  --viewport-padding: var(--size-4);
+  --viewport-padding: var(--space-4);
 }
 
 .toast {
-  background: var(--color-surface-1);
-  color: var(--color-text-1);
-  border: var(--border-size-1) solid var(--color-surface-3);
+  background: var(--color-base-bg);
+  color: var(--color-base-text);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
   box-shadow: var(--shadow-4);
-}
-
-.description {
-  color: var(--color-text-2);
-}
-
-.actionButton {
-  background: var(--color-brand-1);
-  color: var(--color-brand-1-foreground);
-}
-
-.cancelButton {
-  background: var(--color-surface-2);
-  color: var(--color-text-2);
 }

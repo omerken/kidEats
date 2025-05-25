@@ -1,19 +1,16 @@
 .nav {
   margin-inline: auto;
-  display: flex;
-  width: 100%;
-  justify-content: center;
 }
 
 .list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: var(--size-1);
+  gap: var(--space-1);
+  padding: 0;
 }
 
 .item {
   display: flex;
+  height: var(--size-4);
 }
 
 .link {
@@ -21,39 +18,34 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-2);
-  font-size: var(--font-size-2);
-  font-weight: var(--font-weight-5);
-  height: var(--size-10);
-  padding-inline: var(--size-4);
   transition: all 200ms var(--ease-3);
 }
 
 .link:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--color-surface-4);
+  box-shadow: 0 0 0 2px var(--color-base-border-subtle);
 }
 
-.linkGhost {
-  background: transparent;
-  color: var(--color-text-1);
+.page {
 }
 
-.linkGhost:hover {
-  background: var(--color-surface-2);
+.page:hover {
+  background: var(--color-accent-bg-hover);
+  color: var(--color-accent-text-strong);
 }
 
-.linkOutline {
-  border: var(--border-size-1) solid var(--color-surface-3);
-  background: transparent;
+.pageActive {
+  border: var(--border-size-1) solid var(--color-accent-border);
+  background-color: var(--color-pop-bg);
+  color: var(--color-pop-text);
 }
 
-.linkOutline:hover {
-  background: var(--color-surface-2);
+.pageActive:hover {
+  background: var(--color-accent-bg-hover);
 }
 
 .linkIcon {
-  width: var(--size-10);
-  padding: 0;
+  width: var(--size-4);
 }
 
 .directionLink {
@@ -61,36 +53,35 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-2);
-  font-size: var(--font-size-2);
   font-weight: var(--font-weight-5);
-  height: var(--size-10);
-  padding-inline: var(--size-4);
+  height: var(--size-4);
+  padding-inline: var(--space-2);
   transition: all 200ms var(--ease-3);
-  gap: var(--size-1);
+  gap: var(--space-0-5);
 }
 
 .directionLink:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--color-surface-4);
+  box-shadow: 0 0 0 2px var(--color-base-border-subtle);
 }
 
 .previous {
-  padding-left: var(--size-2);
+  padding-left: var(--space-2);
 }
 
 .next {
-  padding-right: var(--size-2);
+  padding-right: var(--space-2);
 }
 
 .icon {
-  height: var(--size-4);
-  width: var(--size-4);
+  aspect-ratio: 1;
+  width: var(--size-2-5);
 }
 
 .ellipsis {
   display: flex;
-  height: var(--size-9);
-  width: var(--size-9);
+  aspect-ratio: 1;
+  width: var(--size-2-5);
   align-items: center;
   justify-content: center;
 }

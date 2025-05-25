@@ -67,12 +67,12 @@ SelectLabel.displayName = SelectPrimitive.Label.displayName;
 
 const SelectItem: React.FC<React.ComponentProps<typeof SelectPrimitive.Item>> = ({ className, children, ...props }) => (
   <SelectPrimitive.Item className={classNames(styles.item, className)} {...props}>
+    <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
     <span className={styles.indicator}>
       <SelectPrimitive.ItemIndicator>
-        <Check className={styles.icon} />
+        <Check className={classNames(styles.icon, styles.indicatorIcon)} />
       </SelectPrimitive.ItemIndicator>
     </span>
-    <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
   </SelectPrimitive.Item>
 );
 SelectItem.displayName = SelectPrimitive.Item.displayName;

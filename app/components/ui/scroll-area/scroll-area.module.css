@@ -1,12 +1,9 @@
 .root {
   position: relative;
-  overflow: hidden;
 }
 
 .viewport {
   height: 100%;
-  width: 100%;
-  border-radius: inherit;
 }
 
 .scrollbar {
@@ -19,20 +16,19 @@
 .scrollbarVertical {
   height: 100%;
   width: var(--size-2);
-  border-left: var(--border-size-1) solid transparent;
-  padding: 1px;
+  border-left: var(--border-size-1) solid var(--color-base-border-subtle);
+  padding: 3px;
 }
 
 .scrollbarHorizontal {
   height: var(--size-2);
   flex-direction: column;
-  border-top: var(--border-size-1) solid transparent;
-  padding: 1px;
+  border-top: var(--border-size-1) solid var(--color-base-border-subtle);
+  padding: var(--space-0-25);
 }
 
 .thumb {
-  position: relative;
   flex: 1;
   border-radius: var(--radius-round);
-  background: var(--color-surface-3);
+  background: var(--color-base-bg-hover);
 }

@@ -3,35 +3,33 @@
   cursor: default;
   user-select: none;
   align-items: center;
-  gap: var(--size-2);
+  gap: var(--space-1-5);
   border-radius: var(--radius-1);
-  padding: var(--size-1) var(--size-2);
-  font-size: var(--font-size-2);
+  padding: var(--space-1) var(--space-2);
   outline: none;
 }
 
 .subTrigger:focus,
 .subTrigger[data-state="open"] {
-  background: var(--color-surface-3);
+  background: var(--color-base-bg-hover);
+  color: var(--color-base-text-strong);
 }
 
 .subTrigger svg {
   pointer-events: none;
-  height: var(--size-4);
-  width: var(--size-4);
+  aspect-ratio: 1;
+  width: var(--size-2-5);
   flex-shrink: 0;
 }
 
 .content {
   z-index: var(--layer-5);
-  min-width: 8rem;
-  overflow: hidden;
   border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--color-surface-3);
-  background: var(--color-surface-1);
   padding: var(--size-1);
-  color: var(--color-text-1);
   box-shadow: var(--shadow-3);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
+  background: var(--color-base-bg);
+  color: var(--color-base-text);
 }
 
 .content[data-state="open"] {
@@ -48,28 +46,27 @@
   cursor: default;
   user-select: none;
   align-items: center;
-  gap: var(--size-2);
+  gap: var(--space-1-5);
   border-radius: var(--radius-1);
-  padding: var(--size-1) var(--size-2);
-  font-size: var(--font-size-2);
+  padding: var(--space-1) var(--space-2);
   outline: none;
   transition: colors 150ms var(--ease-3);
 }
 
 .item:focus {
-  background: var(--color-surface-3);
-  color: var(--color-text-1);
+  background-color: var(--color-base-bg-hover);
+  color: var(--color-base-text-strong);
 }
 
 .item[data-disabled] {
   pointer-events: none;
-  opacity: 0.5;
+  color: var(--color-base-text-muted);
 }
 
 .item svg {
   pointer-events: none;
-  height: var(--size-4);
-  width: var(--size-4);
+  aspect-ratio: 1;
+  width: var(--size-2-5);
   flex-shrink: 0;
 }
 
@@ -80,11 +77,19 @@
   user-select: none;
   align-items: center;
   border-radius: var(--radius-1);
-  padding: var(--size-1) var(--size-2);
-  padding-left: var(--size-8);
-  font-size: var(--font-size-2);
+  padding: var(--space-1) var(--space-2);
+  padding-left: var(--space-8);
   outline: none;
   transition: colors 150ms var(--ease-3);
+}
+
+.checkbox:hover {
+  background-color: var(--color-base-bg-hover);
+  color: var(--color-base-text-strong);
+}
+
+.checkbox[data-state="checked"] {
+  color: var(--color-base-text-strong);
 }
 
 .indicator {
@@ -98,37 +103,34 @@
 }
 
 .icon {
-  height: var(--size-4);
-  width: var(--size-4);
+  aspect-ratio: 1;
+  width: var(--size-2-5);
 }
 
 .circleIcon {
-  height: var(--size-2);
-  width: var(--size-2);
+  aspect-ratio: 1;
+  width: var(--size-1-5);
   fill: currentColor;
 }
 
 .label {
-  padding: var(--size-2);
-  font-size: var(--font-size-2);
-  font-weight: var(--font-weight-6);
+  padding: var(--space-1) var(--space-2);
 }
 
 .separator {
-  margin: var(--size-1) calc(var(--size-1) * -1);
+  margin: var(--space-1);
   height: var(--border-size-1);
-  background: var(--color-surface-3);
+  background: var(--color-base-border-subtle);
 }
 
 .shortcut {
   margin-left: auto;
   font-size: var(--font-size-0);
   letter-spacing: var(--font-letterspacing-4);
-  opacity: 0.6;
+  color: var(--color-base-text-subtle);
 }
 
 .inset {
-  padding-left: var(--size-8);
 }
 
 @keyframes contentShow {

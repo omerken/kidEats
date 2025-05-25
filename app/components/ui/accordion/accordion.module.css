@@ -1,9 +1,10 @@
 .item {
-  border-bottom: var(--border-size-1) solid var(--color-surface-3);
 }
 
 .header {
   display: flex;
+  margin: 0;
+  border-bottom: var(--border-size-1) solid var(--color-base-border-subtle);
 }
 
 .trigger {
@@ -11,10 +12,11 @@
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  padding: var(--size-4) 0;
-  font-weight: var(--font-weight-5);
-  color: var(--color-text-1);
+  padding: var(--space-1-5);
+  font-weight: var(--font-weight-3);
+  color: var(--color-base-text);
   transition: all var(--ease-3);
+  background-color: var(--color-base-bg);
 }
 
 .trigger:hover {
@@ -22,8 +24,8 @@
 }
 
 .chevron {
-  height: var(--size-4);
-  width: var(--size-4);
+  aspect-ratio: 1;
+  width: var(--size-2-5);
   flex-shrink: 0;
   transition: transform 200ms var(--ease-3);
 }
@@ -34,18 +36,16 @@
 
 .content {
   overflow: hidden;
-  font-size: var(--font-size-2);
-  color: var(--color-text-2);
+  background-color: var(--color-base-bg-subtle);
+  color: var(--color-base-text);
+  padding: var(--space-2);
 }
 
 .content[data-state="closed"] {
-  animation: var(--animation-slide-out-up);
 }
 
 .content[data-state="open"] {
-  animation: var(--animation-slide-in-down);
 }
 
 .contentInner {
-  padding: 0 0 var(--size-4) 0;
 }

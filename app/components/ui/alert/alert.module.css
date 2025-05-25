@@ -1,52 +1,30 @@
 .alert {
-  position: relative;
-  width: 100%;
   border-radius: var(--radius-3);
-  border: var(--border-size-1) solid var(--color-surface-3);
-  padding: var(--size-4);
-}
-
-.alert svg {
-  position: absolute;
-  left: var(--size-4);
-  top: var(--size-4);
-  color: var(--color-text-1);
-}
-
-.alert svg ~ * {
-  padding-left: var(--size-7);
-}
-
-.alert svg + div {
-  transform: translateY(-3px);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
+  padding: var(--space-2);
+  font-size: var(--font-size-1);
 }
 
 /* Variants */
 .default {
-  background: var(--color-surface-1);
-  color: var(--color-text-1);
+  background: var(--color-base-bg);
+  color: var(--color-base-text);
 }
 
 .destructive {
-  border-color: color-mix(in srgb, var(--red-9) 50%, transparent);
-  color: var(--red-9);
+  background-color: var(--color-danger-bg);
+  color: var(--color-danger-text);
 }
 
 .destructive svg {
-  color: var(--red-9);
+  color: var(--color-danger-text);
 }
 
 .title {
-  margin-bottom: var(--size-1);
-  font-weight: var(--font-weight-6);
-  line-height: 1;
-  letter-spacing: var(--font-letterspacing-1);
-}
-
-.description {
+  margin-bottom: var(--space-0-25);
+  font-weight: var(--font-weight-5);
   font-size: var(--font-size-2);
 }
 
-.description p {
-  line-height: var(--font-lineheight-3);
+.description {
 }

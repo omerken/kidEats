@@ -1,6 +1,5 @@
 .wrapper {
   position: relative;
-  width: 100%;
   overflow: auto;
 }
 
@@ -8,10 +7,12 @@
   width: 100%;
   caption-side: bottom;
   font-size: var(--font-size-2);
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .header tr {
-  border-bottom: var(--border-size-1) solid var(--color-surface-3);
+  border-bottom: var(--border-size-1) solid var(--color-base-border-subtle);
 }
 
 .body tr:last-child {
@@ -19,9 +20,8 @@
 }
 
 .footer {
-  border-top: var(--border-size-1) solid var(--color-surface-3);
-  background: color-mix(in srgb, var(--color-surface-2) 50%, transparent);
-  font-weight: var(--font-weight-5);
+  border-top: var(--border-size-1) solid var(--color-base-border-subtle);
+  font-weight: var(--font-weight-6);
 }
 
 .footer tr:last-child {
@@ -29,25 +29,22 @@
 }
 
 .row {
-  border-bottom: var(--border-size-1) solid var(--color-surface-3);
+  border-bottom: var(--border-size-1) solid var(--color-base-border-subtle);
   transition: colors 200ms var(--ease-3);
 }
 
 .row:hover {
-  background: color-mix(in srgb, var(--color-surface-2) 50%, transparent);
+  background: var(--color-accent-bg-subtle);
 }
 
 .row[data-state="selected"] {
-  background: var(--color-surface-2);
+  background: var(--color-accent-bg);
 }
 
 .head {
-  height: var(--size-12);
-  padding-inline: var(--size-4);
-  text-align: left;
-  vertical-align: middle;
+  height: var(--size-6);
   font-weight: var(--font-weight-5);
-  color: var(--color-text-2);
+  color: var(--color-base-text-strong);
 }
 
 .head:has([role="checkbox"]) {
@@ -55,8 +52,8 @@
 }
 
 .cell {
-  padding: var(--size-4);
-  vertical-align: middle;
+  padding: var(--space-0-5) var(--space-2);
+  text-align: center;
 }
 
 .cell:has([role="checkbox"]) {
@@ -64,7 +61,5 @@
 }
 
 .caption {
-  margin-top: var(--size-4);
-  font-size: var(--font-size-2);
-  color: var(--color-text-2);
+  margin-top: var(--space-1);
 }

@@ -184,7 +184,7 @@ const SidebarTrigger: React.FC<React.ComponentProps<typeof Button>> = ({ classNa
   return (
     <Button
       data-sidebar="trigger"
-      variant="ghost"
+      variant="link"
       size="icon"
       className={classNames(styles.trigger, className)}
       onClick={(event) => {

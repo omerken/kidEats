@@ -3,7 +3,8 @@ import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration }
 import type { Route } from "./+types/root";
 import { Toaster } from "./components/ui/toaster/toaster";
 
-import "open-props/normalize";
+import "./styles/reset.css";
+import "./styles/tokens/utils.css";
 import "./styles/tokens/animations.css";
 import "./styles/tokens/colors.css";
 import "./styles/tokens/decorations.css";

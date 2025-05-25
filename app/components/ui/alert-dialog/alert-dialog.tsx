@@ -52,7 +52,7 @@ const AlertDialogAction: React.FC<React.ComponentProps<typeof AlertDialogPrimiti
   ...props
 }) => (
   <AlertDialogPrimitive.Action className={classNames(styles.action, className)} asChild {...props}>
-    <Button>{props.children}</Button>
+    <Button variant="destructive">{props.children}</Button>
   </AlertDialogPrimitive.Action>
 );
 AlertDialogAction.displayName = AlertDialogPrimitive.Action.displayName;
@@ -62,7 +62,9 @@ const AlertDialogCancel: React.FC<React.ComponentProps<typeof AlertDialogPrimiti
   ...props
 }) => (
   <AlertDialogPrimitive.Cancel className={classNames(styles.cancel, className)} asChild {...props}>
-    <Button variant="outline">{props.children}</Button>
+    <Button variant="outline" className={styles.cancelButton}>
+      {props.children}
+    </Button>
   </AlertDialogPrimitive.Cancel>
 );
 AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName;

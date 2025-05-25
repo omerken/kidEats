@@ -5,16 +5,19 @@ import classNames from "classnames";
 import styles from "./radio-group.module.css";
 
 const RadioGroup: React.FC<React.ComponentProps<typeof RadioGroupPrimitive.Root>> = ({ className, ...props }) => (
-  <RadioGroupPrimitive.Root />
+  <RadioGroupPrimitive.Root className={classNames(styles.root, className)} {...props} />
 );
 RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
 
 const RadioGroupItem: React.FC<React.ComponentProps<typeof RadioGroupPrimitive.Item>> = ({ className, ...props }) => (
-  <RadioGroupPrimitive.Item className={classNames(styles.item, className)} {...props}>
-    <RadioGroupPrimitive.Indicator className={styles.indicator}>
-      <Circle className={styles.icon} />
-    </RadioGroupPrimitive.Indicator>
-  </RadioGroupPrimitive.Item>
+  <label className={styles.label}>
+    <RadioGroupPrimitive.Item className={classNames(styles.item, className)} {...props}>
+      <RadioGroupPrimitive.Indicator className={styles.indicator}>
+        <Circle className={styles.icon} />
+      </RadioGroupPrimitive.Indicator>
+    </RadioGroupPrimitive.Item>
+    <span className={styles.labelText}>{props.value}</span>
+  </label>
 );
 RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
 

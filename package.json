@@ -17,7 +17,6 @@
     "input-otp": "^1.4.2",
     "isbot": "^5.1.28",
     "lucide-react": "^0.511.0",
-    "open-props": "^1.7.15",
     "radix-ui": "^1.4.2",
     "react": "^19.1.0",
     "react-day-picker": "^9.7.0",

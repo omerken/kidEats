@@ -29,16 +29,10 @@ const BreadcrumbLink: React.FC<React.ComponentProps<"a"> & { asChild?: boolean }
 };
 BreadcrumbLink.displayName = "BreadcrumbLink";
 
-const BreadcrumbPage: React.FC<React.ComponentProps<"span">> = ({ className, ...props }) => (
-  <span
-    role="link"
-    aria-disabled="true"
-    aria-current="page"
-    className={classNames(styles.page, className)}
-    {...props}
-  />
+const BreadcrumbSelected: React.FC<React.ComponentProps<"span">> = ({ className, ...props }) => (
+  <span role="link" aria-disabled="true" className={classNames(styles.selected, className)} {...props} />
 );
-BreadcrumbPage.displayName = "BreadcrumbPage";
+BreadcrumbSelected.displayName = "BreadcrumbSelected";
 
 const BreadcrumbSeparator = ({ children, className, ...props }: React.ComponentProps<"li">) => (
   <li role="presentation" aria-hidden="true" className={classNames(styles.separator, className)} {...props}>
@@ -60,7 +54,7 @@ export {
   BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbPage,
+  BreadcrumbSelected,
   BreadcrumbSeparator,
   BreadcrumbEllipsis,
 };

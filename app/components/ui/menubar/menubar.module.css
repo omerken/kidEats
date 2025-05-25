@@ -1,12 +1,9 @@
 .root {
   display: flex;
-  height: var(--size-10);
   align-items: center;
-  gap: var(--size-1);
   border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--color-surface-3);
-  background: var(--color-surface-1);
-  padding: var(--size-1);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
+  background: var(--color-base-bg-subtle);
 }
 
 .trigger {
@@ -15,16 +12,21 @@
   user-select: none;
   align-items: center;
   border-radius: var(--radius-1);
-  padding: var(--size-1) var(--size-3);
-  font-size: var(--font-size-2);
-  font-weight: var(--font-weight-5);
+  padding: var(--space-1) var(--space-3);
   outline: none;
+  background-color: var(--color-base-bg);
+  color: var(--color-base-text);
+}
+
+.trigger:hover {
+  background: var(--color-base-bg-hover);
+  color: var(--color-base-text-strong);
 }
 
 .trigger:focus,
 .trigger[data-state="open"] {
-  background: var(--color-surface-3);
-  color: var(--color-text-1);
+  background: var(--color-base-bg-subtle);
+  color: var(--color-base-text-strong);
 }
 
 .subTrigger {
@@ -33,36 +35,33 @@
   user-select: none;
   align-items: center;
   border-radius: var(--radius-1);
-  padding: var(--size-1) var(--size-2);
-  font-size: var(--font-size-2);
+  padding: var(--space-1) var(--space-2);
   outline: none;
 }
 
 .subTrigger:focus,
 .subTrigger[data-state="open"] {
-  background: var(--color-surface-3);
-  color: var(--color-text-1);
+  background: var(--color-base-bg-hover);
+  color: var(--color-base-text-strong);
 }
 
 .inset {
-  padding-left: var(--size-8);
 }
 
 .chevron {
   margin-left: auto;
-  height: var(--size-4);
-  width: var(--size-4);
+  aspect-ratio: 1;
+  width: var(--size-2-5);
 }
 
 .content {
-  z-index: var(--layer-5);
+  z-index: var(--layer-1);
   min-width: 12rem;
   overflow: hidden;
   border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--color-surface-3);
-  background: var(--color-surface-1);
-  padding: var(--size-1);
-  color: var(--color-text-1);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
+  background: var(--color-base-bg);
+  color: var(--color-base-text);
   box-shadow: var(--shadow-3);
 }
 
@@ -76,12 +75,10 @@
 
 .subContent {
   z-index: var(--layer-5);
-  min-width: 8rem;
   overflow: hidden;
   border-radius: var(--radius-2);
-  border: var(--border-size-1) solid var(--color-surface-3);
-  background: var(--color-surface-1);
-  padding: var(--size-1);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
+  background-color: var(--color-base-bg);
   color: var(--color-text-1);
   box-shadow: var(--shadow-3);
 }
@@ -101,14 +98,13 @@
   user-select: none;
   align-items: center;
   border-radius: var(--radius-1);
-  padding: var(--size-1) var(--size-2);
-  font-size: var(--font-size-2);
+  padding: var(--space-1) var(--space-2);
   outline: none;
 }
 
 .item:focus {
-  background: var(--color-surface-3);
-  color: var(--color-text-1);
+  background: var(--color-base-bg-hover);
+  color: var(--color-base-text-strong);
 }
 
 .item[data-disabled] {
@@ -123,50 +119,57 @@
   user-select: none;
   align-items: center;
   border-radius: var(--radius-1);
-  padding: var(--size-1) var(--size-2);
-  padding-left: var(--size-8);
-  font-size: var(--font-size-2);
+  padding: var(--space-0-5) 0;
+  padding-left: var(--space-6);
   outline: none;
+}
+
+.checkbox:hover {
+  background: var(--color-base-bg-hover);
+  color: var(--color-base-text-strong);
+}
+
+.checkbox:active {
+  background: var(--color-base-bg-active);
+  color: var(--color-base-text-strong);
+}
+
+.checkbox[data-state="checked"] {
+  background: var(--color-base-bg-active);
+  color: var(--color-base-text-strong);
 }
 
 .indicator {
   position: absolute;
-  left: var(--size-2);
-  display: flex;
-  height: var(--size-3);
-  width: var(--size-3);
-  align-items: center;
-  justify-content: center;
+  left: var(--space-2);
 }
 
 .icon {
-  height: var(--size-4);
-  width: var(--size-4);
+  aspect-ratio: 1;
+  width: var(--size-2-5);
 }
 
 .circleIcon {
-  height: var(--size-2);
-  width: var(--size-2);
+  aspect-ratio: 1;
+  width: var(--size-1-5);
   fill: currentColor;
 }
 
 .label {
-  padding: var(--size-2);
-  font-size: var(--font-size-2);
-  font-weight: var(--font-weight-6);
+  padding: var(--space-2);
+  font-weight: var(--font-weight-5);
 }
 
 .separator {
-  margin: var(--size-1) calc(var(--size-1) * -1);
   height: var(--border-size-1);
-  background: var(--color-surface-3);
+  background: var(--color-base-border-subtle);
 }
 
 .shortcut {
   margin-left: auto;
   font-size: var(--font-size-0);
   letter-spacing: var(--font-letterspacing-4);
-  color: var(--color-text-2);
+  color: var(--color-base-text-subtle);
 }
 
 @keyframes contentShow {

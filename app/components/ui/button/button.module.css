@@ -2,17 +2,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--size-2);
+  column-gap: var(--space-1);
   white-space: nowrap;
   border-radius: var(--radius-2);
   font-size: var(--font-size-2);
-  font-weight: var(--font-weight-5);
   transition: colors 200ms var(--ease-3);
 }
 
 .base:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 2px var(--color-surface-4);
+  box-shadow: 0 0 0 2px var(--color-accent--border); /* TODO: fix shadow color*/
 }
 
 .base:disabled {
@@ -22,56 +21,61 @@
 
 .base svg {
   pointer-events: none;
-  width: var(--size-4);
-  height: var(--size-4);
-  flex-shrink: 0;
+  width: var(--size-2);
+  aspect-ratio: 1;
+  margin-inline-start: -2px;
 }
 
 /* Variants */
 .default {
-  background: var(--color-brand-1);
-  color: var(--color-surface-1);
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
 }
 
 .default:hover {
-  background: color-mix(in srgb, var(--color-brand-1) 90%, transparent);
+  background: var(--color-pop-bg-hover);
+}
+
+.default:focus {
+  box-shadow: 0 0 0 2px var(--color-base-border-hover);
+}
+
+.default:active {
+  background: var(--color-accent-bg-active);
 }
 
 .destructive {
-  background: var(--red-9);
-  color: var(--color-surface-1);
+  background: var(--color-danger-bg);
+  color: var(--color-danger-text);
 }
 
 .destructive:hover {
-  background: color-mix(in srgb, var(--red-9) 90%, transparent);
+  background: color-mix(in srgb, var(--color-danger-bg-hover) 90%, transparent);
 }
 
 .outline {
-  border: var(--border-size-1) solid var(--color-surface-3);
-  background: var(--color-surface-1);
+  border: var(--border-size-1) solid var(--color-accent-border);
+  background: transparent;
+  color: var(--color-accent-text);
 }
 
 .outline:hover {
-  background: var(--color-surface-2);
-  color: var(--color-text-1);
+  border: var(--border-size-1) solid var(--color-accent-border-hover);
+  color: var(--color-accent-text-strong);
 }
 
 .secondary {
-  background: var(--color-surface-3);
-  color: var(--color-text-2);
+  background: var(--color-accent-bg);
+  color: var(--color-accent-text);
 }
 
 .secondary:hover {
-  background: color-mix(in srgb, var(--color-surface-3) 80%, transparent);
-}
-
-.ghost:hover {
-  background: var(--color-surface-2);
-  color: var(--color-text-1);
+  background: color-mix(in srgb, var(--color-accent-bg-hover) 80%, transparent);
 }
 
 .link {
-  color: var(--color-brand-1);
+  background: transparent;
+  color: var(--color-accent-text);
   text-underline-offset: 4px;
 }
 
@@ -81,23 +85,15 @@
 
 /* Sizes */
 .sizeDefault {
-  height: var(--size-10);
-  padding: var(--size-2) var(--size-4);
+  padding: var(--space-0-5) var(--space-2-5);
 }
 
 .sizeSm {
-  height: var(--size-9);
-  padding: 0 var(--size-3);
+  padding: 0 var(--space-2);
   border-radius: var(--radius-2);
 }
 
 .sizeLg {
-  height: var(--size-11);
-  padding: 0 var(--size-8);
+  padding: var(--space-1) var(--space-4);
   border-radius: var(--radius-2);
-}
-
-.sizeIcon {
-  height: var(--size-10);
-  width: var(--size-10);
 }

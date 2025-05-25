@@ -2,7 +2,7 @@
   position: fixed;
   inset: 0;
   z-index: var(--layer-5);
-  background: color-mix(in srgb, var(--color-surface-1) 80%, transparent);
+  background: color-mix(in srgb, var(--color-base-bg-app) 80%, transparent);
 }
 
 .overlay[data-state="open"] {
@@ -19,15 +19,15 @@
   top: 50%;
   z-index: var(--layer-5);
   display: grid;
-  width: 100%;
-  max-width: 32rem;
   transform: translate(-50%, -50%);
-  gap: var(--size-4);
-  border: var(--border-size-1) solid var(--color-surface-3);
-  background: var(--color-surface-1);
-  padding: var(--size-6);
+  gap: var(--space-2);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
+  background: var(--color-base-bg);
+  color: var(--color-base-text);
+  padding: var(--space-4);
   box-shadow: var(--shadow-4);
   transition: all 200ms var(--ease-3);
+  border-radius: var(--radius-3);
 }
 
 .content[data-state="open"] {
@@ -38,33 +38,24 @@
   animation: contentHide 200ms var(--ease-3);
 }
 
-@media (min-width: 640px) {
-  .content {
-    border-radius: var(--radius-3);
-  }
-}
-
 .closeButton {
+  display: flex;
   position: absolute;
   right: var(--size-4);
   top: var(--size-4);
   border-radius: var(--radius-1);
-  opacity: 0.7;
-  transition: opacity 200ms var(--ease-3);
+  background-color: transparent;
+  color: var(--color-base-text-subtle);
 }
 
 .closeButton:hover {
-  opacity: 1;
+  background-color: var(--color-base-bg-hover);
+  color: var(--color-base-text);
 }
 
 .closeButton:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--color-surface-4);
-}
-
-.closeButton[data-state="open"] {
-  background: var(--color-surface-3);
-  color: var(--color-text-2);
+  box-shadow: 0 0 0 2px var(--color-base-border-subtle);
 }
 
 .closeButton:disabled {
@@ -72,46 +63,29 @@
 }
 
 .closeIcon {
-  height: var(--size-4);
-  width: var(--size-4);
+  aspect-ratio: 1;
+  width: var(--size-2-5);
 }
 
 .header {
   display: flex;
   flex-direction: column;
-  gap: var(--size-1);
+  gap: var(--space-1);
   text-align: center;
-}
-
-@media (min-width: 640px) {
-  .header {
-    text-align: left;
-  }
+  text-align: left;
 }
 
 .footer {
   display: flex;
   flex-direction: column-reverse;
-  gap: var(--size-2);
-}
-
-@media (min-width: 640px) {
-  .footer {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
+  justify-content: flex-end;
+  gap: var(--space-0-5);
 }
 
 .title {
-  font-size: var(--font-size-4);
-  font-weight: var(--font-weight-6);
-  line-height: 1;
-  letter-spacing: var(--font-letterspacing-1);
 }
 
 .description {
-  font-size: var(--font-size-2);
-  color: var(--color-text-2);
 }
 
 @keyframes contentShow {

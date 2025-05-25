@@ -28,7 +28,7 @@ const PaginationLink = ({ className, isActive, size = "icon", ...props }: Pagina
     aria-current={isActive ? "page" : undefined}
     className={classNames(
       styles.link,
-      isActive ? styles.linkOutline : styles.linkGhost,
+      isActive ? styles.pageActive : styles.page,
       size === "icon" && styles.linkIcon,
       className
     )}
@@ -65,7 +65,7 @@ PaginationNext.displayName = "PaginationNext";
 
 const PaginationEllipsis = ({ className, ...props }: React.ComponentProps<"span">) => (
   <span aria-hidden className={classNames(styles.ellipsis, className)} {...props}>
-    <MoreHorizontal className={styles.icon} />
+    <MoreHorizontal className={styles.ellipsis} />
     <span className="sr-only">More pages</span>
   </span>
 );

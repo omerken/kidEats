@@ -49,11 +49,11 @@
   --border-size-5: 25px;
 
   --radius-1: 2px;
-  --radius-2: 5px;
-  --radius-3: 1rem;
-  --radius-4: 2rem;
-  --radius-5: 4rem;
-  --radius-6: 8rem;
+  --radius-2: 3px;
+  --radius-3: 4px;
+  --radius-4: 6px;
+  --radius-5: 8px;
+  --radius-6: 12px;
 
   --radius-drawn-1: 255px 15px 225px 15px/15px 225px 15px 255px;
   --radius-drawn-2: 125px 10px 20px 185px/25px 205px 205px 25px;

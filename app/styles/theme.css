@@ -4,6 +4,7 @@ The format for the CSS variables is as follows:
   --font-{type}: {value};
   --color-{type}-{variant}: {value};
 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 html {
   /* Typography */
@@ -14,37 +15,106 @@ html {
   --font-caption: var(--font-size-fluid-0) var(--font-system-ui);
   --font-code: var(--font-size-fluid-0) var(--font-monospace-code);
 
+  font-family: Inter;
+
   /* Light Theme */
-  --color-brand-1: var(--violet-6);
-  --color-brand-2: var(--violet-7);
+  /* Base neutral colors */
+  --color-base-bg-app: var(--olive1);
+  --color-base-bg-subtle: var(--olive2);
+  --color-base-bg: var(--olive3);
+  --color-base-bg-hover: var(--olive4);
+  --color-base-bg-active: var(--olive5);
 
-  --color-text-1: var(--gray-8);
-  --color-text-2: var(--gray-7);
+  --color-base-border-subtle: var(--olive6);
+  --color-base-border: var(--olive7);
+  --color-base-border-hover: var(--olive8);
 
-  --color-surface-1: var(--gray-0);
-  --color-surface-2: var(--gray-1);
-  --color-surface-3: var(--gray-2);
-  --color-surface-4: var(--gray-3);
+  --color-base-text-muted: var(--olive9);
+  --color-base-text-subtle: var(--olive10);
+  --color-base-text: var(--olive11);
+  --color-base-text-strong: var(--olive12);
 
-  --color-surface-success: var(--green-3);
-  --color-surface-danger: var(--red-3);
-}
+  /* Accent colors */
+  --color-accent-app: var(--grass1);
+  --color-accent-bg-subtle: var(--grass2);
+  --color-accent-bg: var(--grass3);
+  --color-accent-bg-hover: var(--grass4);
+  --color-accent-bg-active: var(--grass5);
 
-@media (prefers-color-scheme: dark) {
-  html {
-    /* Dark Theme */
-    --color-brand-1: var(--violet-3);
-    --color-brand-2: var(--violet-4);
+  --color-accent-border-subtle: var(--grass6);
+  --color-accent-border: var(--grass7);
+  --color-accent-border-hover: var(--grass8);
 
-    --color-text-1: var(--gray-3);
-    --color-text-2: var(--gray-5);
+  --color-accent-text-muted: var(--grass9);
+  --color-accent-text-subtle: var(--grass10);
+  --color-accent-text: var(--grass11);
+  --color-accent-text-strong: var(--grass12);
 
-    --color-surface-1: var(--gray-12);
-    --color-surface-2: var(--gray-11);
-    --color-surface-3: var(--gray-10);
-    --color-surface-4: var(--gray-9);
+  /* Pop colors */
+  --color-pop-bg: var(--grass9);
+  --color-pop-bg-hover: var(--grass10);
+  --color-pop-text: white;
 
-    --color-surface-success: var(--green-9);
-    --color-surface-danger: var(--red-9);
+  /* Danger colors */
+  --color-danger-bg: var(--red9);
+  --color-danger-bg-hover: var(--red10);
+  --color-danger-text: white;
+
+  /* Success colors */
+  --color-success-bg: var(--green9);
+  --color-success-bg-hover: var(--green10);
+  --color-success-text: white;
+
+  /* color native elements */
+  background-color: var(--color-base-bg-app);
+
+  /* Dark Theme */
+  @media (prefers-color-scheme: dark) {
+    /* Base neutral colors */
+    --color-base-bg-app: var(--olive1-dark);
+    --color-base-bg-subtle: var(--olive2-dark);
+    --color-base-bg: var(--olive3-dark);
+    --color-base-bg-hover: var(--olive4-dark);
+    --color-base-bg-active: var(--olive5-dark);
+
+    --color-base-border-subtle: var(--olive6-dark);
+    --color-base-border: var(--olive7-dark);
+    --color-base-border-hover: var(--olive8-dark);
+
+    --color-base-text-muted: var(--olive9-dark);
+    --color-base-text-subtle: var(--olive10-dark);
+    --color-base-text: var(--olive11-dark);
+    --color-base-text-strong: var(--olive12-dark);
+
+    /* Accent colors */
+    --color-accent-app: var(--grass1-dark);
+    --color-accent-bg-subtle: var(--grass2-dark);
+    --color-accent-bg: var(--grass3-dark);
+    --color-accent-bg-hover: var(--grass4-dark);
+    --color-accent-bg-active: var(--grass5-dark);
+
+    --color-accent-border-subtle: var(--grass6-dark);
+    --color-accent-border: var(--grass7-dark);
+    --color-accent-border-hover: var(--grass8-dark);
+
+    --color-accent-text-muted: var(--grass9-dark);
+    --color-accent-text-subtle: var(--grass10-dark);
+    --color-accent-text: var(--grass11-dark);
+    --color-accent-text-strong: var(--grass12-dark);
+
+    /* Pop colors */
+    --color-pop-bg: var(--grass9-dark);
+    --color-pop-bg-hover: var(--grass10-dark);
+    --color-pop-text: white;
+
+    /* Danger colors */
+    --color-danger-bg: var(--red9-dark);
+    --color-danger-bg-hover: var(--red10-dark);
+    --color-danger-text: white;
+
+    /* Success colors */
+    --color-success-bg: var(--green9-dark);
+    --color-success-bg-hover: var(--green10-dark);
+    --color-success-text: white;
   }
 }

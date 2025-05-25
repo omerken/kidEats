@@ -1,22 +1,10 @@
 .wrapper {
   display: flex;
-  min-height: 100svh;
   width: 100%;
 }
 
-.wrapper[data-has-inset="true"] {
-  background: var(--color-surface-2);
-}
-
 .sidebar {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .sidebar {
-    display: block;
-    color: var(--color-text-1);
-  }
+  display: block;
 }
 
 .fixedWrapper {
@@ -33,12 +21,13 @@
   height: 100%;
   width: 100%;
   flex-direction: column;
-  background: var(--color-surface-1);
+  background: var(--color-base-bg-subtle);
+  color: var(--color-base-text);
 }
 
 .contentFloating {
   border-radius: var(--radius-3);
-  border: var(--border-size-1) solid var(--color-surface-3);
+  border: var(--border-size-1) solid red;
   box-shadow: var(--shadow-3);
 }
 
@@ -84,6 +73,7 @@
   min-width: 0;
   flex-direction: column;
   gap: var(--size-1);
+  padding: 0;
 }
 
 .rail {
@@ -101,7 +91,7 @@
   inset-block: 0;
   left: 50%;
   width: 2px;
-  background: var(--color-surface-3);
+  background: red;
 }
 
 [data-side="left"] .rail {
@@ -129,7 +119,7 @@
 }
 
 [data-collapsible="offcanvas"] .rail:hover {
-  background: var(--color-surface-1);
+  background: red;
 }
 
 [data-side="left"][data-collapsible="offcanvas"] .rail {
@@ -147,7 +137,7 @@
   padding-inline: var(--size-2);
   font-size: var(--font-size-0);
   font-weight: var(--font-weight-5);
-  color: var(--color-text-2);
+  color: red;
   transition: margin 200ms var(--ease-3), opacity 200ms var(--ease-3);
 }
 
@@ -166,7 +156,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-1);
-  color: var(--color-text-1);
+  color: red;
   outline: none;
   transition: transform 150ms var(--ease-3);
 }
@@ -185,12 +175,12 @@
 }
 
 .groupAction:hover {
-  background: var(--color-surface-2);
-  color: var(--color-text-1);
+  background: red;
+  color: red;
 }
 
 .groupAction:focus-visible {
-  box-shadow: 0 0 0 2px var(--color-brand-1);
+  box-shadow: 0 0 0 2px red;
 }
 
 [data-collapsible="icon"] .groupAction {
@@ -217,7 +207,7 @@
   gap: var(--size-2);
   padding: var(--size-2);
   font-size: var(--font-size-2);
-  color: var(--color-text-1);
+  color: red;
   border-radius: var(--radius-2);
   transition: background 150ms var(--ease-3);
   height: var(--size-8);
@@ -227,26 +217,26 @@
 }
 
 .menuButton:hover {
-  background: var(--color-surface-2);
+  background: red;
 }
 
 .menuButton:focus-visible {
-  box-shadow: 0 0 0 2px var(--color-brand-1);
+  box-shadow: 0 0 0 2px red;
 }
 
 .menuButtonActive {
-  background: var(--color-surface-2);
+  background: red;
   font-weight: var(--font-weight-5);
 }
 
 .menuButtonOutline {
-  background: var(--color-surface-1);
-  box-shadow: 0 0 0 1px var(--color-surface-3);
+  background: red;
+  box-shadow: 0 0 0 1px red;
 }
 
 .menuButtonOutline:hover {
-  background: var(--color-surface-2);
-  box-shadow: 0 0 0 1px var(--color-surface-2);
+  background: red;
+  box-shadow: 0 0 0 1px red;
 }
 
 .menuButtonSm {
@@ -278,7 +268,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--size-1);
-  color: var(--color-text-2);
+  color: red;
   border-radius: var(--radius-1);
 }
 
@@ -295,8 +285,8 @@
 }
 
 .menuAction:hover {
-  background: var(--color-surface-3);
-  color: var(--color-text-1);
+  background: red;
+  color: red;
 }
 
 [data-show-on-hover="true"] {
@@ -337,7 +327,7 @@
   padding-inline: var(--size-1);
   font-size: var(--font-size-0);
   font-weight: var(--font-weight-5);
-  color: var(--color-text-1);
+  color: red;
   user-select: none;
   pointer-events: none;
 }
@@ -356,7 +346,7 @@
 
 .menuButton:hover + .menuBadge,
 [data-active="true"] + .menuBadge {
-  color: var(--color-text-1);
+  color: red;
 }
 
 [data-collapsible="icon"] .menuBadge {
@@ -391,7 +381,7 @@
   margin-left: var(--size-3-5);
   padding-left: var(--size-2-5);
   padding-block: var(--size-0-5);
-  border-left: 1px solid var(--color-surface-3);
+  border-left: 1px solid red;
   min-width: 0;
   transform: translateX(1px);
 }
@@ -410,7 +400,7 @@
   gap: var(--size-2);
   padding: var(--size-1) var(--size-2);
   font-size: var(--font-size-2);
-  color: var(--color-text-2);
+  color: red;
   border-radius: var(--radius-2);
   transition: background 150ms var(--ease-3);
   height: var(--size-7);
@@ -421,17 +411,17 @@
 }
 
 .menuSubButton:hover {
-  background: var(--color-surface-2);
-  color: var(--color-text-1);
+  background: red;
+  color: red;
 }
 
 .menuSubButton:focus-visible {
-  box-shadow: 0 0 0 2px var(--color-brand-1);
+  box-shadow: 0 0 0 2px red;
 }
 
 .menuSubButtonActive {
-  background: var(--color-surface-2);
-  color: var(--color-text-1);
+  background: red;
+  color: red;
   font-weight: var(--font-weight-5);
 }
 
@@ -456,12 +446,12 @@
 .input {
   height: var(--size-8);
   width: 100%;
-  background: var(--color-surface-1);
+  background: red;
   box-shadow: none;
 }
 
 .input:focus-visible {
-  box-shadow: 0 0 0 2px var(--color-brand-1);
+  box-shadow: 0 0 0 2px red;
 }
 
 .inset {
@@ -489,9 +479,9 @@
 
 .mobileContent {
   width: var(--sidebar-width);
-  background: var(--color-surface-1);
+  background: red;
   padding: 0;
-  color: var(--color-text-1);
+  color: red;
 }
 
 .mobileContent > button {
