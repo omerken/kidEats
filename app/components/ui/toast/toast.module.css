@@ -87,7 +87,7 @@
 }
 
 .destructiveClose:focus {
-  box-shadow: 0 0 0 2px var(--red-4);
+  box-shadow: 0 0 0 2px var(--color-danger-bg);
 }
 
 .title {
