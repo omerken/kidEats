@@ -1,7 +1,4 @@
-/* 
-This file contains the CSS variables for the theme of the application.
-This file contains colors, gradients, and noise filters from the Open Props library.
-*/
+/* This file contains light and dark colors palettes. */
 
 :where(html) {
   --gray-1: oklch(99.089% 0 none);
@@ -16,6 +13,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --gray-10: oklch(60.851% 0 none);
   --gray-11: oklch(50.309% 0 none);
   --gray-12: oklch(24.301% 0 none);
+  --gray-13: white;
 
   --mauve-1: oklch(99.185% 0.00181 321.13);
   --mauve-2: oklch(98.325% 0.00327 311.22);
@@ -29,6 +27,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --mauve-10: oklch(61.059% 0.0185 293.07);
   --mauve-11: oklch(50.476% 0.01599 296.08);
   --mauve-12: oklch(24.461% 0.0134 298.05);
+  --mauve-13: white;
 
   --slate-1: oklch(99.12% 0.00148 286.37);
   --slate-2: oklch(98.239% 0.00296 286.35);
@@ -42,6 +41,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --slate-10: oklch(60.975% 0.01583 273.24);
   --slate-11: oklch(50.265% 0.01374 263.44);
   --slate-12: oklch(24.125% 0.00978 249.52);
+  --slate-13: white;
 
   --sage-1: oklch(99.233% 0.00254 160.4);
   --sage-2: oklch(98.078% 0.00266 171.2);
@@ -55,6 +55,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --sage-10: oklch(60.481% 0.00968 172.84);
   --sage-11: oklch(50.074% 0.00777 175.92);
   --sage-12: oklch(23.977% 0.01214 166.78);
+  --sage-13: white;
 
   --olive-1: oklch(99.305% 0.00152 149.08);
   --olive-2: oklch(98.297% 0.00332 144.76);
@@ -68,6 +69,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --olive-10: oklch(60.541% 0.01165 136.54);
   --olive-11: oklch(50.012% 0.0111 139.89);
   --olive-12: oklch(24.186% 0.01119 138.23);
+  --olive-13: white;
 
   --sand-1: oklch(99.37% 0.00111 106.42);
   --sand-2: oklch(98.221% 0.00148 106.43);
@@ -81,6 +83,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --sand-10: oklch(60.567% 0.00958 106.68);
   --sand-11: oklch(49.786% 0.00787 106.68);
   --sand-12: oklch(24.344% 0.00793 96.313);
+  --sand-13: white;
 
   --tomato-1: oklch(99.351% 0.00311 22.753);
   --tomato-2: oklch(98.419% 0.00713 31.019);
@@ -94,6 +97,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --tomato-10: oklch(60.397% 0.19525 33.259);
   --tomato-11: oklch(56.654% 0.19765 32.806);
   --tomato-12: oklch(34.613% 0.07983 30.526);
+  --tomato-13: white;
 
   --red-1: oklch(99.351% 0.00311 22.753);
   --red-2: oklch(98.317% 0.00828 16.025);
@@ -107,6 +111,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --red-10: oklch(59.99% 0.19524 23.889);
   --red-11: oklch(55.725% 0.19775 25.135);
   --red-12: oklch(33.913% 0.10904 16.681);
+  --red-13: white;
 
   --ruby-1: oklch(99.382% 0.00329 356.31);
   --ruby-2: oklch(98.341% 0.00836 8.4106);
@@ -120,6 +125,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --ruby-10: oklch(60.131% 0.19617 13.393);
   --ruby-11: oklch(54.888% 0.19854 13.924);
   --ruby-12: oklch(34.12% 0.10967 10.038);
+  --ruby-13: white;
 
   --crimson-1: oklch(99.382% 0.00329 356.31);
   --crimson-2: oklch(98.176% 0.00804 357.23);
@@ -133,6 +139,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --crimson-10: oklch(60.799% 0.21112 2.3553);
   --crimson-11: oklch(55.209% 0.20742 4.4871);
   --crimson-12: oklch(34.079% 0.11285 356.83);
+  --crimson-13: white;
 
   --pink-1: oklch(99.414% 0.00404 336.25);
   --pink-2: oklch(98.315% 0.00942 339.97);
@@ -146,6 +153,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --pink-10: oklch(59.566% 0.20722 346.5);
   --pink-11: oklch(55.664% 0.20628 347.33);
   --pink-12: oklch(34.999% 0.12899 345.45);
+  --pink-13: white;
 
   --plum-1: oklch(99.326% 0.00473 316.87);
   --plum-2: oklch(98.313% 0.00917 325.99);
@@ -159,6 +167,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --plum-10: oklch(55.267% 0.18095 322.1);
   --plum-11: oklch(52.13% 0.17283 322.02);
   --plum-12: oklch(33.764% 0.12484 321.41);
+  --plum-13: white;
 
   --purple-1: oklch(99.302% 0.00382 325.35);
   --purple-2: oklch(98.228% 0.00915 313.12);
@@ -172,6 +181,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --purple-10: oklch(52.422% 0.17558 305.69);
   --purple-11: oklch(51.603% 0.17396 305.7);
   --purple-12: oklch(32.231% 0.11005 303.8);
+  --purple-13: white;
 
   --violet-1: oklch(99.208% 0.00279 308.03);
   --violet-2: oklch(98.3% 0.00899 295.04);
@@ -185,6 +195,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --violet-10: oklch(51.071% 0.17697 287.64);
   --violet-11: oklch(50.802% 0.15914 288.59);
   --violet-12: oklch(31.271% 0.09752 286.76);
+  --violet-13: white;
 
   --iris-1: oklch(99.448% 0.00258 286.35);
   --iris-2: oklch(98.125% 0.00926 284.1);
@@ -198,6 +209,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --iris-10: oklch(50.863% 0.18622 277.49);
   --iris-11: oklch(51.044% 0.17334 279.69);
   --iris-12: oklch(31.453% 0.09886 277.36);
+  --iris-13: white;
 
   --indigo-1: oklch(99.424% 0.00147 286.37);
   --indigo-2: oklch(98.29% 0.00803 271.38);
@@ -211,6 +223,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --indigo-10: oklch(51.121% 0.19455 266.48);
   --indigo-11: oklch(50.972% 0.17281 267.11);
   --indigo-12: oklch(31.257% 0.08559 268.56);
+  --indigo-13: white;
 
   --blue-1: oklch(99.319% 0.00329 247.64);
   --blue-2: oklch(98.15% 0.00955 243.26);
@@ -224,6 +237,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --blue-10: oklch(62.113% 0.18373 251.92);
   --blue-11: oklch(55.774% 0.1889 253.01);
   --blue-12: oklch(32.397% 0.0965 258.96);
+  --blue-13: white;
 
   --cyan-1: oklch(99.211% 0.00372 219.25);
   --cyan-2: oklch(98.028% 0.00896 202.89);
@@ -237,6 +251,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --cyan-10: oklch(62.672% 0.1141 221.32);
   --cyan-11: oklch(54.031% 0.12699 223.72);
   --cyan-12: oklch(33.168% 0.05277 218.57);
+  --cyan-13: white;
 
   --teal-1: oklch(99.388% 0.0047 177.55);
   --teal-2: oklch(98.122% 0.00898 179);
@@ -250,6 +265,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --teal-10: oklch(61.947% 0.10958 181.2);
   --teal-11: oklch(52.959% 0.12432 179.04);
   --teal-12: oklch(32.688% 0.05042 185.02);
+  --teal-13: white;
 
   --jade-1: oklch(99.452% 0.00374 172.63);
   --jade-2: oklch(98.152% 0.00892 160.3);
@@ -263,6 +279,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --jade-10: oklch(61.341% 0.1099 170.61);
   --jade-11: oklch(52.889% 0.127 167.17);
   --jade-12: oklch(32.569% 0.04102 169.78);
+  --jade-13: white;
 
   --green-1: oklch(99.429% 0.00431 159.06);
   --green-2: oklch(98.158% 0.00911 155.31);
@@ -276,6 +293,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --green-10: oklch(61.125% 0.12632 158.31);
   --green-11: oklch(52.904% 0.13304 158.33);
   --green-12: oklch(32.176% 0.04742 164.62);
+  --green-13: white;
 
   --grass-1: oklch(99.398% 0.00534 146.39);
   --grass-2: oklch(98.198% 0.00919 145.93);
@@ -289,6 +307,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --grass-10: oklch(61.378% 0.14158 147.32);
   --grass-11: oklch(52.675% 0.12962 147.18);
   --grass-12: oklch(32.683% 0.05348 148.58);
+  --grass-13: white;
 
   --brown-1: oklch(99.434% 0.0015 63.24);
   --brown-2: oklch(98.321% 0.0058 65.735);
@@ -302,6 +321,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --brown-10: oklch(59.673% 0.0725 59.281);
   --brown-11: oklch(51.207% 0.05834 55.458);
   --brown-12: oklch(33.155% 0.01804 46.975);
+  --brown-13: white;
 
   --bronze-1: oklch(99.154% 0.00103 15.916);
   --bronze-2: oklch(98.062% 0.00733 42.988);
@@ -315,6 +335,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --bronze-10: oklch(58.796% 0.04519 42.443);
   --bronze-11: oklch(51.049% 0.04372 38.366);
   --bronze-12: oklch(32.923% 0.02932 35.241);
+  --bronze-13: white;
 
   --gold-1: oklch(99.37% 0.00111 106.42);
   --gold-2: oklch(98.085% 0.00859 97.335);
@@ -328,6 +349,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --gold-10: oklch(58.774% 0.04655 77.42);
   --gold-11: oklch(50.388% 0.03934 78.1);
   --gold-12: oklch(33.208% 0.01894 81.666);
+  --gold-13: white;
 
   --sky-1: oklch(99.332% 0.00533 211.91);
   --sky-2: oklch(97.986% 0.00993 217.67);
@@ -341,6 +363,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --sky-10: oklch(83.765% 0.10373 219.57);
   --sky-11: oklch(52.564% 0.10803 232.54);
   --sky-12: oklch(35.114% 0.05723 241.61);
+  --sky-13: black;
 
   --mint-1: oklch(99.278% 0.00526 183.68);
   --mint-2: oklch(98.204% 0.01007 178.66);
@@ -354,6 +377,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --mint-10: oklch(84.116% 0.09975 177.77);
   --mint-11: oklch(51.176% 0.09498 176.02);
   --mint-12: oklch(34.97% 0.05054 181.44);
+  --mint-13: black;
 
   --lime-1: oklch(99.243% 0.00419 120.67);
   --lime-2: oklch(98.173% 0.00978 116.7);
@@ -367,6 +391,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --lime-10: oklch(85.888% 0.18774 126.73);
   --lime-11: oklch(54.375% 0.11131 128.63);
   --lime-12: oklch(35.366% 0.05741 121.18);
+  --lime-13: black;
 
   --yellow-1: oklch(99.285% 0.00516 106.49);
   --yellow-2: oklch(98.841% 0.02505 102.92);
@@ -380,6 +405,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --yellow-10: oklch(89.669% 0.18512 97.531);
   --yellow-11: oklch(57.442% 0.13641 81.691);
   --yellow-12: oklch(35.784% 0.046 86.635);
+  --yellow-13: black;
 
   --amber-1: oklch(99.403% 0.00277 84.624);
   --amber-2: oklch(98.623% 0.02404 100.26);
@@ -393,6 +419,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --amber-10: oklch(83.146% 0.1679 80.938);
   --amber-11: oklch(56.921% 0.14389 67.281);
   --amber-12: oklch(35.19% 0.04852 53.737);
+  --amber-13: black;
 
   --orange-1: oklch(99.216% 0.00264 40.728);
   --orange-2: oklch(97.875% 0.01536 70.826);
@@ -406,6 +433,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --orange-10: oklch(66.216% 0.19444 43.486);
   --orange-11: oklch(59.187% 0.18602 46.954);
   --orange-12: oklch(35.012% 0.06868 40.823);
+  --orange-13: white;
 }
 
 :where(html) {
@@ -421,6 +449,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-gray-10: oklch(58.434% 0 none);
   --dark-gray-11: oklch(77.003% 0 none);
   --dark-gray-12: oklch(94.886% 0 none);
+  --dark-gray-13: white;
 
   --dark-mauve-1: oklch(17.989% 0.00426 307.79);
   --dark-mauve-2: oklch(21.515% 0.00408 307.84);
@@ -434,6 +463,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-mauve-10: oklch(58.622% 0.01666 295.36);
   --dark-mauve-11: oklch(76.976% 0.01401 296.61);
   --dark-mauve-12: oklch(94.942% 0.00261 286.35);
+  --dark-mauve-13: white;
 
   --dark-slate-1: oklch(17.89% 0.00397 285.99);
   --dark-slate-2: oklch(21.327% 0.00408 264.41);
@@ -447,6 +477,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-slate-10: oklch(58.298% 0.01416 263.32);
   --dark-slate-11: oklch(76.773% 0.01039 261.27);
   --dark-slate-12: oklch(94.877% 0.0028 264.57);
+  --dark-slate-13: white;
 
   --dark-sage-1: oklch(17.923% 0.00359 167.38);
   --dark-sage-2: oklch(21.106% 0.00374 160.17);
@@ -460,6 +491,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-sage-10: oklch(57.934% 0.01597 170.51);
   --dark-sage-11: oklch(76.605% 0.00999 167.51);
   --dark-sage-12: oklch(94.733% 0.00237 167.71);
+  --dark-sage-13: white;
 
   --dark-olive-1: oklch(17.973% 0.00428 128.34);
   --dark-olive-2: oklch(21.166% 0.00411 128.29);
@@ -473,6 +505,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-olive-10: oklch(58.124% 0.01633 140.06);
   --dark-olive-11: oklch(76.594% 0.01277 139.5);
   --dark-olive-12: oklch(94.701% 0.00336 144.76);
+  --dark-olive-13: white;
 
   --dark-sand-1: oklch(17.756% 0.00227 106.63);
   --dark-sand-2: oklch(21.293% 0.00217 106.58);
@@ -486,6 +519,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-sand-10: oklch(58.107% 0.01074 94.047);
   --dark-sand-11: oklch(76.664% 0.00914 97.383);
   --dark-sand-12: oklch(94.831% 0.00261 106.45);
+  --dark-sand-13: white;
 
   --dark-tomato-1: oklch(18.687% 0.01173 19.587);
   --dark-tomato-2: oklch(20.768% 0.01671 32.024);
@@ -499,6 +533,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-tomato-10: oklch(66.503% 0.17914 34.149);
   --dark-tomato-11: oklch(78.429% 0.16357 36.019);
   --dark-tomato-12: oklch(89.855% 0.04662 31.109);
+  --dark-tomato-13: white;
 
   --dark-red-1: oklch(18.801% 0.01333 19.389);
   --dark-red-2: oklch(20.479% 0.02152 14.735);
@@ -512,6 +547,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-red-10: oklch(66.464% 0.17734 23.092);
   --dark-red-11: oklch(78.366% 0.16185 22.288);
   --dark-red-12: oklch(90.215% 0.05283 6.1393);
+  --dark-red-13: white;
 
   --dark-ruby-1: oklch(18.88% 0.01366 2.9041);
   --dark-ruby-2: oklch(20.765% 0.01589 5.2903);
@@ -525,6 +561,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-ruby-10: oklch(66.351% 0.17935 13.693);
   --dark-ruby-11: oklch(78.614% 0.16114 17.006);
   --dark-ruby-12: oklch(90.541% 0.05266 355.83);
+  --dark-ruby-13: white;
 
   --dark-crimson-1: oklch(18.927% 0.01431 354.17);
   --dark-crimson-2: oklch(20.679% 0.02212 352.9);
@@ -538,6 +575,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-crimson-10: oklch(66.369% 0.19672 1.9508);
   --dark-crimson-11: oklch(78.737% 0.167 6.719);
   --dark-crimson-12: oklch(90.883% 0.05407 346.66);
+  --dark-crimson-13: white;
 
   --dark-pink-1: oklch(19.067% 0.01741 334.93);
   --dark-pink-2: oklch(20.737% 0.03128 338.17);
@@ -551,6 +589,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-pink-10: oklch(64.996% 0.19695 346.18);
   --dark-pink-11: oklch(78.869% 0.19004 350.74);
   --dark-pink-12: oklch(90.528% 0.05862 343.23);
+  --dark-pink-13: white;
 
   --dark-plum-1: oklch(18.996% 0.01746 326.98);
   --dark-plum-2: oklch(21.004% 0.03106 327.68);
@@ -564,6 +603,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-plum-10: oklch(61.595% 0.18207 322.12);
   --dark-plum-11: oklch(78.591% 0.15407 322.06);
   --dark-plum-12: oklch(90.616% 0.05508 325.83);
+  --dark-plum-13: white;
 
   --dark-purple-1: oklch(19.154% 0.02222 315.98);
   --dark-purple-2: oklch(21.308% 0.03147 314.34);
@@ -577,6 +617,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-purple-10: oklch(59.59% 0.17658 306.35);
   --dark-purple-11: oklch(78.511% 0.15623 307.9);
   --dark-purple-12: oklch(91.092% 0.04856 310.95);
+  --dark-purple-13: white;
 
   --dark-violet-1: oklch(19.143% 0.02609 290.52);
   --dark-violet-2: oklch(21.128% 0.03151 299.46);
@@ -590,6 +631,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-violet-10: oklch(58.821% 0.16951 289.68);
   --dark-violet-11: oklch(77.823% 0.13654 293.62);
   --dark-violet-12: oklch(91.156% 0.04521 292.61);
+  --dark-violet-13: white;
 
   --dark-iris-1: oklch(19.277% 0.02163 284.19);
   --dark-iris-2: oklch(20.855% 0.02924 286.54);
@@ -603,6 +645,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-iris-10: oklch(58.668% 0.17206 281.19);
   --dark-iris-11: oklch(77.571% 0.13108 286.56);
   --dark-iris-12: oklch(91.42% 0.04188 286.98);
+  --dark-iris-13: white;
 
   --dark-indigo-1: oklch(19.066% 0.02472 276.72);
   --dark-indigo-2: oklch(20.883% 0.03019 275.95);
@@ -616,6 +659,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-indigo-10: oklch(58.992% 0.17569 269.19);
   --dark-indigo-11: oklch(77.723% 0.1233 273.28);
   --dark-indigo-12: oklch(91.103% 0.04279 269.99);
+  --dark-indigo-13: white;
 
   --dark-blue-1: oklch(19.318% 0.02579 256.79);
   --dark-blue-2: oklch(21.299% 0.02951 258.84);
@@ -629,6 +673,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-blue-10: oklch(68.901% 0.16967 251.46);
   --dark-blue-11: oklch(76.787% 0.13471 248.84);
   --dark-blue-12: oklch(90.721% 0.05115 238.27);
+  --dark-blue-13: white;
 
   --dark-cyan-1: oklch(19.134% 0.01716 219.89);
   --dark-cyan-2: oklch(21.407% 0.01821 225.41);
@@ -642,6 +687,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-cyan-10: oklch(69.797% 0.11953 219.12);
   --dark-cyan-11: oklch(78.558% 0.11543 213.4);
   --dark-cyan-12: oklch(90.929% 0.05685 211.73);
+  --dark-cyan-13: white;
 
   --dark-teal-1: oklch(18.889% 0.01227 184.5);
   --dark-teal-2: oklch(21.652% 0.01685 189.31);
@@ -655,6 +701,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-teal-10: oklch(68.687% 0.1227 180.32);
   --dark-teal-11: oklch(78.882% 0.14691 175.66);
   --dark-teal-12: oklch(90.512% 0.07212 175.26);
+  --dark-teal-13: white;
 
   --dark-jade-1: oklch(18.796% 0.01398 166.3);
   --dark-jade-2: oklch(21.581% 0.01796 166.11);
@@ -668,6 +715,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-jade-10: oklch(67.764% 0.12523 169.87);
   --dark-jade-11: oklch(78.535% 0.15614 167.1);
   --dark-jade-12: oklch(90.267% 0.07759 166.98);
+  --dark-jade-13: white;
 
   --dark-green-1: oklch(18.878% 0.01271 163.27);
   --dark-green-2: oklch(21.267% 0.01601 162.22);
@@ -681,6 +729,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-green-10: oklch(67.552% 0.14123 157.56);
   --dark-green-11: oklch(77.968% 0.16569 157.23);
   --dark-green-12: oklch(90.481% 0.08276 158.28);
+  --dark-green-13: white;
 
   --dark-grass-1: oklch(18.835% 0.0141 155.81);
   --dark-grass-2: oklch(21.104% 0.01411 151.48);
@@ -694,6 +743,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-grass-10: oklch(68.978% 0.14536 147.64);
   --dark-grass-11: oklch(77.981% 0.14204 148.46);
   --dark-grass-12: oklch(91.096% 0.07797 144.91);
+  --dark-grass-13: white;
 
   --dark-brown-1: oklch(17.846% 0.00496 81.547);
   --dark-brown-2: oklch(21.31% 0.00746 51.619);
@@ -707,6 +757,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-brown-10: oklch(67.44% 0.07494 61.481);
   --dark-brown-11: oklch(79.824% 0.06277 62.509);
   --dark-brown-12: oklch(91.761% 0.03596 75.667);
+  --dark-brown-13: white;
 
   --dark-bronze-1: oklch(18.064% 0.00527 41.551);
   --dark-bronze-2: oklch(21.474% 0.00504 41.544);
@@ -720,6 +771,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-bronze-10: oklch(66.867% 0.04525 44.286);
   --dark-bronze-11: oklch(79.185% 0.04295 44.501);
   --dark-bronze-12: oklch(91.509% 0.01737 50.301);
+  --dark-bronze-13: white;
 
   --dark-gold-1: oklch(18.221% 0.00225 106.62);
   --dark-gold-2: oklch(21.648% 0.00608 92.491);
@@ -733,6 +785,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-gold-10: oklch(66.22% 0.04726 77.182);
   --dark-gold-11: oklch(79.402% 0.04102 77.181);
   --dark-gold-12: oklch(91.508% 0.01368 77.441);
+  --dark-gold-13: white;
 
   --dark-sky-1: oklch(18.978% 0.02398 257.09);
   --dark-sky-2: oklch(21.613% 0.02892 258.45);
@@ -746,6 +799,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-sky-10: oklch(90.809% 0.07301 214.92);
   --dark-sky-11: oklch(79.258% 0.09863 231.67);
   --dark-sky-12: oklch(93.371% 0.05259 214.37);
+  --dark-sky-13: black;
 
   --dark-mint-1: oklch(18.838% 0.01155 192.27);
   --dark-mint-2: oklch(21.012% 0.01724 196.61);
@@ -759,6 +813,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-mint-10: oklch(91.616% 0.07962 179.36);
   --dark-mint-11: oklch(79.547% 0.11845 176.38);
   --dark-mint-12: oklch(93.049% 0.05689 168.49);
+  --dark-mint-13: black;
 
   --dark-lime-1: oklch(18.042% 0.01439 120.26);
   --dark-lime-2: oklch(20.799% 0.01935 128.97);
@@ -772,6 +827,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-lime-10: oklch(94.179% 0.17542 123.73);
   --dark-lime-11: oklch(86.777% 0.15571 124.78);
   --dark-lime-12: oklch(94.644% 0.08191 122.62);
+  --dark-lime-13: black;
 
   --dark-yellow-1: oklch(18.115% 0.01299 86.01);
   --dark-yellow-2: oklch(20.881% 0.01702 92.088);
@@ -785,6 +841,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-yellow-10: oklch(97.107% 0.18215 109.36);
   --dark-yellow-11: oklch(90.018% 0.1664 101.64);
   --dark-yellow-12: oklch(94.131% 0.07467 101.04);
+  --dark-yellow-13: black;
 
   --dark-amber-1: oklch(18.356% 0.01265 77.268);
   --dark-amber-2: oklch(21.168% 0.01795 78.676);
@@ -798,6 +855,7 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-amber-10: oklch(90.153% 0.20649 96.982);
   --dark-amber-11: oklch(87.061% 0.17536 85.068);
   --dark-amber-12: oklch(93.493% 0.07153 85.989);
+  --dark-amber-13: black;
 
   --dark-orange-1: oklch(18.643% 0.01191 53.747);
   --dark-orange-2: oklch(20.883% 0.01918 67.381);
@@ -811,4 +869,5 @@ This file contains colors, gradients, and noise filters from the Open Props libr
   --dark-orange-10: oklch(74.135% 0.1991 46.323);
   --dark-orange-11: oklch(79.898% 0.16312 50.766);
   --dark-orange-12: oklch(92.484% 0.05241 66.22);
+  --dark-orange-13: white;
 }

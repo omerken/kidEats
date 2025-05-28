@@ -1,7 +1,4 @@
-/* 
-This file contains the CSS variables for the theme of the application.
-This file offers content size, screen size, z-index, and aspect ratio tokens.
-*/
+/* This file offers content size, z-index, and aspect ratio tokens. */
 
 :where(html) {
   --size-1: 8px;

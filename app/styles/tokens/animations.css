@@ -1,5 +1,4 @@
 /* 
-This file contains the CSS variables for the theme of the application.
 This file provides easing functions (e.g. var(--ease-1)), animation tokens (e.g. var(--animation-fade-in)), 
 and keyframe declarations (@keyframes fade-in, etc.).
 */

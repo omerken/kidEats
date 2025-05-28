@@ -2,7 +2,7 @@
 This file contains the CSS variables for the theme of the application.
 The format for the CSS variables is as follows:
   --font-{type}: {value};
-  --color-{type}-{variant}: {value};
+  --color-{theme}-{type}{-variant?}: {value};
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
@@ -51,17 +51,17 @@ html {
   /* Pop colors */
   --color-pop-bg: var(--indigo-9);
   --color-pop-bg-hover: var(--indigo-10);
-  --color-pop-text: white;
+  --color-pop-text: var(--indigo-13);
 
   /* Danger colors */
   --color-danger-bg: var(--red-9);
   --color-danger-bg-hover: var(--red-10);
-  --color-danger-text: white;
+  --color-danger-text: var(--red-13);
 
   /* Success colors */
   --color-success-bg: var(--green-9);
   --color-success-bg-hover: var(--green-10);
-  --color-success-text: white;
+  --color-success-text: var(--green-13);
 
   /* color native elements */
   background-color: var(--color-base-bg-app);
@@ -105,16 +105,16 @@ html {
     /* Pop colors */
     --color-pop-bg: var(--dark-indigo-9);
     --color-pop-bg-hover: var(--dark-indigo-10);
-    --color-pop-text: white;
+    --color-pop-text: var(--dark-indigo-13);
 
     /* Danger colors */
     --color-danger-bg: var(--dark-red-9);
     --color-danger-bg-hover: var(--dark-red-10);
-    --color-danger-text: white;
+    --color-danger-text: var(--dark-red-13);
 
     /* Success colors */
     --color-success-bg: var(--dark-green-9);
     --color-success-bg-hover: var(--dark-green-10);
-    --color-success-text: white;
+    --color-success-text: var(--dark-green-13);
   }
 }
