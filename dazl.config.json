@@ -9,5 +9,111 @@
       "app/styles/tokens/decorations.css",
       "app/styles/tokens/animations.css"
     ]
+  },
+  "quickAdd": {
+    "addedElements": [
+      {
+        "id": "button",
+        "title": "Button",
+        "icon": "ComponentIcon",
+        "element": {
+          "__kind": "jsx",
+          "type": { "exportName": "Button", "specifier": "~/components/ui/button/button" },
+          "props": {
+            "children": "Click Me"
+          }
+        }
+      },
+      {
+        "id": "avatar",
+        "title": "Avatar",
+        "icon": "ComponentIcon",
+        "element": {
+          "__kind": "jsx",
+          "type": {
+            "exportName": "Avatar",
+            "specifier": "~/components/ui/avatar/avatar"
+          },
+          "props": {
+            "children": [
+              {
+                "__kind": "jsx",
+                "type": {
+                  "exportName": "AvatarImage",
+                  "specifier": "~/components/ui/avatar/avatar"
+                },
+                "props": {
+                  "src": "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?&w=256&h=256&q=70&crop=focalpoint&fp-x=0.5&fp-y=0.3&fp-z=1&fit=crop",
+                  "alt": "User avatar"
+                }
+              },
+              {
+                "__kind": "jsx",
+                "type": {
+                  "exportName": "AvatarFallback",
+                  "specifier": "~/components/ui/avatar/avatar"
+                },
+                "props": {
+                  "children": "AB"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "card",
+        "title": "Card",
+        "icon": "ComponentIcon",
+        "element": {
+          "__kind": "jsx",
+          "type": {
+            "exportName": "Card",
+            "specifier": "~/components/ui/card/card"
+          },
+          "props": {
+            "children": [
+              {
+                "__kind": "jsx",
+                "type": {
+                  "exportName": "CardHeader",
+                  "specifier": "~/components/ui/card/card"
+                },
+                "props": {
+                  "children": "Card Title"
+                }
+              },
+              {
+                "__kind": "jsx",
+                "type": {
+                  "exportName": "CardContent",
+                  "specifier": "~/components/ui/card/card"
+                },
+                "props": {
+                  "children": "This is some card content."
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "input",
+        "title": "Input",
+        "icon": "ComponentIcon",
+        "element": {
+          "__kind": "jsx",
+          "type": {
+            "exportName": "Input",
+            "specifier": "~/components/ui/input/input"
+          },
+          "props": {
+            "id": "input-id",
+            "type": "text",
+            "placeholder": "Enter your name"
+          }
+        }
+      }
+    ]
   }
 }
