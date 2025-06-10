@@ -1,0 +1,331 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-base-bg-app);
+}
+
+.header {
+  background: var(--color-base-bg);
+  border-bottom: 1px solid var(--color-base-border-subtle);
+  padding: var(--space-3) 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-base-text);
+  text-decoration: none;
+  font: var(--font-body);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-2);
+  transition: all 0.2s ease;
+}
+
+.backButton:hover {
+  background: var(--color-accent-bg-subtle);
+  color: var(--color-accent-text-strong);
+}
+
+.title {
+  font: var(--font-heading);
+  color: var(--color-base-text-strong);
+  margin: 0;
+}
+
+.cartInfo {
+  min-width: 150px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cartButton {
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+  border: none;
+}
+
+.cartButton:hover {
+  background: var(--color-pop-bg-hover);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--color-accent-bg-subtle) 0%, var(--color-base-bg-app) 100%);
+  padding: var(--space-6) 0;
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.heroText {
+  flex: 1;
+}
+
+.heroTitle {
+  font: var(--font-heading);
+  color: var(--color-base-text-strong);
+  margin-bottom: var(--space-2);
+}
+
+.heroDescription {
+  font: var(--font-body);
+  font-size: var(--font-size-2);
+  color: var(--color-base-text);
+  line-height: var(--font-lineheight-3);
+}
+
+.heroReward {
+  display: flex;
+  align-items: center;
+}
+
+.rewardBadge {
+  background: var(--color-warning-bg);
+  color: var(--color-warning-text);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font: var(--font-subheading);
+  box-shadow: var(--shadow-2);
+}
+
+.rewardIcon {
+  width: var(--size-4);
+  height: var(--size-4);
+}
+
+.filters {
+  background: var(--color-base-bg);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-base-border-subtle);
+}
+
+.filtersContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+
+.filtersTitle {
+  font: var(--font-subheading);
+  color: var(--color-base-text-strong);
+  margin-bottom: var(--space-2);
+}
+
+.filterButtons {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  border-color: var(--color-accent-border);
+  color: var(--color-accent-text);
+}
+
+.filterButton:hover {
+  background: var(--color-accent-bg-subtle);
+  border-color: var(--color-accent-border-hover);
+}
+
+.activeFilter {
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+  border: none;
+}
+
+.activeFilter:hover {
+  background: var(--color-pop-bg-hover);
+}
+
+.foodGrid {
+  padding: var(--space-6) 0;
+}
+
+.foodGridContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.foodCard {
+  background: var(--color-base-bg);
+  border: 1px solid var(--color-base-border-subtle);
+  border-radius: var(--radius-4);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.foodCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-4);
+  border-color: var(--color-accent-border);
+}
+
+.foodCardHeader {
+  position: relative;
+  text-align: center;
+  padding: var(--space-4) var(--space-3) var(--space-2);
+}
+
+.foodImage {
+  position: relative;
+  margin-bottom: var(--space-2);
+}
+
+.foodEmoji {
+  font-size: 4rem;
+  display: block;
+}
+
+.healthyBadge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+  border-radius: var(--radius-round);
+  width: var(--size-6);
+  height: var(--size-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-2);
+}
+
+.foodTitle {
+  font: var(--font-subheading);
+  color: var(--color-base-text-strong);
+  margin-bottom: var(--space-1);
+}
+
+.priceTag {
+  font: var(--font-subheading);
+  color: var(--color-pop-bg);
+  font-weight: var(--font-weight-7);
+}
+
+.foodCardContent {
+  padding: 0 var(--space-3) var(--space-4);
+}
+
+.foodDescription {
+  font: var(--font-body);
+  color: var(--color-base-text);
+  margin-bottom: var(--space-3);
+  line-height: var(--font-lineheight-3);
+}
+
+.healthTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.healthTag {
+  background: var(--color-accent-bg-subtle);
+  color: var(--color-accent-text-strong);
+  border: 1px solid var(--color-accent-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-0-5);
+  font-size: var(--font-size-0);
+  padding: var(--space-0-5) var(--space-1);
+}
+
+.addButton {
+  width: 100%;
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+  border: none;
+  font: var(--font-subheading);
+}
+
+.addButton:hover:not(:disabled) {
+  background: var(--color-pop-bg-hover);
+}
+
+.addButton:disabled {
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+  cursor: not-allowed;
+}
+
+.floatingCart {
+  position: fixed;
+  bottom: var(--space-4);
+  right: var(--space-4);
+  z-index: 20;
+}
+
+.floatingCartButton {
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+  border: none;
+  box-shadow: var(--shadow-4);
+  border-radius: var(--radius-4);
+}
+
+.floatingCartButton:hover {
+  background: var(--color-pop-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-3);
+  }
+
+  .filterButtons {
+    justify-content: center;
+  }
+
+  .foodGridContent {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .floatingCart {
+    bottom: var(--space-2);
+    right: var(--space-2);
+    left: var(--space-2);
+  }
+
+  .floatingCartButton {
+    width: 100%;
+  }
+}

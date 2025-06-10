@@ -5,116 +5,137 @@ The format for the CSS variables is as follows:
   --color-{theme}-{type}{-variant?}: {value};
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 html {
   /* Typography */
-  --font-display: var(--font-weight-9) var(--font-size-fluid-3) var(--font-transitional);
-  --font-heading: var(--font-weight-6) var(--font-size-fluid-2) var(--font-transitional);
-  --font-subheading: var(--font-weight-4) var(--font-size-fluid-1) var(--font-system-ui);
-  --font-body: var(--font-size-fluid-0) var(--font-system-ui);
-  --font-caption: var(--font-size-fluid-0) var(--font-system-ui);
+  --font-display: var(--font-weight-8) var(--font-size-fluid-3) var(--font-rounded-sans);
+  --font-heading: var(--font-weight-7) var(--font-size-fluid-2) var(--font-rounded-sans);
+  --font-subheading: var(--font-weight-6) var(--font-size-fluid-1) var(--font-rounded-sans);
+  --font-body: var(--font-size-fluid-0) var(--font-rounded-sans);
+  --font-caption: var(--font-size-0) var(--font-rounded-sans);
   --font-code: var(--font-size-fluid-0) var(--font-monospace-code);
 
   /* Light Theme */
-  /* Base neutral colors */
-  --color-base-bg-app: var(--slate-1);
-  --color-base-bg-subtle: var(--slate-2);
-  --color-base-bg: var(--slate-3);
-  --color-base-bg-hover: var(--slate-4);
-  --color-base-bg-active: var(--slate-5);
+  /* Base neutral colors - using light pastel green as base */
+  --color-base-bg-app: #E8F5E9;
+  --color-base-bg-subtle: #F1F8E9;
+  --color-base-bg: #FFFFFF;
+  --color-base-bg-hover: #F5F5F5;
+  --color-base-bg-active: #EEEEEE;
 
-  --color-base-border-subtle: var(--slate-6);
-  --color-base-border: var(--slate-7);
-  --color-base-border-hover: var(--slate-8);
+  --color-base-border-subtle: #E0E0E0;
+  --color-base-border: #BDBDBD;
+  --color-base-border-hover: #9E9E9E;
 
-  --color-base-text-muted: var(--slate-9);
-  --color-base-text-subtle: var(--slate-10);
-  --color-base-text: var(--slate-11);
-  --color-base-text-strong: var(--slate-12);
+  --color-base-text-muted: #757575;
+  --color-base-text-subtle: #616161;
+  --color-base-text: #424242;
+  --color-base-text-strong: #212121;
 
-  /* Accent colors */
-  --color-accent-app: var(--indigo-1);
-  --color-accent-bg-subtle: var(--indigo-2);
-  --color-accent-bg: var(--indigo-3);
-  --color-accent-bg-hover: var(--indigo-4);
-  --color-accent-bg-active: var(--indigo-5);
+  /* Accent colors - bright green theme */
+  --color-accent-bg-app: #E8F5E9;
+  --color-accent-bg-subtle: #C8E6C9;
+  --color-accent-bg: #A5D6A7;
+  --color-accent-bg-hover: #81C784;
+  --color-accent-bg-active: #66BB6A;
 
-  --color-accent-border-subtle: var(--indigo-6);
-  --color-accent-border: var(--indigo-7);
-  --color-accent-border-hover: var(--indigo-8);
+  --color-accent-border-subtle: #A5D6A7;
+  --color-accent-border: #81C784;
+  --color-accent-border-hover: #66BB6A;
 
-  --color-accent-text-muted: var(--indigo-9);
-  --color-accent-text-subtle: var(--indigo-10);
-  --color-accent-text: var(--indigo-11);
-  --color-accent-text-strong: var(--indigo-12);
+  --color-accent-text-muted: #4CAF50;
+  --color-accent-text-subtle: #388E3C;
+  --color-accent-text: #2E7D32;
+  --color-accent-text-strong: #1B5E20;
 
-  /* Pop colors */
-  --color-pop-bg: var(--indigo-9);
-  --color-pop-bg-hover: var(--indigo-10);
-  --color-pop-text: var(--indigo-13);
+  /* Pop colors - bright green for CTAs */
+  --color-pop-bg: #8BC34A;
+  --color-pop-bg-hover: #7CB342;
+  --color-pop-text: #FFFFFF;
 
   /* Danger colors */
-  --color-danger-bg: var(--red-9);
-  --color-danger-bg-hover: var(--red-10);
-  --color-danger-text: var(--red-13);
+  --color-danger-bg: #F44336;
+  --color-danger-bg-hover: #E53935;
+  --color-danger-text: #FFFFFF;
 
   /* Success colors */
-  --color-success-bg: var(--green-9);
-  --color-success-bg-hover: var(--green-10);
-  --color-success-text: var(--green-13);
+  --color-success-bg: #4CAF50;
+  --color-success-bg-hover: #43A047;
+  --color-success-text: #FFFFFF;
+
+  /* Warning colors - soft orange */
+  --color-warning-bg: #FF9800;
+  --color-warning-bg-hover: #F57C00;
+  --color-warning-text: #FFFFFF;
+
+  /* Info colors - soft pink */
+  --color-info-bg: #E91E63;
+  --color-info-bg-hover: #C2185B;
+  --color-info-text: #FFFFFF;
 
   /* color native elements */
   background-color: var(--color-base-bg-app);
-  font-family: Inter;
+  font-family: 'Nunito', var(--font-rounded-sans);
   color: var(--color-base-text);
 
   /* Dark Theme */
   @media (prefers-color-scheme: dark) {
     /* Base neutral colors */
-    --color-base-bg-app: var(--dark-slate-1);
-    --color-base-bg-subtle: var(--dark-slate-2);
-    --color-base-bg: var(--dark-slate-3);
-    --color-base-bg-hover: var(--dark-slate-4);
-    --color-base-bg-active: var(--dark-slate-5);
+    --color-base-bg-app: #1B2E1B;
+    --color-base-bg-subtle: #2E3B2E;
+    --color-base-bg: #3A4A3A;
+    --color-base-bg-hover: #4A5A4A;
+    --color-base-bg-active: #5A6A5A;
 
-    --color-base-border-subtle: var(--dark-slate-6);
-    --color-base-border: var(--dark-slate-7);
-    --color-base-border-hover: var(--dark-slate-8);
+    --color-base-border-subtle: #4A5A4A;
+    --color-base-border: #6A7A6A;
+    --color-base-border-hover: #7A8A7A;
 
-    --color-base-text-muted: var(--dark-slate-9);
-    --color-base-text-subtle: var(--dark-slate-10);
-    --color-base-text: var(--dark-slate-11);
-    --color-base-text-strong: var(--dark-slate-12);
+    --color-base-text-muted: #9E9E9E;
+    --color-base-text-subtle: #BDBDBD;
+    --color-base-text: #E0E0E0;
+    --color-base-text-strong: #FFFFFF;
 
     /* Accent colors */
-    --color-accent-app: var(--dark-indigo-1);
-    --color-accent-bg-subtle: var(--dark-indigo-2);
-    --color-accent-bg: var(--dark-indigo-3);
-    --color-accent-bg-hover: var(--dark-indigo-4);
-    --color-accent-bg-active: var(--dark-indigo-5);
+    --color-accent-bg-app: #1B2E1B;
+    --color-accent-bg-subtle: #2E4A2E;
+    --color-accent-bg: #4A6A4A;
+    --color-accent-bg-hover: #5A7A5A;
+    --color-accent-bg-active: #6A8A6A;
 
-    --color-accent-border-subtle: var(--dark-indigo-6);
-    --color-accent-border: var(--dark-indigo-7);
-    --color-accent-border-hover: var(--dark-indigo-8);
+    --color-accent-border-subtle: #4A6A4A;
+    --color-accent-border: #5A7A5A;
+    --color-accent-border-hover: #6A8A6A;
 
-    --color-accent-text-muted: var(--dark-indigo-9);
-    --color-accent-text-subtle: var(--dark-indigo-10);
-    --color-accent-text: var(--dark-indigo-11);
-    --color-accent-text-strong: var(--dark-indigo-12);
+    --color-accent-text-muted: #81C784;
+    --color-accent-text-subtle: #A5D6A7;
+    --color-accent-text: #C8E6C9;
+    --color-accent-text-strong: #E8F5E9;
 
     /* Pop colors */
-    --color-pop-bg: var(--dark-indigo-9);
-    --color-pop-bg-hover: var(--dark-indigo-10);
-    --color-pop-text: var(--dark-indigo-13);
+    --color-pop-bg: #8BC34A;
+    --color-pop-bg-hover: #7CB342;
+    --color-pop-text: #FFFFFF;
 
     /* Danger colors */
-    --color-danger-bg: var(--dark-red-9);
-    --color-danger-bg-hover: var(--dark-red-10);
-    --color-danger-text: var(--dark-red-13);
+    --color-danger-bg: #F44336;
+    --color-danger-bg-hover: #E53935;
+    --color-danger-text: #FFFFFF;
 
     /* Success colors */
-    --color-success-bg: var(--dark-green-9);
-    --color-success-bg-hover: var(--dark-green-10);
-    --color-success-text: var(--dark-green-13);
+    --color-success-bg: #4CAF50;
+    --color-success-bg-hover: #43A047;
+    --color-success-text: #FFFFFF;
+
+    /* Warning colors */
+    --color-warning-bg: #FF9800;
+    --color-warning-bg-hover: #F57C00;
+    --color-warning-text: #FFFFFF;
+
+    /* Info colors */
+    --color-info-bg: #E91E63;
+    --color-info-bg-hover: #C2185B;
+    --color-info-text: #FFFFFF;
   }
 }

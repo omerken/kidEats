@@ -1,0 +1,461 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-base-bg-app);
+}
+
+.header {
+  background: var(--color-base-bg);
+  border-bottom: 1px solid var(--color-base-border-subtle);
+  padding: var(--space-3) 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-base-text);
+  text-decoration: none;
+  font: var(--font-body);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-2);
+  transition: all 0.2s ease;
+}
+
+.backButton:hover {
+  background: var(--color-accent-bg-subtle);
+  color: var(--color-accent-text-strong);
+}
+
+.title {
+  font: var(--font-heading);
+  color: var(--color-base-text-strong);
+  margin: 0;
+}
+
+.headerActions {
+  min-width: 150px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.settingsIcon {
+  color: var(--color-base-text-muted);
+  width: var(--size-5);
+  height: var(--size-5);
+}
+
+.dashboardContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-4) var(--space-3);
+}
+
+.tabs {
+  width: 100%;
+}
+
+.tabsList {
+  background: var(--color-base-bg);
+  border: 1px solid var(--color-base-border-subtle);
+  border-radius: var(--radius-3);
+  padding: var(--space-1);
+  display: flex;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.tabsTrigger {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-2);
+  font: var(--font-subheading);
+  color: var(--color-base-text);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tabsTrigger:hover {
+  background: var(--color-accent-bg-subtle);
+  color: var(--color-accent-text-strong);
+}
+
+.tabsTrigger[data-state="active"] {
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+}
+
+.tabContent {
+  outline: none;
+}
+
+.sectionHeader {
+  margin-bottom: var(--space-4);
+}
+
+.sectionTitle {
+  font: var(--font-heading);
+  color: var(--color-base-text-strong);
+  margin-bottom: var(--space-1);
+}
+
+.sectionDescription {
+  font: var(--font-body);
+  color: var(--color-base-text-subtle);
+  line-height: var(--font-lineheight-3);
+}
+
+/* Orders Section */
+.ordersSection {
+  width: 100%;
+}
+
+.emptyState {
+  border: 2px dashed var(--color-base-border-subtle);
+  background: var(--color-base-bg-subtle);
+}
+
+.emptyStateContent {
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.emptyStateIcon {
+  color: var(--color-base-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.emptyStateTitle {
+  font: var(--font-subheading);
+  color: var(--color-base-text-strong);
+  margin-bottom: var(--space-1);
+}
+
+.emptyStateDescription {
+  font: var(--font-body);
+  color: var(--color-base-text-subtle);
+}
+
+.ordersGrid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.orderCard {
+  background: var(--color-base-bg);
+  border: 1px solid var(--color-base-border-subtle);
+  border-radius: var(--radius-4);
+  transition: all 0.2s ease;
+}
+
+.orderCard:hover {
+  border-color: var(--color-accent-border);
+  box-shadow: var(--shadow-2);
+}
+
+.orderCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-base-border-subtle);
+}
+
+.orderInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.orderTitle {
+  font: var(--font-subheading);
+  color: var(--color-base-text-strong);
+  margin: 0;
+}
+
+.timeBadge {
+  background: var(--color-accent-bg-subtle);
+  color: var(--color-accent-text-strong);
+  font-size: var(--font-size-0);
+}
+
+.orderAmount {
+  font: var(--font-subheading);
+  font-weight: var(--font-weight-7);
+  color: var(--color-pop-bg);
+  font-size: var(--font-size-3);
+}
+
+.orderCardContent {
+  padding: var(--space-3);
+}
+
+.orderItems {
+  margin-bottom: var(--space-3);
+}
+
+.itemsTitle {
+  font: var(--font-subheading);
+  color: var(--color-base-text-strong);
+  margin-bottom: var(--space-1);
+}
+
+.itemsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.orderItem {
+  font: var(--font-body);
+  color: var(--color-base-text);
+  padding: var(--space-0-5) 0;
+  border-bottom: 1px solid var(--color-base-border-subtle);
+}
+
+.orderItem:last-child {
+  border-bottom: none;
+}
+
+.orderActions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.approveButton {
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.approveButton:hover {
+  background: var(--color-success-bg-hover);
+}
+
+.rejectButton {
+  border-color: var(--color-danger-bg);
+  color: var(--color-danger-bg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.rejectButton:hover {
+  background: var(--color-danger-bg);
+  color: var(--color-danger-text);
+}
+
+/* Budget Section */
+.budgetSection {
+  width: 100%;
+}
+
+.budgetCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.budgetCard {
+  background: var(--color-base-bg);
+  border: 1px solid var(--color-base-border-subtle);
+  border-radius: var(--radius-4);
+}
+
+.budgetCardTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font: var(--font-subheading);
+  color: var(--color-base-text-strong);
+  margin: 0;
+}
+
+.budgetCardContent {
+  padding: var(--space-3);
+}
+
+.budgetAmount {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-7);
+  color: var(--color-pop-bg);
+  margin-bottom: var(--space-3);
+}
+
+.budgetInput {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.inputLabel {
+  font: var(--font-body);
+  color: var(--color-base-text-strong);
+  font-weight: var(--font-weight-5);
+}
+
+.inputGroup {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.budgetInputField {
+  flex: 1;
+}
+
+.updateButton {
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+  border: none;
+}
+
+.updateButton:hover {
+  background: var(--color-pop-bg-hover);
+}
+
+.spendingAmount {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-7);
+  color: var(--color-base-text-strong);
+  margin-bottom: var(--space-3);
+}
+
+.budgetProgress {
+  margin-bottom: var(--space-2);
+}
+
+.progressBar {
+  width: 100%;
+  height: var(--size-2);
+  background: var(--color-base-border-subtle);
+  border-radius: var(--radius-2);
+  overflow: hidden;
+  margin-bottom: var(--space-1);
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-pop-bg);
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font: var(--font-caption);
+  color: var(--color-base-text-subtle);
+  text-align: center;
+}
+
+.remainingBudget {
+  font: var(--font-body);
+  color: var(--color-success-bg);
+  font-weight: var(--font-weight-6);
+  text-align: center;
+  padding: var(--space-2);
+  background: var(--color-accent-bg-subtle);
+  border-radius: var(--radius-2);
+}
+
+/* Restrictions Section */
+.restrictionsSection {
+  width: 100%;
+}
+
+.restrictionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--space-4);
+}
+
+.restrictionsCard {
+  background: var(--color-base-bg);
+  border: 1px solid var(--color-base-border-subtle);
+  border-radius: var(--radius-4);
+}
+
+.restrictionsContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.restrictionItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  border-radius: var(--radius-2);
+  transition: all 0.2s ease;
+}
+
+.restrictionItem:hover {
+  background: var(--color-base-bg-hover);
+}
+
+.restrictionCheckbox {
+  flex-shrink: 0;
+}
+
+.restrictionLabel {
+  flex: 1;
+  font: var(--font-body);
+  color: var(--color-base-text);
+  cursor: pointer;
+}
+
+.restrictedBadge {
+  background: var(--color-danger-bg);
+  color: var(--color-danger-text);
+  font-size: var(--font-size-0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .tabsList {
+    flex-direction: column;
+  }
+
+  .orderCardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .orderActions {
+    flex-direction: column;
+  }
+
+  .budgetCards {
+    grid-template-columns: 1fr;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+  }
+
+  .restrictionsGrid {
+    grid-template-columns: 1fr;
+  }
+}
