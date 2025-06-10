@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { Button } from "../ui/button/button";
 import { Input } from "../ui/input/input";
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from "../ui/navigation-menu/navigation-menu";
-import { Utensils, Search, Menu } from "lucide-react";
+import { Utensils, Search, Menu, ShoppingCart } from "lucide-react";
 import { useState } from "react";
 import styles from "./app-header.module.css";
 
@@ -71,6 +71,12 @@ export function AppHeader() {
           </div>
         </form>
 
+        {/* Cart Button */}
+        <Button variant="outline" className={styles.cartButton}>
+          <ShoppingCart size={18} />
+          <span className={styles.cartText}>Cart</span>
+        </Button>
+
         {/* Get Started Button */}
         <Button className={styles.getStartedButton} asChild>
           <Link to="/parent-dashboard">
@@ -131,6 +137,10 @@ export function AppHeader() {
                 </div>
               </form>
             </div>
+            <Button className={styles.mobileCartButton}>
+              <ShoppingCart size={18} />
+              <span>Cart</span>
+            </Button>
             <Button className={styles.mobileGetStartedButton} asChild>
               <Link to="/parent-dashboard" onClick={() => setIsMobileMenuOpen(false)}>
                 Get Started

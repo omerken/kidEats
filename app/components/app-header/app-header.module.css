@@ -106,6 +106,30 @@
   box-shadow: 0 0 0 2px var(--color-accent-bg-subtle);
 }
 
+/* Cart Button */
+.cartButton {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1-5) var(--space-2-5);
+  border: var(--border-size-1) solid var(--color-base-border);
+  background: var(--color-base-bg);
+  color: var(--color-base-text);
+  font-weight: var(--font-weight-5);
+  border-radius: var(--radius-3);
+  transition: all 200ms var(--ease-3);
+}
+
+.cartButton:hover {
+  background: var(--color-base-bg-hover);
+  border-color: var(--color-base-border-hover);
+  color: var(--color-base-text-strong);
+}
+
+.cartText {
+  font-size: var(--font-size-1);
+}
+
 /* Get Started Button */
 .getStartedButton {
   background: var(--color-pop-bg);
@@ -176,6 +200,24 @@
   width: 100%;
 }
 
+.mobileCartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  background: var(--color-base-bg);
+  color: var(--color-base-text);
+  border: var(--border-size-1) solid var(--color-base-border);
+  padding: var(--space-2) var(--space-3);
+  font-weight: var(--font-weight-5);
+  border-radius: var(--radius-3);
+  margin-top: var(--space-1);
+}
+
+.mobileCartButton:hover {
+  background: var(--color-base-bg-hover);
+}
+
 .mobileGetStartedButton {
   background: var(--color-pop-bg);
   color: var(--color-pop-text);
@@ -202,6 +244,10 @@
   }
 
   .searchForm {
+    display: none;
+  }
+
+  .cartButton {
     display: none;
   }
 
@@ -247,9 +293,11 @@
   .logo,
   .navLink,
   .searchInput,
+  .cartButton,
   .getStartedButton,
   .mobileMenuButton,
-  .mobileNavLink {
+  .mobileNavLink,
+  .mobileCartButton {
     transition: none;
   }
 }
@@ -258,9 +306,11 @@
 .logo:focus,
 .navLink:focus,
 .searchInput:focus,
+.cartButton:focus,
 .getStartedButton:focus,
 .mobileMenuButton:focus,
-.mobileNavLink:focus {
+.mobileNavLink:focus,
+.mobileCartButton:focus {
   outline: 2px solid var(--color-accent-border);
   outline-offset: 2px;
 }
