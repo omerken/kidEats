@@ -85,11 +85,6 @@ export function AppHeader() {
         </Button>
 
         {/* Get Started Button */}
-        <Button className={styles.getStartedButton} asChild>
-          <Link to="/parent-dashboard">
-            Get Started
-          </Link>
-        </Button>
 
         {/* Mobile Menu Button */}
         <Button
