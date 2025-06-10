@@ -178,12 +178,18 @@
   overflow: hidden;
   transition: all 0.3s ease;
   position: relative;
+  cursor: pointer;
 }
 
 .foodCard:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-4);
   border-color: var(--color-accent-border);
+}
+
+.foodCard:focus {
+  outline: 2px solid var(--color-pop-bg);
+  outline-offset: 2px;
 }
 
 .foodCardHeader {
@@ -195,6 +201,21 @@
 .foodImage {
   position: relative;
   margin-bottom: var(--space-2);
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--radius-3);
+}
+
+.foodPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-3);
+  transition: transform 0.3s ease;
+}
+
+.foodCard:hover .foodPhoto {
+  transform: scale(1.05);
 }
 
 .foodEmoji {
@@ -204,8 +225,8 @@
 
 .healthyBadge {
   position: absolute;
-  top: -10px;
-  right: 20px;
+  top: var(--space-1);
+  right: var(--space-1);
   background: var(--color-success-bg);
   color: var(--color-success-text);
   border-radius: var(--radius-round);
@@ -297,6 +318,159 @@
   box-shadow: var(--shadow-5);
 }
 
+/* Modal Styles */
+.modalContent {
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modalTitle {
+  font: var(--font-heading);
+  color: var(--color-base-text-strong);
+  margin-bottom: var(--space-1);
+}
+
+.modalDescription {
+  font: var(--font-body);
+  color: var(--color-base-text);
+  margin-bottom: var(--space-3);
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.modalImageContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: var(--radius-3);
+  overflow: hidden;
+}
+
+.modalImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modalHealthyBadge {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font: var(--font-caption);
+  font-weight: var(--font-weight-6);
+  box-shadow: var(--shadow-2);
+}
+
+.modalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.modalPrice {
+  font: var(--font-heading);
+  color: var(--color-pop-bg);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-7);
+}
+
+.modalSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.modalSectionTitle {
+  font: var(--font-subheading);
+  color: var(--color-base-text-strong);
+  margin-bottom: var(--space-1);
+}
+
+.modalHealthTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.modalHealthTag {
+  background: var(--color-accent-bg-subtle);
+  color: var(--color-accent-text-strong);
+  border: 1px solid var(--color-accent-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-0-5);
+  font-size: var(--font-size-0);
+  padding: var(--space-0-5) var(--space-1-5);
+}
+
+.modalIngredients {
+  font: var(--font-body);
+  color: var(--color-base-text);
+  line-height: var(--font-lineheight-3);
+}
+
+.modalNutrition {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-1);
+}
+
+.nutritionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-1);
+  background: var(--color-base-bg-subtle);
+  border-radius: var(--radius-2);
+}
+
+.nutritionLabel {
+  font: var(--font-body);
+  color: var(--color-base-text);
+}
+
+.nutritionValue {
+  font: var(--font-body);
+  font-weight: var(--font-weight-6);
+  color: var(--color-base-text-strong);
+}
+
+.modalAllergens {
+  font: var(--font-body);
+  color: var(--color-danger-bg);
+  font-weight: var(--font-weight-6);
+}
+
+.modalAddButton {
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+  border: none;
+  font: var(--font-subheading);
+  margin-top: var(--space-2);
+}
+
+.modalAddButton:hover:not(:disabled) {
+  background: var(--color-pop-bg-hover);
+}
+
+.modalAddButton:disabled {
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
+  cursor: not-allowed;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .headerContent {
@@ -327,5 +501,14 @@
 
   .floatingCartButton {
     width: 100%;
+  }
+
+  .modalContent {
+    max-width: 95vw;
+    margin: var(--space-2);
+  }
+
+  .modalNutrition {
+    grid-template-columns: 1fr;
   }
 }

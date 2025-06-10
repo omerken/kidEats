@@ -26,7 +26,7 @@ export default function Home() {
             <span className={styles.logoText}>KidEats</span>
           </div>
           <nav className={styles.nav}>
-            <Link to="/kid-menu" className={styles.navLink}>Menu</Link>
+            <Link to="/" className={styles.navLink}>Menu</Link>
             <Link to="/parent-dashboard" className={styles.navLink}>Parent Dashboard</Link>
           </nav>
         </div>
@@ -44,7 +44,7 @@ export default function Home() {
               while parents maintain full control over spending and food choices.
             </p>
             <div className={styles.heroButtons}>
-              <Link to="/kid-menu">
+              <Link to="/">
                 <Button size="lg" className={styles.primaryButton}>
                   Browse Kid Menu
                 </Button>
@@ -135,7 +135,7 @@ export default function Home() {
           <p className={styles.ctaDescription}>
             Join thousands of families making mealtime fun and healthy!
           </p>
-          <Link to="/kid-menu">
+          <Link to="/">
             <Button size="lg" className={styles.ctaButton}>
               Start Browsing Menu
             </Button>
