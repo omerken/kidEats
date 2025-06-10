@@ -23,7 +23,7 @@
 }
 
 .heroTitle {
-  font: var(--font-heading);
+  font: var(--font-body);
   color: var(--color-base-text-strong);
   margin: 0 0 var(--space-2) 0;
 }
