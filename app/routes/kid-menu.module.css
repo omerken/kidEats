@@ -5,8 +5,9 @@
 
 /* Hero Banner */
 .hero {
-  padding: var(--space-6) var(--space-3) var(--space-4);
+  padding-left: var(--space-3);
   background: linear-gradient(135deg, var(--color-accent-bg-app) 0%, var(--color-base-bg-app) 100%);
+  padding-right: var(--space-3);
 }
 
 .heroContent {
@@ -16,10 +17,28 @@
   justify-content: space-between;
   align-items: center;
   gap: var(--space-6);
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  max-width: 960px;
+  margin: auto;
+  min-height: 50vh;
+  align-items: end;
+  overflow: hidden;
 }
 
 .heroText {
   flex: 1;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  max-width: 23em;
+}
+
+.heroImg {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+  scale: 1.3;
+  transform-origin: right center;
 }
 
 .heroTitle {
@@ -29,7 +48,7 @@
 }
 
 .heroDescription {
-  font: var(--font-body);
+  font: var(--font-subheading);
   color: var(--color-base-text);
   font-size: var(--font-size-2);
   margin: 0;
@@ -78,8 +97,10 @@
 .filterButtons {
   display: flex;
   gap: var(--space-2);
+  margin: 0 auto;
   flex-wrap: wrap;
   padding-bottom: 20px;
+  max-width: 1200px;
 }
 
 .filterButton {
@@ -109,7 +130,7 @@
 /* Food Grid */
 .foodGrid {
   padding: var(--space-6) var(--space-3);
-  background: gold;
+  background: white;
 }
 
 .foodGridContent {
@@ -431,7 +452,6 @@
 @media (max-width: 768px) {
   .heroContent {
     flex-direction: column;
-    text-align: center;
     gap: var(--space-4);
   }
 

@@ -231,14 +231,10 @@ export default function KidMenu() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <h1 className={styles.heroTitle}>Explore Kid-Friendly Meals</h1>
-            <p className={styles.heroDescription}>
-              Choose from our delicious and healthy options! Look for the healthy badges to earn rewards!
-            </p>
+            <h1 className={styles.heroTitle}>Congrats!</h1>
+            <p className={styles.heroDescription}>You&apos;ve completed your weekly challenge and unlocked Dunkin’ Donuts meal.</p>
           </div>
-<img src="/images/dd.png" />
-          <div className={styles.heroReward}></div>
-        </div>
+<img src="/images/dd.png" className={styles.heroImg}/></div>
       </section>
 
       {/* Filters */}
