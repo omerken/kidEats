@@ -52,6 +52,13 @@ export function AppHeader() {
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link to="/parent-dashboard" className={styles.navLink}>
+                    Parent Area
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
         </nav>
@@ -121,6 +128,13 @@ export function AppHeader() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
+            </Link>
+            <Link 
+              to="/parent-dashboard" 
+              className={styles.mobileNavLink}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Parent Area
             </Link>
             <div className={styles.mobileSearchContainer}>
               <form onSubmit={handleSearch} className={styles.mobileSearchForm}>
