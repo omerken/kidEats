@@ -5,7 +5,8 @@ import { Button } from "../components/ui/button/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card/card";
 import { Badge } from "../components/ui/badge/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "../components/ui/dialog/dialog";
-import{ ArrowLeft,Heart,Leaf,Zap,X } from "lucide-react";
+import{ Heart,Leaf,Zap } from "lucide-react";
+import classNames from "classnames";
 import styles from "./kid-menu.module.css";
 
 export function meta({}: Route.MetaArgs) {
@@ -231,7 +232,7 @@ export default function KidMenu() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <h1 className={styles.heroTitle}>Congrats!</h1>
+            <h2 className={styles.heroTitle}>Congrats!</h2>
             <p className={styles.heroDescription}>You&apos;ve completed your weekly challenge and unlocked Dunkin’ Donuts meal.</p>
           </div>
 <img src="/images/dd.png" className={styles.heroImg}/></div>
@@ -241,17 +242,20 @@ export default function KidMenu() {
 
       {/* Food Items Grid */}
       <section className={styles.foodGrid}>
-        <div className={styles.filterButtons}>
-            {filters.map(filter => (
-              <Button
-                key={filter}
-                variant={selectedFilter === filter ? "default" : "outline"}
-                onClick={() => setSelectedFilter(filter)}
-                className={selectedFilter === filter ? styles.activeFilter : styles.filterButton}
-              >
-                {filter}
-              </Button>
-            ))}
+        <div className={styles.filterSection}>
+          <h2 className={styles.filterSectionTitle}>Explore Kid-Friendly Meals</h2>
+<div className={styles.filterButtons}>
+              {filters.map(filter => (
+                <Button
+                  size="sm"
+                  key={filter}
+                  onClick={() => setSelectedFilter(filter)}
+                  className={classNames(styles.filterButton, {[styles.activeFilter]:selectedFilter === filter })}
+                >
+                  {filter}
+                </Button>
+              ))}
+            </div>
           </div>
 <div className={styles.foodGridContent}>
           {filteredItems.map(item => (

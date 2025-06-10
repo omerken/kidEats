@@ -5,54 +5,47 @@
 
 /* Hero Banner */
 .hero {
-  padding-left: var(--space-3);
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
   background: linear-gradient(135deg, var(--color-accent-bg-app) 0%, var(--color-base-bg-app) 100%);
-  padding-right: var(--space-3);
 }
 
 .heroContent {
+  position: relative;
+  display: flex;
+  align-items: end;
+  column-gap: var(--space-8);
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--space-6);
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  max-width: 960px;
-  margin: auto;
-  min-height: 50vh;
-  align-items: end;
+  height: 50vh;
+  min-height: 300px;
   overflow: hidden;
 }
 
 .heroText {
-  flex: 1;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  max-width: 23em;
+  padding-bottom: var(--space-6);
+  padding-top: var(--space-6);
+  padding-right: 50%;
+  color: var(--color-base-text-strong);
 }
 
 .heroImg {
   height: 100%;
   object-fit: contain;
-  width: 100%;
-  scale: 1.3;
-  transform-origin: right center;
+  scale: 1.2;
+  position: absolute;
+  bottom: -20px;
+  right: var(--space-6);
 }
 
 .heroTitle {
-  font: var(--font-heading);
-  color: var(--color-base-text-strong);
+  font: var(--font-display);
   margin: 0 0 var(--space-2) 0;
 }
 
 .heroDescription {
   font: var(--font-subheading);
-  color: var(--color-base-text);
-  font-size: var(--font-size-2);
   margin: 0;
-  line-height: var(--font-lineheight-3);
 }
 
 .heroReward {
@@ -94,37 +87,44 @@
   margin: 0 0 var(--space-3) 0;
 }
 
-.filterButtons {
+.filterSection{
   display: flex;
-  gap: var(--space-2);
+  flex-direction: column;
+  row-gap: var(--space-2);
   margin: 0 auto;
-  flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: var(--space-4);
   max-width: 1200px;
 }
 
-.filterButton {
-  border: var(--border-size-1) solid var(--color-base-border);
-  background: var(--color-base-bg);
-  color: var(--color-base-text);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-3);
-  font-weight: var(--font-weight-5);
-  transition: all 200ms var(--ease-3);
+.filterSectionTitle {
+  font: var(--font-heading);
+  color: var(--color-base-text-strong);
 }
 
-.filterButton:hover {
-  background: var(--color-base-bg-hover);
-  border-color: var(--color-accent-border);
+.filterButtons {
+  display: flex;
+  column-gap: var(--space-1);
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  background: var(--color-accent-bg-subtle);
+  color: var(--color-accent-text);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-6);
+  transition: all 200ms var(--ease-3);
+  padding-top: var(--space-0-5);
+  padding-bottom: var(--space-0-5);
+  height: auto;
+}
+
+.filterButton:hover:not(.activeFilter) {
+  background: var(--color-accent-bg-hover);
 }
 
 .activeFilter {
-  background: var(--color-accent-bg);
-  color: var(--color-accent-text-strong);
-  border: var(--border-size-1) solid var(--color-accent-border);
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-3);
-  font-weight: var(--font-weight-6);
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
 }
 
 /* Food Grid */
@@ -511,3 +511,4 @@
     font-size: var(--font-size-0);
   }
 }
+
