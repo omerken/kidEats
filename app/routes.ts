@@ -6,4 +6,5 @@ export default [
   route("parent-dashboard", "routes/parent-dashboard.tsx"),
   route("how-it-works", "routes/how-it-works.tsx"),
   route("contact", "routes/contact.tsx"),
+  route("cart", "routes/cart.tsx"),
 ] satisfies RouteConfig;

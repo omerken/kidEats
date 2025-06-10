@@ -79,9 +79,11 @@ export function AppHeader() {
         </form>
 
         {/* Cart Button */}
-        <Button variant="outline" className={styles.cartButton}>
-          <ShoppingCart size={18} />
-          <span className={styles.cartText}>Cart</span>
+        <Button variant="outline" className={styles.cartButton} asChild>
+          <Link to="/cart">
+            <ShoppingCart size={18} />
+            <span className={styles.cartText}>Cart</span>
+          </Link>
         </Button>
 
         {/* Get Started Button */}
@@ -146,9 +148,11 @@ export function AppHeader() {
                 </div>
               </form>
             </div>
-            <Button className={styles.mobileCartButton}>
-              <ShoppingCart size={18} />
-              <span>Cart</span>
+            <Button className={styles.mobileCartButton} asChild>
+              <Link to="/cart" onClick={() => setIsMobileMenuOpen(false)}>
+                <ShoppingCart size={18} />
+                <span>Cart</span>
+              </Link>
             </Button>
             <Button className={styles.mobileGetStartedButton} asChild>
               <Link to="/parent-dashboard" onClick={() => setIsMobileMenuOpen(false)}>
