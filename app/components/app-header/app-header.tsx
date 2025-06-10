@@ -68,8 +68,8 @@ export function AppHeader() {
           <div className={styles.searchContainer}>
             <Search className={styles.searchIcon} size={18} />
             <Input
-              type="search"
-              placeholder="Search"
+              type="password"
+              placeholder="insert"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className={styles.searchInput}
