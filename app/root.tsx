@@ -2,6 +2,7 @@ import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration }
 
 import type { Route } from "./+types/root";
 import { Toaster } from "./components/ui/toaster/toaster";
+import { AppHeader } from "./components/app-header/app-header";
 
 import "./styles/reset.css";
 import "./styles/tokens/utils.css";
@@ -36,6 +37,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <AppHeader />
         {children}
         <Toaster />
         <ScrollRestoration />

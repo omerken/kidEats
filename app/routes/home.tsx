@@ -18,20 +18,6 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div className={styles.container}>
-      {/* Header */}
-      <header className={styles.header}>
-        <div className={styles.headerContent}>
-          <div className={styles.logo}>
-            <Utensils className={styles.logoIcon} />
-            <span className={styles.logoText}>KidEats</span>
-          </div>
-          <nav className={styles.nav}>
-            <Link to="/" className={styles.navLink}>Menu</Link>
-            <Link to="/parent-dashboard" className={styles.navLink}>Parent Dashboard</Link>
-          </nav>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>

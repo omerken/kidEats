@@ -95,19 +95,15 @@ export default function ParentDashboard() {
 
   return (
     <div className={styles.container}>
-      {/* Header */}
-      <header className={styles.header}>
-        <div className={styles.headerContent}>
-          <Link to="/" className={styles.backButton}>
-            <ArrowLeft size={20} />
-            Back to Home
-          </Link>
-          <h1 className={styles.title}>Parent Dashboard</h1>
-          <div className={styles.headerActions}>
-            <Settings className={styles.settingsIcon} />
-          </div>
+      {/* Hero Section */}
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.heroTitle}>Parent Dashboard</h1>
+          <p className={styles.heroDescription}>
+            Manage your child's food orders, set budgets, and control what they can order
+          </p>
         </div>
-      </header>
+      </section>
 
       {/* Dashboard Content */}
       <div className={styles.dashboardContent}>

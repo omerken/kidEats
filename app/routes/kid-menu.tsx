@@ -227,29 +227,11 @@ export default function KidMenu() {
 
   return (
     <div className={styles.container}>
-      {/* Header */}
-      <header className={styles.header}>
-        <div className={styles.headerContent}>
-          <Link to="/home" className={styles.backButton}>
-            <ArrowLeft size={20} />
-            Back to Home
-          </Link>
-          <h1 className={styles.title}>Kid Menu</h1>
-          <div className={styles.cartInfo}>
-            {cart.length > 0 && (
-              <Button onClick={requestOrder} className={styles.cartButton}>
-                Request Order ({cart.length})
-              </Button>
-            )}
-          </div>
-        </div>
-      </header>
-
       {/* Hero Banner */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            <h2 className={styles.heroTitle}>Explore Kid-Friendly Meals</h2>
+            <h1 className={styles.heroTitle}>Explore Kid-Friendly Meals</h1>
             <p className={styles.heroDescription}>
               Choose from our delicious and healthy options! Look for the healthy badges to earn rewards!
             </p>
@@ -266,7 +248,7 @@ export default function KidMenu() {
       {/* Filters */}
       <section className={styles.filters}>
         <div className={styles.filtersContent}>
-          <h3 className={styles.filtersTitle}>Filter by:</h3>
+          <h2 className={styles.filtersTitle}>Filter by:</h2>
           <div className={styles.filterButtons}>
             {filters.map(filter => (
               <Button

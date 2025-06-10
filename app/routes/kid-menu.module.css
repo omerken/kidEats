@@ -3,76 +3,19 @@
   background: var(--color-base-bg-app);
 }
 
-.header {
-  background: var(--color-base-bg);
-  border-bottom: 1px solid var(--color-base-border-subtle);
-  padding: var(--space-3) 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.headerContent {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--space-3);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.backButton {
-  display: flex;
-  align-items: center;
-  gap: var(--space-1);
-  color: var(--color-base-text);
-  text-decoration: none;
-  font: var(--font-body);
-  padding: var(--space-1) var(--space-2);
-  border-radius: var(--radius-2);
-  transition: all 0.2s ease;
-}
-
-.backButton:hover {
-  background: var(--color-accent-bg-subtle);
-  color: var(--color-accent-text-strong);
-}
-
-.title {
-  font: var(--font-heading);
-  color: var(--color-base-text-strong);
-  margin: 0;
-}
-
-.cartInfo {
-  min-width: 150px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.cartButton {
-  background: var(--color-pop-bg);
-  color: var(--color-pop-text);
-  border: none;
-}
-
-.cartButton:hover {
-  background: var(--color-pop-bg-hover);
-}
-
+/* Hero Banner */
 .hero {
-  background: linear-gradient(135deg, var(--color-accent-bg-subtle) 0%, var(--color-base-bg-app) 100%);
-  padding: var(--space-6) 0;
+  padding: var(--space-6) var(--space-3) var(--space-4);
+  background: linear-gradient(135deg, var(--color-accent-bg-app) 0%, var(--color-base-bg-app) 100%);
 }
 
 .heroContent {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-3);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: var(--space-4);
+  align-items: center;
+  gap: var(--space-6);
 }
 
 .heroText {
@@ -82,30 +25,30 @@
 .heroTitle {
   font: var(--font-heading);
   color: var(--color-base-text-strong);
-  margin-bottom: var(--space-2);
+  margin: 0 0 var(--space-2) 0;
 }
 
 .heroDescription {
   font: var(--font-body);
-  font-size: var(--font-size-2);
   color: var(--color-base-text);
+  font-size: var(--font-size-2);
+  margin: 0;
   line-height: var(--font-lineheight-3);
 }
 
 .heroReward {
-  display: flex;
-  align-items: center;
+  flex-shrink: 0;
 }
 
 .rewardBadge {
-  background: var(--color-warning-bg);
-  color: var(--color-warning-text);
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-4);
   display: flex;
   align-items: center;
   gap: var(--space-1);
-  font: var(--font-subheading);
+  background: var(--color-warning-bg);
+  color: var(--color-warning-text);
+  padding: var(--space-1-5) var(--space-3);
+  border-radius: var(--radius-4);
+  font-weight: var(--font-weight-6);
   box-shadow: var(--shadow-2);
 }
 
@@ -114,22 +57,22 @@
   height: var(--size-4);
 }
 
+/* Filters */
 .filters {
+  padding: var(--space-4) var(--space-3);
   background: var(--color-base-bg);
-  padding: var(--space-4) 0;
-  border-bottom: 1px solid var(--color-base-border-subtle);
+  border-bottom: var(--border-size-1) solid var(--color-base-border-subtle);
 }
 
 .filtersContent {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-3);
 }
 
 .filtersTitle {
   font: var(--font-subheading);
   color: var(--color-base-text-strong);
-  margin-bottom: var(--space-2);
+  margin: 0 0 var(--space-3) 0;
 }
 
 .filterButtons {
@@ -139,33 +82,37 @@
 }
 
 .filterButton {
-  border-color: var(--color-accent-border);
-  color: var(--color-accent-text);
+  border: var(--border-size-1) solid var(--color-base-border);
+  background: var(--color-base-bg);
+  color: var(--color-base-text);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-3);
+  font-weight: var(--font-weight-5);
+  transition: all 200ms var(--ease-3);
 }
 
 .filterButton:hover {
-  background: var(--color-accent-bg-subtle);
-  border-color: var(--color-accent-border-hover);
+  background: var(--color-base-bg-hover);
+  border-color: var(--color-accent-border);
 }
 
 .activeFilter {
-  background: var(--color-pop-bg);
-  color: var(--color-pop-text);
-  border: none;
+  background: var(--color-accent-bg);
+  color: var(--color-accent-text-strong);
+  border: var(--border-size-1) solid var(--color-accent-border);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-3);
+  font-weight: var(--font-weight-6);
 }
 
-.activeFilter:hover {
-  background: var(--color-pop-bg-hover);
-}
-
+/* Food Grid */
 .foodGrid {
-  padding: var(--space-6) 0;
+  padding: var(--space-6) var(--space-3);
 }
 
 .foodGridContent {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 var(--space-3);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--space-4);
@@ -173,11 +120,10 @@
 
 .foodCard {
   background: var(--color-base-bg);
-  border: 1px solid var(--color-base-border-subtle);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
   border-radius: var(--radius-4);
   overflow: hidden;
-  transition: all 0.3s ease;
-  position: relative;
+  transition: all 200ms var(--ease-3);
   cursor: pointer;
 }
 
@@ -188,50 +134,42 @@
 }
 
 .foodCard:focus {
-  outline: 2px solid var(--color-pop-bg);
+  outline: 2px solid var(--color-accent-border);
   outline-offset: 2px;
 }
 
 .foodCardHeader {
+  padding: 0;
   position: relative;
-  text-align: center;
-  padding: var(--space-4) var(--space-3) var(--space-2);
 }
 
 .foodImage {
   position: relative;
-  margin-bottom: var(--space-2);
+  width: 100%;
   height: 200px;
   overflow: hidden;
-  border-radius: var(--radius-3);
 }
 
 .foodPhoto {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: var(--radius-3);
-  transition: transform 0.3s ease;
+  transition: transform 200ms var(--ease-3);
 }
 
 .foodCard:hover .foodPhoto {
   transform: scale(1.05);
 }
 
-.foodEmoji {
-  font-size: 4rem;
-  display: block;
-}
-
 .healthyBadge {
   position: absolute;
-  top: var(--space-1);
-  right: var(--space-1);
+  top: var(--space-2);
+  right: var(--space-2);
   background: var(--color-success-bg);
   color: var(--color-success-text);
-  border-radius: var(--radius-round);
-  width: var(--size-6);
-  height: var(--size-6);
+  width: var(--size-8);
+  height: var(--size-8);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,42 +179,50 @@
 .foodTitle {
   font: var(--font-subheading);
   color: var(--color-base-text-strong);
-  margin-bottom: var(--space-1);
+  margin: var(--space-3) var(--space-3) var(--space-1) var(--space-3);
+  font-size: var(--font-size-2);
 }
 
 .priceTag {
-  font: var(--font-subheading);
-  color: var(--color-pop-bg);
-  font-weight: var(--font-weight-7);
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-3);
+  font-weight: var(--font-weight-6);
+  font-size: var(--font-size-1);
+  box-shadow: var(--shadow-2);
 }
 
 .foodCardContent {
-  padding: 0 var(--space-3) var(--space-4);
+  padding: 0 var(--space-3) var(--space-3) var(--space-3);
 }
 
 .foodDescription {
-  font: var(--font-body);
   color: var(--color-base-text);
-  margin-bottom: var(--space-3);
+  margin: 0 0 var(--space-3) 0;
   line-height: var(--font-lineheight-3);
 }
 
 .healthTags {
   display: flex;
-  flex-wrap: wrap;
   gap: var(--space-1);
+  flex-wrap: wrap;
   margin-bottom: var(--space-3);
 }
 
 .healthTag {
-  background: var(--color-accent-bg-subtle);
-  color: var(--color-accent-text-strong);
-  border: 1px solid var(--color-accent-border);
   display: flex;
   align-items: center;
   gap: var(--space-0-5);
-  font-size: var(--font-size-0);
+  background: var(--color-accent-bg-subtle);
+  color: var(--color-accent-text-strong);
   padding: var(--space-0-5) var(--space-1);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-5);
 }
 
 .addButton {
@@ -284,11 +230,15 @@
   background: var(--color-pop-bg);
   color: var(--color-pop-text);
   border: none;
-  font: var(--font-subheading);
+  padding: var(--space-1-5);
+  border-radius: var(--radius-3);
+  font-weight: var(--font-weight-6);
+  transition: all 200ms var(--ease-3);
 }
 
 .addButton:hover:not(:disabled) {
   background: var(--color-pop-bg-hover);
+  transform: translateY(-1px);
 }
 
 .addButton:disabled {
@@ -297,19 +247,23 @@
   cursor: not-allowed;
 }
 
+/* Floating Cart */
 .floatingCart {
   position: fixed;
   bottom: var(--space-4);
   right: var(--space-4);
-  z-index: 20;
+  z-index: var(--layer-3);
 }
 
 .floatingCartButton {
   background: var(--color-pop-bg);
   color: var(--color-pop-text);
   border: none;
-  box-shadow: var(--shadow-4);
+  padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-4);
+  font-weight: var(--font-weight-6);
+  box-shadow: var(--shadow-4);
+  transition: all 200ms var(--ease-3);
 }
 
 .floatingCartButton:hover {
@@ -321,20 +275,19 @@
 /* Modal Styles */
 .modalContent {
   max-width: 600px;
-  max-height: 90vh;
+  max-height: 80vh;
   overflow-y: auto;
 }
 
 .modalTitle {
   font: var(--font-heading);
   color: var(--color-base-text-strong);
-  margin-bottom: var(--space-1);
+  margin: 0 0 var(--space-1) 0;
 }
 
 .modalDescription {
-  font: var(--font-body);
   color: var(--color-base-text);
-  margin-bottom: var(--space-3);
+  margin: 0 0 var(--space-4) 0;
 }
 
 .modalBody {
@@ -368,7 +321,6 @@
   display: flex;
   align-items: center;
   gap: var(--space-1);
-  font: var(--font-caption);
   font-weight: var(--font-weight-6);
   box-shadow: var(--shadow-2);
 }
@@ -380,89 +332,91 @@
 }
 
 .modalPrice {
-  font: var(--font-heading);
-  color: var(--color-pop-bg);
   font-size: var(--font-size-4);
   font-weight: var(--font-weight-7);
+  color: var(--color-pop-bg);
 }
 
 .modalSection {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
+  border-top: var(--border-size-1) solid var(--color-base-border-subtle);
+  padding-top: var(--space-3);
 }
 
 .modalSectionTitle {
   font: var(--font-subheading);
   color: var(--color-base-text-strong);
-  margin-bottom: var(--space-1);
+  margin: 0 0 var(--space-2) 0;
+  font-size: var(--font-size-2);
 }
 
 .modalHealthTags {
   display: flex;
-  flex-wrap: wrap;
   gap: var(--space-1);
+  flex-wrap: wrap;
 }
 
 .modalHealthTag {
-  background: var(--color-accent-bg-subtle);
-  color: var(--color-accent-text-strong);
-  border: 1px solid var(--color-accent-border);
   display: flex;
   align-items: center;
   gap: var(--space-0-5);
-  font-size: var(--font-size-0);
-  padding: var(--space-0-5) var(--space-1-5);
+  background: var(--color-accent-bg-subtle);
+  color: var(--color-accent-text-strong);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-2);
+  font-weight: var(--font-weight-5);
 }
 
 .modalIngredients {
-  font: var(--font-body);
   color: var(--color-base-text);
   line-height: var(--font-lineheight-3);
 }
 
 .modalNutrition {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-1);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--space-2);
 }
 
 .nutritionItem {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space-1);
-  background: var(--color-base-bg-subtle);
-  border-radius: var(--radius-2);
+  flex-direction: column;
+  gap: var(--space-0-5);
 }
 
 .nutritionLabel {
-  font: var(--font-body);
-  color: var(--color-base-text);
+  font-weight: var(--font-weight-6);
+  color: var(--color-base-text-strong);
+  font-size: var(--font-size-0);
 }
 
 .nutritionValue {
-  font: var(--font-body);
-  font-weight: var(--font-weight-6);
-  color: var(--color-base-text-strong);
+  color: var(--color-base-text);
+  font-weight: var(--font-weight-5);
 }
 
 .modalAllergens {
-  font: var(--font-body);
   color: var(--color-danger-bg);
   font-weight: var(--font-weight-6);
+  background: var(--color-danger-bg);
+  color: var(--color-danger-text);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-2);
+  display: inline-block;
 }
 
 .modalAddButton {
   background: var(--color-pop-bg);
   color: var(--color-pop-text);
   border: none;
-  font: var(--font-subheading);
-  margin-top: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-3);
+  font-weight: var(--font-weight-6);
+  transition: all 200ms var(--ease-3);
 }
 
 .modalAddButton:hover:not(:disabled) {
   background: var(--color-pop-bg-hover);
+  transform: translateY(-1px);
 }
 
 .modalAddButton:disabled {
@@ -473,24 +427,19 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .headerContent {
-    flex-direction: column;
-    gap: var(--space-2);
-  }
-
   .heroContent {
     flex-direction: column;
     text-align: center;
+    gap: var(--space-4);
+  }
+
+  .foodGridContent {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: var(--space-3);
   }
 
   .filterButtons {
     justify-content: center;
-  }
-
-  .foodGridContent {
-    grid-template-columns: 1fr;
-    gap: var(--space-3);
   }
 
   .floatingCart {
@@ -504,11 +453,39 @@
   }
 
   .modalContent {
-    max-width: 95vw;
     margin: var(--space-2);
+    max-height: calc(100vh - var(--space-4));
   }
 
   .modalNutrition {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: var(--space-4) var(--space-2) var(--space-3);
+  }
+
+  .filters {
+    padding: var(--space-3) var(--space-2);
+  }
+
+  .foodGrid {
+    padding: var(--space-4) var(--space-2);
+  }
+
+  .foodGridContent {
     grid-template-columns: 1fr;
+  }
+
+  .filterButtons {
+    gap: var(--space-1);
+  }
+
+  .filterButton,
+  .activeFilter {
+    padding: var(--space-1) var(--space-2);
+    font-size: var(--font-size-0);
   }
 }

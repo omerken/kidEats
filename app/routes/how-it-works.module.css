@@ -1,0 +1,320 @@
+.container {
+  min-height: 100vh;
+  background: var(--color-base-bg-app);
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--space-8) var(--space-3) var(--space-6);
+  background: linear-gradient(135deg, var(--color-accent-bg-app) 0%, var(--color-base-bg-app) 100%);
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font: var(--font-display);
+  color: var(--color-base-text-strong);
+  line-height: var(--font-lineheight-1);
+  margin: 0 0 var(--space-4) 0;
+}
+
+.heroDescription {
+  font: var(--font-body);
+  color: var(--color-base-text);
+  line-height: var(--font-lineheight-3);
+  font-size: var(--font-size-2);
+  margin: 0;
+}
+
+/* Steps Section */
+.steps {
+  padding: var(--space-8) var(--space-3);
+  background: var(--color-base-bg);
+}
+
+.stepsContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stepsTitle {
+  font: var(--font-heading);
+  color: var(--color-base-text-strong);
+  text-align: center;
+  margin: 0 0 var(--space-8) 0;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.stepContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.stepCard {
+  background: var(--color-base-bg);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
+  border-radius: var(--radius-4);
+  padding: var(--space-4);
+  transition: all 200ms var(--ease-3);
+  flex: 1;
+}
+
+.stepCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-4);
+  border-color: var(--color-accent-border);
+}
+
+.stepHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  padding-bottom: var(--space-3);
+}
+
+.stepNumber {
+  width: var(--size-12);
+  height: var(--size-12);
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-7);
+  margin-bottom: var(--space-1);
+}
+
+.stepIcon {
+  width: var(--size-8);
+  height: var(--size-8);
+  color: var(--color-accent-text-strong);
+}
+
+.stepTitle {
+  font: var(--font-subheading);
+  color: var(--color-base-text-strong);
+  margin: 0;
+}
+
+.stepDescription {
+  color: var(--color-base-text);
+  text-align: center;
+  line-height: var(--font-lineheight-3);
+  margin: 0;
+}
+
+.stepArrow {
+  width: var(--size-6);
+  height: var(--size-6);
+  color: var(--color-accent-text);
+  flex-shrink: 0;
+}
+
+/* Features Section */
+.features {
+  padding: var(--space-8) var(--space-3);
+  background: var(--color-accent-bg-subtle);
+}
+
+.featuresContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featuresTitle {
+  font: var(--font-heading);
+  color: var(--color-base-text-strong);
+  text-align: center;
+  margin: 0 0 var(--space-6) 0;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-4);
+}
+
+.featureCard {
+  background: var(--color-base-bg);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
+  border-radius: var(--radius-4);
+  padding: var(--space-4);
+  transition: all 200ms var(--ease-3);
+  text-align: center;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-4);
+  border-color: var(--color-accent-border);
+}
+
+.featureIcon {
+  width: var(--size-12);
+  height: var(--size-12);
+  color: var(--color-pop-bg);
+  margin: 0 auto var(--space-3) auto;
+}
+
+/* CTA Section */
+.cta {
+  padding: var(--space-8) var(--space-3);
+  background: var(--color-base-bg);
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font: var(--font-heading);
+  color: var(--color-base-text-strong);
+  margin: 0 0 var(--space-3) 0;
+}
+
+.ctaDescription {
+  font: var(--font-body);
+  color: var(--color-base-text);
+  font-size: var(--font-size-2);
+  margin: 0 0 var(--space-4) 0;
+  line-height: var(--font-lineheight-3);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+  border: none;
+  padding: var(--space-2) var(--space-4);
+  font-weight: var(--font-weight-6);
+  border-radius: var(--radius-3);
+  transition: all 200ms var(--ease-3);
+}
+
+.primaryButton:hover {
+  background: var(--color-pop-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-3);
+}
+
+.secondaryButton {
+  border: var(--border-size-2) solid var(--color-accent-border);
+  color: var(--color-accent-text-strong);
+  background: transparent;
+  padding: var(--space-2) var(--space-4);
+  font-weight: var(--font-weight-6);
+  border-radius: var(--radius-3);
+  transition: all 200ms var(--ease-3);
+}
+
+.secondaryButton:hover {
+  background: var(--color-accent-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--space-6) var(--space-2) var(--space-4);
+  }
+
+  .steps {
+    padding: var(--space-6) var(--space-2);
+  }
+
+  .features {
+    padding: var(--space-6) var(--space-2);
+  }
+
+  .cta {
+    padding: var(--space-6) var(--space-2);
+  }
+
+  .stepsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .stepContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stepArrow {
+    transform: rotate(90deg);
+    margin: var(--space-2) 0;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: var(--font-size-5);
+  }
+
+  .heroDescription {
+    font-size: var(--font-size-1);
+  }
+
+  .stepCard {
+    padding: var(--space-3);
+  }
+
+  .featureCard {
+    padding: var(--space-3);
+  }
+
+  .stepNumber {
+    width: var(--size-10);
+    height: var(--size-10);
+    font-size: var(--font-size-2);
+  }
+
+  .stepIcon {
+    width: var(--size-6);
+    height: var(--size-6);
+  }
+
+  .featureIcon {
+    width: var(--size-10);
+    height: var(--size-10);
+  }
+}
