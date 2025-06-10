@@ -68,8 +68,8 @@ export function AppHeader() {
           <div className={styles.searchContainer}>
             <Search className={styles.searchIcon} size={18} />
             <Input
-              type="password"
-              placeholder="insert"
+              type="search"
+              placeholder="Search"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className={styles.searchInput}
@@ -79,7 +79,7 @@ export function AppHeader() {
         </form>
 
         {/* Cart Button */}
-        <Button variant="outline" className={styles.cartButton} asChild>
+        <Button variant="default" className={styles.cartButton} asChild>
           <Link to="/cart">
             <ShoppingCart size={18} />
             <span className={styles.cartText}>Cart</span>

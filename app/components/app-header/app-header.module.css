@@ -93,11 +93,6 @@
 .searchInput {
   width: 100%;
   padding-left: var(--space-6);
-  background: var(--color-base-bg-subtle);
-  border: var(--border-size-1) solid var(--color-base-border-subtle);
-  border-radius: var(--radius-3);
-  font-size: var(--font-size-1);
-  transition: all 200ms var(--ease-3);
 }
 
 .searchInput:focus {
@@ -108,16 +103,9 @@
 
 /* Cart Button */
 .cartButton {
-  display: flex;
-  align-items: center;
-  gap: var(--space-1);
-  padding: var(--space-1-5) var(--space-2-5);
-  border: var(--border-size-1) solid var(--color-base-border);
-  background: var(--color-base-bg);
-  color: var(--color-base-text);
-  font-weight: var(--font-weight-5);
+  padding-top: var(--space-1);
+  padding-bottom: var(--space-1);
   border-radius: var(--radius-3);
-  transition: all 200ms var(--ease-3);
 }
 
 .cartButton:hover {

@@ -137,23 +137,22 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: var(--space-4);
 }
 
 .foodCard {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  border: none;
+  box-shadow: none;
   background: var(--color-base-bg);
-  border: var(--border-size-1) solid var(--color-base-border-subtle);
-  border-radius: var(--radius-4);
-  overflow: hidden;
   transition: all 200ms var(--ease-3);
   cursor: pointer;
 }
 
 .foodCard:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-4);
-  border-color: var(--color-accent-border);
 }
 
 .foodCard:focus {
@@ -169,8 +168,9 @@
 .foodImage {
   position: relative;
   width: 100%;
-  height: 200px;
+  aspect-ratio: 1;
   overflow: hidden;
+  border-radius: var(--radius-6);
 }
 
 .foodPhoto {
@@ -202,7 +202,6 @@
 .foodTitle {
   font: var(--font-subheading);
   color: var(--color-base-text-strong);
-  margin: var(--space-3) var(--space-3) var(--space-1) var(--space-3);
   font-size: var(--font-size-2);
 }
 
@@ -220,13 +219,17 @@
 }
 
 .foodCardContent {
-  padding: 0 var(--space-3) var(--space-3) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: var(--space-1);
 }
 
 .foodDescription {
   color: var(--color-base-text);
   margin: 0 0 var(--space-3) 0;
-  line-height: var(--font-lineheight-3);
+  font-size: var(--font-size-1);
+  line-height: var(--font-lineheight-1);
 }
 
 .healthTags {
@@ -234,6 +237,8 @@
   gap: var(--space-1);
   flex-wrap: wrap;
   margin-bottom: var(--space-3);
+  flex-grow: 1;
+  align-items: start;
 }
 
 .healthTag {
@@ -268,6 +273,14 @@
   background: var(--color-success-bg);
   color: var(--color-success-text);
   cursor: not-allowed;
+}
+
+.addButton:not(:disabled){
+  opacity: 0;
+}
+
+.foodCard:hover .addButton{
+  opacity: 1;
 }
 
 /* Floating Cart */
