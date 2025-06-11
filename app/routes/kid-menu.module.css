@@ -39,7 +39,7 @@
 }
 
 .heroTitle {
-  font: var(--font-display);
+  font: var(--font-subheading);
   margin: 0 0 var(--space-2) 0;
 }
 
