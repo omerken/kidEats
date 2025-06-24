@@ -7,7 +7,7 @@
 .hero {
   padding-left: var(--space-6);
   padding-right: var(--space-6);
-  background: linear-gradient(135deg, var(--color-accent-bg-app) 0%, var(--color-base-bg-app) 100%);
+  background: linear-gradient(135deg, var(--color-base-bg-subtle) 0%, var(--color-base-bg-app) 100%);
 }
 
 .heroContent {

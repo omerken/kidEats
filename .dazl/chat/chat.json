@@ -12,14 +12,7 @@
       "parts": [
         {
           "type": "text",
-          "value": "Help me build this product: Kids Foodie (web app).\nUse the attachment as the design guidlines - this is how it should be built.\n\nGoal: Safe, fun food ordering for kids, with parent controls and healthy eating incentives.\n\nFeatures:\n\nKids browse food and see health info (e.g., low sugar, vegetarian).\n\nParents approve orders, set category/item restrictions, and weekly budgets.\n\nParent can set weekly goals (e.g., 2 salads = 1 fast food).\n\nKid-friendly.\n\nRoles:\n\nKids: Browse, order (parent approval), track healthy progress.\n\nParents: Set restrictions, approve orders, see spending and weekly plans."
-        }
-      ],
-      "attachments": [
-        {
-          "path": "eff9f305-25c5-4ce9-8cb7-302a2384c445/ff8c8a76-c3c7-4a3f-b663-6980982f23f9/4210ec5e-408f-42ac-84a0-6a9b7edccd1a.png",
-          "originalName": "Screenshot 2025-06-10 at 9.53.50.png",
-          "mimeType": "image/png"
+          "value": "Help me build KidEats web app - a food delivery app for kids.\nGoal: Safe, fun food ordering for kids, with parent controls and healthy eating incentives.\n\nFeatures:\n\nKids browse food and see health info (e.g., low sugar, vegetarian).\n\nParents approve orders, set category/item restrictions, and weekly budgets.\n\nParent can set weekly goals (e.g., 2 salads = 1 fast food).\n\nKid-friendly.\n\nRoles:\n\nKids: Browse, order (parent approval), track healthy progress.\n\nParents: Set restrictions, approve orders, see spending and weekly plans."
         }
       ],
       "messageContext": {
