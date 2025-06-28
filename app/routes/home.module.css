@@ -66,7 +66,7 @@
 }
 
 .secondaryButton {
-  border: var(--border-size-2) solid var(--color-accent-border);
+  border: var(--border-size-2) solid var(--color-base-border);
   color: var(--color-accent-text-strong);
   background: transparent;
   padding: var(--space-2) var(--space-4);
@@ -144,7 +144,7 @@
 .featureIcon {
   width: var(--size-12);
   height: var(--size-12);
-  background: var(--color-accent-bg-subtle);
+  background: var(--color-base-bg-subtle);
   border-radius: var(--radius-3);
   display: flex;
   align-items: center;
@@ -156,7 +156,11 @@
 /* CTA Section */
 .cta {
   padding: var(--space-8) var(--space-3);
-  background: var(--color-accent-bg-subtle);
+  background: linear-gradient(
+    120deg,
+    var(--color-base-bg-app) 14%,
+    var(--color-base-bg-subtle) 90%
+  );
   text-align: center;
 }
 

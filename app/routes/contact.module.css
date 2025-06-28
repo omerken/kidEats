@@ -88,7 +88,7 @@
   padding: var(--space-2);
   border: var(--border-size-1) solid var(--color-base-border);
   border-radius: var(--radius-2);
-  background: var(--color-base-bg-subtle);
+  background: var(--color-base-bg-app);
   font-size: var(--font-size-1);
   transition: all 200ms var(--ease-3);
 }
@@ -104,7 +104,7 @@
   padding: var(--space-2);
   border: var(--border-size-1) solid var(--color-base-border);
   border-radius: var(--radius-2);
-  background: var(--color-base-bg-subtle);
+  background: var(--color-base-bg-app);
   font-size: var(--font-size-1);
   font-family: inherit;
   resize: vertical;
@@ -149,7 +149,7 @@
 
 .infoCard {
   background: var(--color-base-bg);
-  border: var(--border-size-1) solid var(--color-base-border-subtle);
+  border: var(--border-size-1) solid var(--color-base-border);
   border-radius: var(--radius-4);
   box-shadow: var(--shadow-2);
 }
@@ -199,8 +199,8 @@
 
 /* FAQ Card */
 .faqCard {
-  background: var(--color-accent-bg-subtle);
-  border: var(--border-size-1) solid var(--color-accent-border-subtle);
+  background: var(--color-base-bg-app);
+  border: var(--border-size-1) solid var(--color-base-border);
   border-radius: var(--radius-4);
   box-shadow: var(--shadow-1);
 }

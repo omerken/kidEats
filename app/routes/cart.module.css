@@ -124,7 +124,7 @@
   position: absolute;
   top: var(--space-1);
   right: var(--space-1);
-  background: var(--color-success-bg);
+  background: var(--color-base-bg-subtle);
   color: var(--color-success-text);
   width: var(--size-6);
   height: var(--size-6);
