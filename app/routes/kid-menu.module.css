@@ -193,7 +193,7 @@
   top: var(--space-2);
   right: var(--space-2);
   background: var(--color-base-bg-subtle);
-  color: var(--color-success-text);
+  color: var(--color-accent-text-strong);
   width: var(--size-8);
   height: var(--size-8);
   border-radius: 50%;

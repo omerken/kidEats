@@ -5,7 +5,7 @@ import { Button } from "../components/ui/button/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card/card";
 import { Badge } from "../components/ui/badge/badge";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "../components/ui/dialog/dialog";
-import{ Heart,Leaf,Zap } from "lucide-react";
+import { Heart, Leaf, Zap } from "lucide-react";
 import classNames from "classnames";
 import styles from "./kid-menu.module.css";
 
@@ -49,15 +49,24 @@ const foodItems: FoodItem[] = [
     healthTags: ["Low Sugar", "Vegetarian"],
     category: "Main",
     isHealthy: true,
-    ingredients: ["Whole wheat crust", "Tomato sauce", "Mozzarella cheese", "Bell peppers", "Zucchini", "Cherry tomatoes", "Red onion", "Basil"],
+    ingredients: [
+      "Whole wheat crust",
+      "Tomato sauce",
+      "Mozzarella cheese",
+      "Bell peppers",
+      "Zucchini",
+      "Cherry tomatoes",
+      "Red onion",
+      "Basil",
+    ],
     nutrition: {
       calories: 285,
       protein: "12g",
       carbs: "35g",
       fat: "10g",
-      fiber: "4g"
+      fiber: "4g",
     },
-    allergens: ["Gluten", "Dairy"]
+    allergens: ["Gluten", "Dairy"],
   },
   {
     id: "2",
@@ -68,15 +77,23 @@ const foodItems: FoodItem[] = [
     healthTags: ["High Protein", "Gluten-Free"],
     category: "Main",
     isHealthy: true,
-    ingredients: ["Grilled chicken breast", "Fresh broccoli", "Olive oil", "Garlic", "Lemon juice", "Sea salt", "Black pepper"],
+    ingredients: [
+      "Grilled chicken breast",
+      "Fresh broccoli",
+      "Olive oil",
+      "Garlic",
+      "Lemon juice",
+      "Sea salt",
+      "Black pepper",
+    ],
     nutrition: {
       calories: 220,
       protein: "28g",
       carbs: "8g",
       fat: "9g",
-      fiber: "3g"
+      fiber: "3g",
     },
-    allergens: []
+    allergens: [],
   },
   {
     id: "3",
@@ -93,9 +110,9 @@ const foodItems: FoodItem[] = [
       protein: "15g",
       carbs: "22g",
       fat: "4g",
-      fiber: "3g"
+      fiber: "3g",
     },
-    allergens: ["Dairy", "Nuts"]
+    allergens: ["Dairy", "Nuts"],
   },
   {
     id: "4",
@@ -112,15 +129,15 @@ const foodItems: FoodItem[] = [
       protein: "22g",
       carbs: "8g",
       fat: "8g",
-      fiber: "1g"
+      fiber: "1g",
     },
-    allergens: ["Gluten", "Eggs"]
+    allergens: ["Gluten", "Eggs"],
   },
   {
     id: "5",
     name: "Cheesy Cauliflower Tots",
     description: "Crispy cauliflower tots with a cheesy center",
-    image: "https://images.unsplash.com/photo-1609501676725-7186f4f3db0e?w=400&h=300&fit=crop&crop=center",
+    image: "https://images.unsplash.com/photo-1574101476807-3e1dbec5ed62?w=400&h=300&fit=crop&crop=center",
     price: 5.49,
     healthTags: ["Vegetarian", "Low Carb"],
     category: "Side",
@@ -131,9 +148,9 @@ const foodItems: FoodItem[] = [
       protein: "8g",
       carbs: "6g",
       fat: "10g",
-      fiber: "2g"
+      fiber: "2g",
     },
-    allergens: ["Dairy", "Eggs", "Nuts"]
+    allergens: ["Dairy", "Eggs", "Nuts"],
   },
   {
     id: "6",
@@ -144,15 +161,23 @@ const foodItems: FoodItem[] = [
     healthTags: ["Antioxidants", "Dairy-Free"],
     category: "Drink",
     isHealthy: true,
-    ingredients: ["Frozen mixed berries", "Banana", "Coconut milk", "Chia seeds", "Fresh blueberries", "Granola", "Coconut flakes"],
+    ingredients: [
+      "Frozen mixed berries",
+      "Banana",
+      "Coconut milk",
+      "Chia seeds",
+      "Fresh blueberries",
+      "Granola",
+      "Coconut flakes",
+    ],
     nutrition: {
       calories: 165,
       protein: "4g",
       carbs: "28g",
       fat: "6g",
-      fiber: "8g"
+      fiber: "8g",
     },
-    allergens: ["Nuts"]
+    allergens: ["Nuts"],
   },
   {
     id: "7",
@@ -163,15 +188,25 @@ const foodItems: FoodItem[] = [
     healthTags: [],
     category: "Dessert",
     isHealthy: false,
-    ingredients: ["All-purpose flour", "Butter", "Brown sugar", "White sugar", "Eggs", "Vanilla", "Chocolate chips", "Baking soda", "Salt"],
+    ingredients: [
+      "All-purpose flour",
+      "Butter",
+      "Brown sugar",
+      "White sugar",
+      "Eggs",
+      "Vanilla",
+      "Chocolate chips",
+      "Baking soda",
+      "Salt",
+    ],
     nutrition: {
       calories: 320,
       protein: "4g",
       carbs: "42g",
       fat: "16g",
-      fiber: "2g"
+      fiber: "2g",
     },
-    allergens: ["Gluten", "Dairy", "Eggs"]
+    allergens: ["Gluten", "Dairy", "Eggs"],
   },
   {
     id: "8",
@@ -188,9 +223,9 @@ const foodItems: FoodItem[] = [
       protein: "18g",
       carbs: "15g",
       fat: "16g",
-      fiber: "1g"
+      fiber: "1g",
     },
-    allergens: ["Gluten", "Eggs"]
+    allergens: ["Gluten", "Eggs"],
   },
 ];
 
@@ -201,18 +236,18 @@ export default function KidMenu() {
 
   const filters = ["All", "Low Sugar", "Vegetarian", "Gluten-Free", "High Protein"];
 
-  const filteredItems = foodItems.filter(item => {
+  const filteredItems = foodItems.filter((item) => {
     if (selectedFilter === "All") return true;
     return item.healthTags.includes(selectedFilter);
   });
 
   const addToCart = (itemId: string) => {
-    setCart(prev => [...prev, itemId]);
+    setCart((prev) => [...prev, itemId]);
   };
 
   const requestOrder = () => {
     if (cart.length === 0) return;
-    
+
     // In a real app, this would send the order to parent approval
     alert(`Order requested! ${cart.length} item(s) sent to parent for approval.`);
     setCart([]);
@@ -233,9 +268,12 @@ export default function KidMenu() {
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
             <h2 className={styles.heroTitle}>Congrats!</h2>
-            <p className={styles.heroDescription}>You&apos;ve completed your weekly challenge and unlocked Dunkin’ Donuts meal.</p>
+            <p className={styles.heroDescription}>
+              You&apos;ve completed your weekly challenge and unlocked Dunkin’ Donuts meal.
+            </p>
           </div>
-<img src="/images/dd.png" className={styles.heroImg}/></div>
+          <img src="/images/dd.png" className={styles.heroImg} />
+        </div>
       </section>
 
       {/* Filters */}
@@ -244,29 +282,29 @@ export default function KidMenu() {
       <section className={styles.foodGrid}>
         <div className={styles.filterSection}>
           <h2 className={styles.filterSectionTitle}>Explore Kid-Friendly Meals</h2>
-<div className={styles.filterButtons}>
-              {filters.map(filter => (
-                <Button
-                  size="sm"
-                  key={filter}
-                  onClick={() => setSelectedFilter(filter)}
-                  className={classNames(styles.filterButton, {[styles.activeFilter]:selectedFilter === filter })}
-                >
-                  {filter}
-                </Button>
-              ))}
-            </div>
+          <div className={styles.filterButtons}>
+            {filters.map((filter) => (
+              <Button
+                size="sm"
+                key={filter}
+                onClick={() => setSelectedFilter(filter)}
+                className={classNames(styles.filterButton, { [styles.activeFilter]: selectedFilter === filter })}
+              >
+                {filter}
+              </Button>
+            ))}
           </div>
-<div className={styles.foodGridContent}>
-          {filteredItems.map(item => (
-            <Card 
-              key={item.id} 
+        </div>
+        <div className={styles.foodGridContent}>
+          {filteredItems.map((item) => (
+            <Card
+              key={item.id}
               className={styles.foodCard}
               onClick={() => openItemDetail(item)}
               role="button"
               tabIndex={0}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
+                if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();
                   openItemDetail(item);
                 }
@@ -275,12 +313,7 @@ export default function KidMenu() {
             >
               <CardHeader className={styles.foodCardHeader}>
                 <div className={styles.foodImage}>
-                  <img 
-                    src={item.image} 
-                    alt={item.name}
-                    className={styles.foodPhoto}
-                    loading="lazy"
-                  />
+                  <img src={item.image} alt={item.name} className={styles.foodPhoto} loading="lazy" />
                   {item.isHealthy && (
                     <div className={styles.healthyBadge}>
                       <Heart size={16} />
@@ -291,11 +324,9 @@ export default function KidMenu() {
                 <div className={styles.priceTag}>${item.price}</div>
               </CardHeader>
               <CardContent className={styles.foodCardContent}>
-                <CardDescription className={styles.foodDescription}>
-                  {item.description}
-                </CardDescription>
+                <CardDescription className={styles.foodDescription}>{item.description}</CardDescription>
                 <div className={styles.healthTags}>
-                  {item.healthTags.map(tag => (
+                  {item.healthTags.map((tag) => (
                     <Badge key={tag} className={styles.healthTag}>
                       {tag === "Low Sugar" && <Zap size={12} />}
                       {tag === "Vegetarian" && <Leaf size={12} />}
@@ -304,7 +335,7 @@ export default function KidMenu() {
                     </Badge>
                   ))}
                 </div>
-                <Button 
+                <Button
                   onClick={(e) => {
                     e.stopPropagation();
                     addToCart(item.id);
@@ -335,18 +366,12 @@ export default function KidMenu() {
           <DialogContent className={styles.modalContent}>
             <DialogHeader>
               <DialogTitle className={styles.modalTitle}>{selectedItem.name}</DialogTitle>
-              <DialogDescription className={styles.modalDescription}>
-                {selectedItem.description}
-              </DialogDescription>
+              <DialogDescription className={styles.modalDescription}>{selectedItem.description}</DialogDescription>
             </DialogHeader>
-            
+
             <div className={styles.modalBody}>
               <div className={styles.modalImageContainer}>
-                <img 
-                  src={selectedItem.image} 
-                  alt={selectedItem.name}
-                  className={styles.modalImage}
-                />
+                <img src={selectedItem.image} alt={selectedItem.name} className={styles.modalImage} />
                 {selectedItem.isHealthy && (
                   <div className={styles.modalHealthyBadge}>
                     <Heart size={20} />
@@ -357,11 +382,11 @@ export default function KidMenu() {
 
               <div className={styles.modalInfo}>
                 <div className={styles.modalPrice}>${selectedItem.price}</div>
-                
+
                 <div className={styles.modalSection}>
                   <h4 className={styles.modalSectionTitle}>Health Benefits</h4>
                   <div className={styles.modalHealthTags}>
-                    {selectedItem.healthTags.map(tag => (
+                    {selectedItem.healthTags.map((tag) => (
                       <Badge key={tag} className={styles.modalHealthTag}>
                         {tag === "Low Sugar" && <Zap size={14} />}
                         {tag === "Vegetarian" && <Leaf size={14} />}
@@ -374,9 +399,7 @@ export default function KidMenu() {
 
                 <div className={styles.modalSection}>
                   <h4 className={styles.modalSectionTitle}>Ingredients</h4>
-                  <div className={styles.modalIngredients}>
-                    {selectedItem.ingredients.join(", ")}
-                  </div>
+                  <div className={styles.modalIngredients}>{selectedItem.ingredients.join(", ")}</div>
                 </div>
 
                 <div className={styles.modalSection}>
@@ -408,13 +431,11 @@ export default function KidMenu() {
                 {selectedItem.allergens.length > 0 && (
                   <div className={styles.modalSection}>
                     <h4 className={styles.modalSectionTitle}>Allergens</h4>
-                    <div className={styles.modalAllergens}>
-                      {selectedItem.allergens.join(", ")}
-                    </div>
+                    <div className={styles.modalAllergens}>{selectedItem.allergens.join(", ")}</div>
                   </div>
                 )}
 
-                <Button 
+                <Button
                   onClick={() => {
                     addToCart(selectedItem.id);
                     closeItemDetail();
