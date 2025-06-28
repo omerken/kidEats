@@ -40,6 +40,7 @@
   box-shadow: var(--shadow-1);
   &:hover {
     background: var(--color-pop-bg-hover);
+    color: var(--color-success-text);
   }
 }
 
