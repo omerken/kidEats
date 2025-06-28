@@ -33,7 +33,7 @@
 }
 
 .default:hover {
-  background: var(--color-pop-bg-hover);
+  background: var(--color-base-bg-subtle);
 }
 
 .default:focus {
@@ -60,7 +60,7 @@
 }
 
 .outline:hover {
-  border: var(--border-size-1) solid var(--color-accent-border-hover);
+  border: var(--border-size-1) solid var(--color-base-border-subtle);
   color: var(--color-accent-text-strong);
 }
 
@@ -86,6 +86,7 @@
 /* Sizes */
 .sizeDefault {
   padding: var(--space-0-5) var(--space-2-5);
+  height: var(--size-5);
 }
 
 .sizeSm {

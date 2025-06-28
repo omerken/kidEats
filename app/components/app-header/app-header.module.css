@@ -66,7 +66,7 @@
 
 .navLink:hover,
 .navLink:focus {
-  background: var(--color-base-bg-hover);
+  background: var(--color-base-bg-app);
   color: var(--color-base-text-strong);
 }
 
@@ -97,7 +97,7 @@
 
 .searchInput:focus {
   background: var(--color-base-bg);
-  border-color: var(--color-accent-border);
+  border-color: var(--color-base-border);
   box-shadow: 0 0 0 2px var(--color-accent-bg-subtle);
 }
 
@@ -299,6 +299,6 @@
 .mobileMenuButton:focus,
 .mobileNavLink:focus,
 .mobileCartButton:focus {
-  outline: 2px solid var(--color-accent-border);
+  outline: 2px solid var(--color-base-border);
   outline-offset: 2px;
 }

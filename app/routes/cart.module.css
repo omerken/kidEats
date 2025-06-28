@@ -98,7 +98,7 @@
 }
 
 .cartItem:hover {
-  border-color: var(--color-accent-border);
+  border-color: var(--color-base-border);
   box-shadow: var(--shadow-2);
 }
 

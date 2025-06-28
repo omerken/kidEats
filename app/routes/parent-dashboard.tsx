@@ -59,7 +59,7 @@ export default function ParentDashboard() {
   ]);
 
   const [budgetSettings, setBudgetSettings] = useState<BudgetSettings>({
-    weeklyLimit: 50.00,
+    weeklyLimit: 50.0,
     currentSpent: 23.47,
   });
 
@@ -77,16 +77,14 @@ export default function ParentDashboard() {
   };
 
   const handleBudgetUpdate = (newLimit: number) => {
-    setBudgetSettings(prev => ({ ...prev, weeklyLimit: newLimit }));
+    setBudgetSettings((prev) => ({ ...prev, weeklyLimit: newLimit }));
   };
 
   const toggleRestriction = (restrictionId: string) => {
-    setRestrictions(prev =>
-      prev.map(restriction =>
-        restriction.id === restrictionId
-          ? { ...restriction, isRestricted: !restriction.isRestricted }
-          : restriction
-      )
+    setRestrictions((prev) =>
+      prev.map((restriction) =>
+        restriction.id === restrictionId ? { ...restriction, isRestricted: !restriction.isRestricted } : restriction,
+      ),
     );
   };
 
@@ -95,7 +93,6 @@ export default function ParentDashboard() {
 
   return (
     <div className={styles.container}>
-      {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>Parent Dashboard</h1>
@@ -104,6 +101,7 @@ export default function ParentDashboard() {
           </p>
         </div>
       </section>
+      {/* Hero Section */}
 
       {/* Dashboard Content */}
       <div className={styles.dashboardContent}>
@@ -138,25 +136,19 @@ export default function ParentDashboard() {
                   <CardContent className={styles.emptyStateContent}>
                     <Clock size={48} className={styles.emptyStateIcon} />
                     <h3 className={styles.emptyStateTitle}>No Pending Orders</h3>
-                    <p className={styles.emptyStateDescription}>
-                      Your child hasn't requested any orders yet.
-                    </p>
+                    <p className={styles.emptyStateDescription}>Your child hasn't requested any orders yet.</p>
                   </CardContent>
                 </Card>
               ) : (
                 <div className={styles.ordersGrid}>
-                  {pendingOrders.map(order => (
+                  {pendingOrders.map((order) => (
                     <Card key={order.id} className={styles.orderCard}>
                       <CardHeader className={styles.orderCardHeader}>
                         <div className={styles.orderInfo}>
-                          <CardTitle className={styles.orderTitle}>
-                            Order from {order.childName}
-                          </CardTitle>
+                          <CardTitle className={styles.orderTitle}>Order from {order.childName}</CardTitle>
                           <Badge className={styles.timeBadge}>{order.requestedAt}</Badge>
                         </div>
-                        <div className={styles.orderAmount}>
-                          ${order.totalAmount.toFixed(2)}
-                        </div>
+                        <div className={styles.orderAmount}>${order.totalAmount.toFixed(2)}</div>
                       </CardHeader>
                       <CardContent className={styles.orderCardContent}>
                         <div className={styles.orderItems}>
@@ -213,9 +205,7 @@ export default function ParentDashboard() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className={styles.budgetCardContent}>
-                    <div className={styles.budgetAmount}>
-                      ${budgetSettings.weeklyLimit.toFixed(2)}
-                    </div>
+                    <div className={styles.budgetAmount}>${budgetSettings.weeklyLimit.toFixed(2)}</div>
                     <div className={styles.budgetInput}>
                       <label className={styles.inputLabel}>Set new weekly limit:</label>
                       <div className={styles.inputGroup}>
@@ -226,10 +216,7 @@ export default function ParentDashboard() {
                           defaultValue={budgetSettings.weeklyLimit}
                           className={styles.budgetInputField}
                         />
-                        <Button
-                          onClick={() => handleBudgetUpdate(50)}
-                          className={styles.updateButton}
-                        >
+                        <Button onClick={() => handleBudgetUpdate(50)} className={styles.updateButton}>
                           Update
                         </Button>
                       </div>
@@ -239,28 +226,17 @@ export default function ParentDashboard() {
 
                 <Card className={styles.budgetCard}>
                   <CardHeader>
-                    <CardTitle className={styles.budgetCardTitle}>
-                      Current Spending
-                    </CardTitle>
+                    <CardTitle className={styles.budgetCardTitle}>Current Spending</CardTitle>
                   </CardHeader>
                   <CardContent className={styles.budgetCardContent}>
-                    <div className={styles.spendingAmount}>
-                      ${budgetSettings.currentSpent.toFixed(2)}
-                    </div>
+                    <div className={styles.spendingAmount}>${budgetSettings.currentSpent.toFixed(2)}</div>
                     <div className={styles.budgetProgress}>
                       <div className={styles.progressBar}>
-                        <div 
-                          className={styles.progressFill}
-                          style={{ width: `${Math.min(budgetPercentage, 100)}%` }}
-                        />
+                        <div className={styles.progressFill} style={{ width: `${Math.min(budgetPercentage, 100)}%` }} />
                       </div>
-                      <div className={styles.progressText}>
-                        {budgetPercentage.toFixed(0)}% of budget used
-                      </div>
+                      <div className={styles.progressText}>{budgetPercentage.toFixed(0)}% of budget used</div>
                     </div>
-                    <div className={styles.remainingBudget}>
-                      ${remainingBudget.toFixed(2)} remaining this week
-                    </div>
+                    <div className={styles.remainingBudget}>${remainingBudget.toFixed(2)} remaining this week</div>
                   </CardContent>
                 </Card>
               </div>
@@ -281,23 +257,19 @@ export default function ParentDashboard() {
                 <Card className={styles.restrictionsCard}>
                   <CardHeader>
                     <CardTitle>Food Categories</CardTitle>
-                    <CardDescription>
-                      Restrict entire categories of food
-                    </CardDescription>
+                    <CardDescription>Restrict entire categories of food</CardDescription>
                   </CardHeader>
                   <CardContent className={styles.restrictionsContent}>
                     {restrictions
-                      .filter(r => r.type === "category")
-                      .map(restriction => (
+                      .filter((r) => r.type === "category")
+                      .map((restriction) => (
                         <div key={restriction.id} className={styles.restrictionItem}>
                           <Checkbox
                             checked={restriction.isRestricted}
                             onCheckedChange={() => toggleRestriction(restriction.id)}
                             className={styles.restrictionCheckbox}
                           />
-                          <label className={styles.restrictionLabel}>
-                            Restrict {restriction.name}
-                          </label>
+                          <label className={styles.restrictionLabel}>Restrict {restriction.name}</label>
                           {restriction.isRestricted && (
                             <Badge variant="destructive" className={styles.restrictedBadge}>
                               Restricted
@@ -311,23 +283,19 @@ export default function ParentDashboard() {
                 <Card className={styles.restrictionsCard}>
                   <CardHeader>
                     <CardTitle>Specific Items</CardTitle>
-                    <CardDescription>
-                      Restrict individual food items
-                    </CardDescription>
+                    <CardDescription>Restrict individual food items</CardDescription>
                   </CardHeader>
                   <CardContent className={styles.restrictionsContent}>
                     {restrictions
-                      .filter(r => r.type === "item")
-                      .map(restriction => (
+                      .filter((r) => r.type === "item")
+                      .map((restriction) => (
                         <div key={restriction.id} className={styles.restrictionItem}>
                           <Checkbox
                             checked={restriction.isRestricted}
                             onCheckedChange={() => toggleRestriction(restriction.id)}
                             className={styles.restrictionCheckbox}
                           />
-                          <label className={styles.restrictionLabel}>
-                            Restrict {restriction.name}
-                          </label>
+                          <label className={styles.restrictionLabel}>Restrict {restriction.name}</label>
                           {restriction.isRestricted && (
                             <Badge variant="destructive" className={styles.restrictedBadge}>
                               Restricted
