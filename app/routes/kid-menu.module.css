@@ -207,6 +207,7 @@
   font: var(--font-subheading);
   color: var(--color-base-text-strong);
   font-size: var(--font-size-2);
+  margin-bottom: var(--space-0-25);
 }
 
 .priceTag {
@@ -227,6 +228,7 @@
   flex-direction: column;
   padding: 0;
   padding-top: var(--space-1);
+  gap: var(--space-0-5);
 }
 
 .foodDescription {

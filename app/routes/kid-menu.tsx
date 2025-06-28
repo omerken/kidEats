@@ -320,10 +320,11 @@ export default function KidMenu() {
                     </div>
                   )}
                 </div>
-                <CardTitle className={styles.foodTitle}>{item.name}</CardTitle>
+
                 <div className={styles.priceTag}>${item.price}</div>
               </CardHeader>
               <CardContent className={styles.foodCardContent}>
+                <CardTitle className={styles.foodTitle}>{item.name}</CardTitle>
                 <CardDescription className={styles.foodDescription}>{item.description}</CardDescription>
                 <div className={styles.healthTags}>
                   {item.healthTags.map((tag) => (
