@@ -98,7 +98,6 @@
 .searchInput:focus {
   background: var(--color-base-bg);
   border-color: var(--color-base-border);
-  box-shadow: 0 0 0 2px var(--color-accent-bg-subtle);
 }
 
 /* Cart Button */
