@@ -1,11 +1,15 @@
 .container {
   min-height: 100vh;
-  background: var(--color-base-bg-app);
+  background: var(--color-base-bg);
 }
 
 /* Header */
 .header {
-  background: var(--color-base-bg);
+  background: linear-gradient(
+    11deg,
+    var(--color-base-bg-subtle) 0%,
+    var(--color-base-bg-app) 100%
+  );
   border-bottom: var(--border-size-1) solid var(--color-base-border-subtle);
   padding: var(--space-4) var(--space-3);
 }

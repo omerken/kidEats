@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  background: var(--color-base-bg-app);
+  background: var(--color-base-bg);
 }
 
 /* Hero Section */
