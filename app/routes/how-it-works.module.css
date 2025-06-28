@@ -136,7 +136,11 @@
 /* Features Section */
 .features {
   padding: var(--space-8) var(--space-3);
-  background: var(--color-accent-bg-subtle);
+  background: linear-gradient(
+    135deg,
+    var(--color-base-bg-app) 100%,
+    var(--color-base-bg-subtle) 0%
+  );
 }
 
 .featuresContent {
@@ -229,7 +233,7 @@
 }
 
 .secondaryButton {
-  border: var(--border-size-2) solid var(--color-accent-border);
+  border: var(--border-size-2) solid var(--color-accent-text);
   color: var(--color-accent-text-strong);
   background: transparent;
   padding: var(--space-2) var(--space-4);

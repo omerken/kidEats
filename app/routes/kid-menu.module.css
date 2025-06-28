@@ -7,7 +7,11 @@
 .hero {
   padding-left: var(--space-6);
   padding-right: var(--space-6);
-  background: linear-gradient(135deg, var(--color-base-bg-subtle) 0%, var(--color-base-bg-app) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-base-bg-subtle) 0%,
+    var(--color-base-bg-app) 100%
+  );
 }
 
 .heroContent {
@@ -108,7 +112,7 @@
 }
 
 .filterButton {
-  background: var(--color-accent-bg-subtle);
+  background: var(--color-base-bg-app);
   color: var(--color-accent-text);
   padding: var(--space-1) var(--space-3);
   border-radius: var(--radius-6);
@@ -188,7 +192,7 @@
   position: absolute;
   top: var(--space-2);
   right: var(--space-2);
-  background: var(--color-success-bg);
+  background: var(--color-base-bg-subtle);
   color: var(--color-success-text);
   width: var(--size-8);
   height: var(--size-8);
@@ -245,8 +249,8 @@
   display: flex;
   align-items: center;
   gap: var(--space-0-5);
-  background: var(--color-accent-bg-subtle);
-  color: var(--color-accent-text-strong);
+  background: var(--color-base-bg-app);
+  color: var(--color-accent-text);
   padding: var(--space-0-5) var(--space-1);
   border-radius: var(--radius-2);
   font-size: var(--font-size-0);
@@ -350,7 +354,7 @@
   position: absolute;
   top: var(--space-2);
   right: var(--space-2);
-  background: var(--color-success-bg);
+  background: var(--color-base-bg-subtle);
   color: var(--color-success-text);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--radius-3);
@@ -395,8 +399,8 @@
   display: flex;
   align-items: center;
   gap: var(--space-0-5);
-  background: var(--color-accent-bg-subtle);
-  color: var(--color-accent-text-strong);
+  background: var(--color-base-bg-app);
+  color: var(--color-accent-text);
   padding: var(--space-1) var(--space-2);
   border-radius: var(--radius-2);
   font-weight: var(--font-weight-5);
