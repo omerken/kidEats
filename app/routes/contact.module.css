@@ -95,8 +95,7 @@
 
 .input:focus {
   background: var(--color-base-bg);
-  border-color: var(--color-accent-border);
-  box-shadow: 0 0 0 2px var(--color-accent-bg-subtle);
+  border-color: var(--color-base-border);
   outline: none;
 }
 
@@ -114,8 +113,7 @@
 
 .textarea:focus {
   background: var(--color-base-bg);
-  border-color: var(--color-accent-border);
-  box-shadow: 0 0 0 2px var(--color-accent-bg-subtle);
+  border-color: var(--color-base-border-subtle);
   outline: none;
 }
 
@@ -318,6 +316,5 @@
 .input:focus,
 .textarea:focus,
 .submitButton:focus {
-  outline: 2px solid var(--color-accent-border);
-  outline-offset: 2px;
+  outline: 2px solid var(--color-base-border-subtle);
 }
