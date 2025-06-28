@@ -19,24 +19,18 @@ export default function HowItWorks() {
   const steps = [
     {
       number: 1,
-      title: "Kids Browse Menu",
-      description: "Children explore our colorful, kid-friendly menu with healthy options and fun descriptions",
+      title: "Browse & Add Items",
+      description: "Kids explore from our colorful, kid-friendly menu and select their favourites",
       icon: <Heart className={styles.stepIcon} />,
     },
     {
       number: 2,
-      title: "Add to Cart",
-      description: "Kids select their favorite meals and add them to their order cart",
-      icon: <Star className={styles.stepIcon} />,
-    },
-    {
-      number: 3,
       title: "Request Approval",
       description: "Orders are sent to parents for review and approval before being placed",
       icon: <Shield className={styles.stepIcon} />,
     },
     {
-      number: 4,
+      number: 3,
       title: "Parent Reviews",
       description: "Parents can approve, reject, or modify orders based on budget and dietary restrictions",
       icon: <CheckCircle className={styles.stepIcon} />,
@@ -50,7 +44,8 @@ export default function HowItWorks() {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>How KidEats Works</h1>
           <p className={styles.heroDescription}>
-            A simple, safe process that puts kids in control of their food choices while keeping parents in charge of decisions
+            A simple, safe process that puts kids in control of their food choices while keeping parents in charge of
+            decisions
           </p>
         </div>
       </section>
@@ -69,14 +64,10 @@ export default function HowItWorks() {
                     <CardTitle className={styles.stepTitle}>{step.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className={styles.stepDescription}>
-                      {step.description}
-                    </CardDescription>
+                    <CardDescription className={styles.stepDescription}>{step.description}</CardDescription>
                   </CardContent>
                 </Card>
-                {index < steps.length - 1 && (
-                  <ArrowRight className={styles.stepArrow} />
-                )}
+                {index < steps.length - 1 && <ArrowRight className={styles.stepArrow} />}
               </div>
             ))}
           </div>
@@ -131,9 +122,7 @@ export default function HowItWorks() {
       <section className={styles.cta}>
         <div className={styles.ctaContent}>
           <h2 className={styles.ctaTitle}>Ready to Get Started?</h2>
-          <p className={styles.ctaDescription}>
-            Join thousands of families making mealtime fun, safe, and healthy!
-          </p>
+          <p className={styles.ctaDescription}>Join thousands of families making mealtime fun, safe, and healthy!</p>
           <div className={styles.ctaButtons}>
             <Button size="lg" className={styles.primaryButton} asChild>
               <Link to="/">Browse Menu</Link>
