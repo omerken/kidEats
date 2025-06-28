@@ -63,8 +63,8 @@ html {
   --color-danger-text: #ffffff;
 
   /* Success colors */
-  --color-success-bg: #4caf50;
-  --color-success-bg-hover: #43a047;
+  --color-success-bg: var(--green-9);
+  --color-success-bg-hover: var(--green-10);
   --color-success-text: #ffffff;
 
   /* Warning colors - soft orange */
