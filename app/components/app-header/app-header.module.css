@@ -299,6 +299,4 @@
 .mobileMenuButton:focus,
 .mobileNavLink:focus,
 .mobileCartButton:focus {
-  outline: 2px solid var(--color-base-border);
-  outline-offset: 2px;
 }

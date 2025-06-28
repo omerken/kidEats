@@ -37,7 +37,7 @@
 }
 
 .default:focus {
-  box-shadow: 0 0 0 2px var(--color-base-border-hover);
+  box-shadow: 0 0 0 1px var(--color-base-border-subtle);
 }
 
 .default:active {
