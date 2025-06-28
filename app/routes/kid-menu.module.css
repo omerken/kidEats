@@ -36,7 +36,7 @@
 .heroImg {
   height: 100%;
   object-fit: contain;
-  scale: 1.2;
+  scale: 1.1;
   position: absolute;
   bottom: -20px;
   right: var(--space-6);
