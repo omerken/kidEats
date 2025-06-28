@@ -272,7 +272,7 @@ export default function KidMenu() {
               You&apos;ve completed your weekly challenge and unlocked Dunkin’ Donuts meal.
             </p>
           </div>
-          <img src="dd.png" className={styles.heroImg} />
+          <img src="Dunkin.png" className={styles.heroImg} />
         </div>
       </section>
 
