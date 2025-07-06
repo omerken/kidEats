@@ -7,11 +7,7 @@
 .hero {
   padding-left: var(--space-6);
   padding-right: var(--space-6);
-  background: linear-gradient(
-    135deg,
-    var(--color-base-bg-subtle) 0%,
-    var(--color-base-bg-app) 100%
-  );
+  background: linear-gradient(135deg, var(--color-base-bg-subtle) 0%, var(--color-base-bg-app) 100%);
 }
 
 .heroContent {
@@ -124,10 +120,16 @@
 
 .filterButton:hover:not(.activeFilter) {
   background: var(--color-base-bg-subtle);
+  color: var(--color-base-text-muted);
 }
 
 .activeFilter {
   background: var(--color-pop-bg);
+  color: var(--color-pop-text);
+}
+
+.activeFilter:hover {
+  background-color: var(--color-pop-bg);
   color: var(--color-pop-text);
 }
 
