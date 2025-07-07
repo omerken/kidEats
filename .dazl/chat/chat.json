@@ -85,20 +85,6 @@
         }
       ],
       "commitHash": "9430175d66fa63765697faa5a18f9ce492d633ba"
-    },
-    {
-      "id": "bebde31e-2d87-4554-9af4-bc9c62b80080",
-      "role": "system",
-      "type": "manualEdits",
-      "createdAt": "2025-07-07T07:50:38.003Z",
-      "parts": [
-        {
-          "type": "file-edit",
-          "editType": "update",
-          "filePath": ".gitignore",
-          "status": "completed"
-        }
-      ]
     }
   ]
 }
