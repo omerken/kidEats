@@ -9,6 +9,7 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@dazl/dev": "^1.1.1",
     "@react-router/node": "^7.6.2",
     "@react-router/serve": "^7.6.2",
     "classnames": "^2.5.1",

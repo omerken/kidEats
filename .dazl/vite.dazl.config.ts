@@ -6,4 +6,4 @@ const dazlPluginOptions = {
   "previewScriptUrl": "http://localhost:4444/src/dazl-ai/entrypoints/web/editor-preview.web.ts"
 };
 
-export default mergeConfig(originalConfig, { plugins: dazlPlugins(dazlPluginOptions, import.meta.url) });
+export default mergeConfig(originalConfig, { plugins: dazlPlugins(dazlPluginOptions) });
