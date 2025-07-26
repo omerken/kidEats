@@ -47,7 +47,7 @@ html {
 
   --color-accent-text-muted: var(--grass-9);
   --color-accent-text-subtle: var(--green-8);
-  --color-accent-text: var(--green-10);
+  --color-accent-text: var(--gray-12);
   --color-accent-text-strong: var(--gray-12);
 
   /* Pop colors - bright green for CTAs */
